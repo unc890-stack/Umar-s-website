@@ -3,444 +3,134 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dr. Umar Nawaz | Health Systems &amp; Hospital Management Consultant</title>
-<meta name="description" content="Dr. Umar Nawaz, MBBS, MPH — physician and health-systems manager. Hospital commissioning, operations, quality, costing and health-programme delivery for hospitals, trusts, government and development partners.">
-<meta property="og:title" content="Dr. Umar Nawaz | Health Systems & Hospital Management Consultant">
-<meta property="og:description" content="Hospitals and health programmes that run on systems, not daily firefighting.">
-<meta property="og:image" content="img/portrait.jpg">
+<title>Dr. Umar Nawaz | Doctor and Health Consultant</title>
+<meta name="description" content="Dr. Umar Nawaz is a doctor and health manager from Faisalabad, Pakistan. He helps hospitals and health programs work well.">
+<meta property="og:title" content="Dr. Umar Nawaz | Doctor and Health Consultant">
+<meta property="og:description" content="I help hospitals and health programs work well.">
+<meta property="og:image" content="img/photos/portrait.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="alternate icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#b3132b">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{--paper:#f8f7f4;--white:#fff;--ink:#141b26;--navy:#14223a;--navy-2:#0d1729;--muted:#5b6472;--line:#e3e0d8;--brass:#a8844b;--ease:cubic-bezier(.2,.7,.2,1)}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-a{color:inherit}
-img{display:block;max-width:100%}
-.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
-h1,h2,h3{font-family:Newsreader,Georgia,serif;font-weight:500;color:var(--navy);letter-spacing:-.005em}
-h2{font-size:clamp(30px,3.6vw,42px);line-height:1.15;margin:12px 0 16px}
-p{margin:0 0 16px}
-.label{font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--brass)}
-.intro{max-width:700px;color:var(--muted);font-size:17px;margin-bottom:48px}
-section{padding:104px 0}
-.white{background:var(--white)}
-
-/* header */
-header.top{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .35s var(--ease),box-shadow .35s var(--ease),height .35s}
-header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;transition:height .35s var(--ease)}
-.name{font-family:Newsreader,Georgia,serif;font-size:22px;font-weight:600;color:#fff;text-decoration:none;transition:color .35s}
-.name span{font:500 12px Inter,sans-serif;letter-spacing:.1em;margin-left:10px;color:rgba(255,255,255,.7);transition:color .35s}
-nav.menu{display:flex;gap:30px;align-items:center}
-nav.menu a{font-size:14px;color:rgba(255,255,255,.82);text-decoration:none;position:relative;transition:color .25s}
-nav.menu a::after{content:"";position:absolute;left:0;bottom:-6px;height:1px;width:100%;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
-nav.menu a:hover::after,nav.menu a.on::after{transform:scaleX(1)}
-nav.menu a.cta{border:1px solid rgba(255,255,255,.55);padding:9px 18px;color:#fff}
-nav.menu a.cta::after{display:none}
-header.top.solid{background:rgba(255,255,255,.96);box-shadow:0 1px 0 var(--line);backdrop-filter:blur(8px)}
-header.top.solid .wrap{height:64px}
-header.top.solid .name{color:var(--navy)}
-header.top.solid .name span{color:var(--muted)}
-header.top.solid nav.menu a{color:var(--muted)}
-header.top.solid nav.menu a:hover,header.top.solid nav.menu a.on{color:var(--navy)}
-header.top.solid nav.menu a.cta{color:#fff;background:var(--navy);border-color:var(--navy)}
-@media(max-width:960px){nav.menu a:not(.cta){display:none}}
-@media(max-width:480px){.name span{display:none}}
-
-/* hero */
-.hero{position:relative;min-height:100vh;display:flex;align-items:center;color:#fff;overflow:hidden;padding:0;background:radial-gradient(circle at 78% 30%,#1f3557 0%,#14223a 45%,#0d1729 100%)}
-.hero .wrap{position:relative;z-index:2;width:100%;padding-top:110px;padding-bottom:64px;display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center}
-.hero .label{color:#d2b47e}
-.hero h1{color:#fff;font-size:clamp(44px,5.4vw,72px);line-height:1;margin:14px 0 6px}
-.hero .title{font-family:Newsreader,Georgia,serif;font-size:clamp(19px,1.9vw,24px);color:#d9c39a;margin-bottom:22px}
-.hero .promise{font-family:Newsreader,Georgia,serif;font-size:clamp(22px,2.2vw,28px);line-height:1.3;color:#fff;max-width:620px;margin:0 0 16px}
-.hero .lead{font-size:clamp(16px,1.4vw,18px);color:rgba(255,255,255,.78);max-width:620px}
-.hero figure{margin:0;position:relative;justify-self:end;width:100%;max-width:440px}
-.hero figure img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 15%;box-shadow:0 40px 80px -30px rgba(0,0,0,.6);animation:photoIn 1.4s var(--ease) both .2s}
-.hero figure::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid rgba(201,164,103,.55);z-index:-1}
-.hero figcaption{position:absolute;left:-28px;bottom:28px;background:#fff;color:var(--navy);padding:14px 20px;font-size:13px;box-shadow:0 20px 40px -20px rgba(0,0,0,.5)}
-.hero figcaption b{display:block;font-family:Newsreader,Georgia,serif;font-size:17px;font-weight:500}
-@keyframes photoIn{from{opacity:0;transform:translateY(24px) scale(.98)}to{opacity:1;transform:none}}
-.hero .stats{grid-template-columns:1fr 1fr;max-width:560px;margin-top:40px}
-.hero .stats div{padding:18px 20px 6px 0}
-.hero .stats b{font-size:clamp(28px,2.6vw,36px)}
-@media(max-width:900px){.hero .wrap{grid-template-columns:1fr;gap:40px;padding-top:96px}.hero figure{justify-self:start;max-width:300px;order:-1}.hero figcaption{left:12px}}
-.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:36px}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;font-size:15px;font-weight:500;text-decoration:none;border:1px solid var(--navy);transition:background .25s,color .25s,transform .25s var(--ease)}
-.btn:hover{transform:translateY(-2px)}
-.btn .arr{transition:transform .25s var(--ease)}
-.btn:hover .arr{transform:translateX(4px)}
-.btn.gold{background:#c9a467;border-color:#c9a467;color:var(--navy-2)}
-.btn.gold:hover{background:#d8b77d}
-.btn.ghost{border-color:rgba(255,255,255,.5);color:#fff}
-.btn.ghost:hover{background:rgba(255,255,255,.1)}
-.btn.solid{background:var(--navy);color:#fff}
-.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:48px;border-top:1px solid rgba(255,255,255,.18)}
-.stats div{padding:22px 20px 0 0}
-.stats b{display:block;font-family:Newsreader,Georgia,serif;font-weight:500;font-size:clamp(30px,3vw,42px);line-height:1.1}
-.stats span{font-size:13.5px;color:rgba(255,255,255,.7)}
-@media(max-width:760px){.stats{grid-template-columns:1fr 1fr}.stats div{padding-bottom:12px}}
-.scrollcue{position:absolute;z-index:2;left:50%;bottom:22px;width:22px;height:36px;border:1px solid rgba(255,255,255,.5);border-radius:12px;transform:translateX(-50%)}
-.scrollcue::after{content:"";position:absolute;left:50%;top:7px;width:2px;height:7px;background:#fff;transform:translateX(-50%);animation:cue 1.8s infinite}
-@keyframes cue{0%{opacity:0;top:6px}40%{opacity:1}100%{opacity:0;top:20px}}
-@media(max-width:760px){.scrollcue{display:none}}
-
-/* hero slider */
-.slider{margin-top:6px;max-width:640px}
-.slide-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
-.slide-tabs button{--c:#c9a467;background:transparent;border:1px solid var(--c);color:var(--c);font:500 13px Inter,sans-serif;padding:7px 14px;cursor:pointer;transition:background .3s,color .3s}
-.slide-tabs button:nth-child(2){--c:#5fc1b0}.slide-tabs button:nth-child(3){--c:#e8957a}.slide-tabs button:nth-child(4){--c:#8dbbea}
-.slide-tabs button[aria-selected="true"],.slide-tabs button:hover{background:var(--c);color:#0d1729}
-.slides{position:relative;min-height:236px;border-left:2px solid var(--sc,#c9a467);padding-left:22px;transition:border-color .5s}
-.slide{position:absolute;inset:0 0 auto 22px;opacity:0;transform:translateX(28px);transition:opacity .6s var(--ease),transform .6s var(--ease);pointer-events:none}
-.slide.on{position:relative;inset:auto;opacity:1;transform:none;pointer-events:auto}
-.slide.out{transform:translateX(-28px)}
-.slide .promise{font-family:Newsreader,Georgia,serif;font-size:clamp(22px,2.2vw,28px);line-height:1.3;color:#fff;margin:0 0 14px}
-.slide .lead{font-size:16px;color:rgba(255,255,255,.8);margin:0 0 12px}
-.slide ul.ticks{list-style:none;margin:0;padding:0}
-.slide ul.ticks li{position:relative;padding:5px 0 5px 22px;font-size:15px;color:rgba(255,255,255,.8)}
-.slide ul.ticks li::before{content:"";position:absolute;left:0;top:14px;width:8px;height:8px;background:#e8957a}
-.slide ul.ticks b{color:#fff;font-weight:600}
-.edu{display:grid;gap:14px}
-.edu h4{margin:0 0 2px;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:#8dbbea;font-weight:600}
-.edu p{margin:0;font-size:15.5px;color:rgba(255,255,255,.85)}
-.slide-nav{display:flex;align-items:center;gap:14px;margin-top:18px;position:relative}
-.arrow{width:38px;height:38px;border:1px solid rgba(255,255,255,.35);background:transparent;color:#fff;cursor:pointer;transition:background .25s,border-color .25s}
-.arrow:hover{background:rgba(255,255,255,.12);border-color:#fff}
-.dots{display:flex;gap:8px}
-.dots span{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.3);cursor:pointer;transition:background .3s,transform .3s}
-.dots span.on{background:#fff;transform:scale(1.25)}
-.progress{flex:1;height:2px;background:rgba(255,255,255,.14);overflow:hidden}
-.progress i{display:block;height:100%;width:0;background:var(--sc,#c9a467)}
-.progress i.run{animation:prog 7s linear forwards}
-.slider.paused .progress i{animation-play-state:paused}
-@keyframes prog{to{width:100%}}
-@media(max-width:600px){.slides{min-height:330px}}
-
-/* partners marquee */
-.affil{background:var(--white);border-bottom:1px solid var(--line);padding:26px 0;overflow:hidden}
-.affil .row{display:flex;align-items:center;gap:30px}
-.affil .label{color:var(--muted);white-space:nowrap}
-.marquee{overflow:hidden;flex:1;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
-.track{display:flex;gap:56px;width:max-content;animation:slide 32s linear infinite}
-.track{align-items:center}
-.track img{height:46px;width:auto;object-fit:contain}
-.track .wm{font-family:Newsreader,Georgia,serif;font-size:19px;font-weight:600;color:#1d3a5f;white-space:nowrap;line-height:1.1}
-.track .wm small{display:block;font:500 10px Inter,sans-serif;letter-spacing:.12em;color:#5b6472}
-@keyframes slide{to{transform:translateX(-50%)}}
-
-/* situations */
-.sits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
-.sit{background:var(--white);border:1px solid var(--line);padding:30px 28px;position:relative;transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .35s}
-.sit::before{content:"";position:absolute;left:0;top:0;height:3px;width:100%;background:var(--brass);transform:scaleX(0);transform-origin:left;transition:transform .45s var(--ease)}
-.sit:hover{transform:translateY(-6px);box-shadow:0 22px 44px -26px rgba(20,34,58,.35);border-color:transparent}
-.sit:hover::before{transform:scaleX(1)}
-.sit{--c:#1f7a6d;border-top:3px solid var(--c)}
-.sit:nth-child(2){--c:#b0702a}.sit:nth-child(3){--c:#2d5f9a}.sit:nth-child(4){--c:#8a4f7d}.sit:nth-child(5){--c:#c0573e}.sit:nth-child(6){--c:#4f7a2a}
-.sit::before{background:var(--c)!important}
-.sit .n{font-family:Newsreader,Georgia,serif;color:var(--c);font-size:15px;font-weight:600}
-.sit h3{font-size:21px;line-height:1.3;margin:10px 0 12px}
-.sit p{font-size:15px;color:var(--muted);margin:0}
-@media(max-width:960px){.sits{grid-template-columns:1fr 1fr}}
-@media(max-width:620px){.sits{grid-template-columns:1fr}}
-
-/* tabs */
-.tabs{display:flex;flex-wrap:wrap;gap:12px;position:relative;margin-bottom:40px}
-.tab{--c:#1f7a6d;background:#fff;border:1.5px solid var(--c);color:var(--c);padding:13px 24px;font:600 16px Inter,sans-serif;cursor:pointer;transition:background .3s,color .3s,box-shadow .3s,transform .3s var(--ease)}
-#t2{--c:#b0702a}
-.tab:hover{transform:translateY(-2px);box-shadow:0 10px 22px -14px var(--c)}
-.tab[aria-selected="true"]{background:var(--c);color:#fff}
-.tab:focus-visible{outline:2px solid var(--c);outline-offset:4px}
-.ink{display:none}
-#p1{--c:#1f7a6d}#p2{--c:#b0702a}
-.panel{border-top:3px solid var(--c);padding-top:32px}
-.panel dt{color:var(--c)}
-.panel figure{outline:1.5px solid var(--c);outline-offset:8px}
-.panel{display:none;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
-.panel.show{display:grid;animation:panelIn .55s var(--ease)}
-@keyframes panelIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
-.panel figure{margin:0;overflow:hidden;position:sticky;top:96px}
-.panel figure img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform 1.2s var(--ease)}
-.panel figure:hover img{transform:scale(1.04)}
-.panel .who{font-size:14px;color:var(--muted);margin-bottom:18px}
-.panel dl{margin:0;border-top:1px solid var(--line)}
-.panel dt{font-weight:600;color:var(--navy);padding-top:18px}
-.panel dd{margin:4px 0 0;padding-bottom:18px;border-bottom:1px solid var(--line);color:var(--muted);font-size:15px}
-@media(max-width:860px){.panel{grid-template-columns:1fr;gap:28px}.panel figure{position:static}.panel figure img{aspect-ratio:16/10}}
-
-/* record */
-.record{position:relative;margin-left:8px;border-left:1px solid var(--line)}
-.rec{position:relative;display:grid;grid-template-columns:150px 1fr 1.25fr;gap:32px;padding:28px 0 28px 36px}
-.rec::before{content:"";position:absolute;left:-6px;top:38px;width:11px;height:11px;border-radius:50%;background:var(--white);border:2px solid var(--brass)}
-.rec+.rec{border-top:1px solid var(--line)}
-.rec .yr{font-family:Newsreader,Georgia,serif;font-size:20px;color:var(--brass)}
-.rec h3{font-size:21px;margin:0 0 4px}
-.rec .role{font-size:14px;color:var(--muted)}
-.rec ul{margin:0;padding-left:18px;font-size:15px}
-.rec li{margin-bottom:6px}
-@media(max-width:860px){.rec{grid-template-columns:1fr;gap:8px}}
-
-/* journey gallery */
-.journey{background:var(--navy);color:#dfe4ec}
-.journey h2{color:#fff}.journey .label{color:#d2b47e}.journey .intro{color:#b9c2cf}
-.filters{display:flex;flex-wrap:wrap;gap:10px;margin:-20px 0 34px}
-.filters button{--c:#fff;background:transparent;border:1px solid var(--c);color:var(--c);padding:8px 16px;font:500 14px Inter,sans-serif;cursor:pointer;transition:background .3s,color .3s}
-.filters button.on,.filters button:hover{background:var(--c);color:var(--navy)}
-.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:220px;grid-auto-flow:dense;gap:14px}
-.g{margin:0;position:relative;overflow:hidden;cursor:zoom-in;background:#0d1729}
-.g.wide{grid-column:span 2}.g.tall{grid-row:span 2}
-.g img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease),filter .6s}
-.g figcaption{position:absolute;inset:auto 0 0 0;padding:44px 16px 14px;font-size:13px;line-height:1.45;color:rgba(255,255,255,.86);background:linear-gradient(transparent,rgba(9,16,30,.92));transform:translateY(38%);opacity:.0;transition:transform .5s var(--ease),opacity .5s}
-.g figcaption b{display:block;font:500 16px Newsreader,Georgia,serif;color:#fff;margin-bottom:2px}
-.g:hover img{transform:scale(1.06)}
-.g:hover figcaption,.g:focus-within figcaption{transform:none;opacity:1}
-.g.hide{display:none}
-@media(hover:none){.g figcaption{transform:none;opacity:1}}
-@media(max-width:900px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:180px}}
-@media(max-width:520px){.gallery{grid-template-columns:1fr;grid-auto-rows:240px}.g.wide{grid-column:auto}.g.tall{grid-row:span 1}}
-.lightbox{position:fixed;inset:0;z-index:100;background:rgba(6,11,22,.94);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .35s}
-.lightbox.open{opacity:1;pointer-events:auto}
-.lightbox figure{margin:0;max-width:min(1100px,88vw);text-align:center}
-.lightbox img{max-width:100%;max-height:78vh;margin:0 auto;box-shadow:0 30px 80px rgba(0,0,0,.6)}
-.lightbox figcaption{color:#cfd6e2;font-size:15px;margin-top:14px}
-.lightbox figcaption b{display:block;font:500 20px Newsreader,Georgia,serif;color:#fff}
-.lightbox button{position:absolute;background:transparent;border:1px solid rgba(255,255,255,.35);color:#fff;width:46px;height:46px;font-size:20px;cursor:pointer}
-.lb-x{top:20px;right:20px}.lb-p{left:20px;top:50%}.lb-n{right:20px;top:50%}
-
-/* engagement */
-.split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
-@media(max-width:860px){.split{grid-template-columns:1fr;gap:36px}}
-.split figure{margin:0;overflow:hidden}
-.split figure img{width:100%;aspect-ratio:3/2;object-fit:cover}
-.modes{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--navy)}
-.mode{padding:24px 24px 20px 0;border-bottom:1px solid var(--line)}
-.mode:nth-child(even){padding-left:24px;border-left:1px solid var(--line)}
-.mode h3{font-size:20px;margin:0 0 8px}
-.mode p{font-size:15px;color:var(--muted);margin:0}
-@media(max-width:560px){.modes{grid-template-columns:1fr}.mode:nth-child(even){padding-left:0;border-left:0}}
-.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));margin-top:72px;position:relative}
-.steps::before{content:"";position:absolute;top:19px;left:0;right:0;height:1px;background:var(--line)}
-.steps .bar{position:absolute;top:19px;left:0;height:1px;background:var(--brass);width:0;transition:width 1.6s var(--ease)}
-.steps.in .bar{width:100%}
-.step{position:relative;padding-right:22px}
-.step i{display:flex;align-items:center;justify-content:center;width:39px;height:39px;border-radius:50%;background:var(--paper);border:1px solid var(--brass);font:500 15px Newsreader,serif;font-style:normal;color:var(--brass);margin-bottom:16px;position:relative}
-.step b{display:block;color:var(--navy);margin-bottom:4px}
-.step p{font-size:14.5px;color:var(--muted);margin:0}
-@media(max-width:860px){.steps{grid-template-columns:1fr;gap:22px}.steps::before,.steps .bar{display:none}}
-
-/* profile */
-.profile{display:grid;grid-template-columns:1.3fr .7fr;gap:72px;align-items:start}
-.profile figure{margin:0}
-.profile figure img{width:100%;aspect-ratio:4/5;object-fit:cover}
-.profile figcaption{font-size:13px;color:var(--muted);margin-top:10px}
-.profile p{font-size:16.5px}
-.side h4{font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);margin:0 0 10px}
-.side ul{list-style:none;margin:0 0 28px;padding:0;border-top:1px solid var(--line)}
-.side li{padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
-.side li span{display:block;font-size:13px;color:var(--muted)}
-@media(max-width:860px){.profile{grid-template-columns:1fr;gap:36px}}
-
-/* enquiries */
-.enq{position:relative;background:var(--navy);color:#dfe4ec;overflow:hidden}
-.enq::before{content:"";position:absolute;inset:0;background:url(img/meeting.jpg) center/cover;opacity:.12}
-.enq .wrap{position:relative}
-.enq h2{color:#fff}
-.enq .label{color:#d2b47e}
-.enq .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:end}
-@media(max-width:860px){.enq .grid{grid-template-columns:1fr;gap:28px}}
-.enq p{color:#b9c2cf;font-size:17px;max-width:620px}
-.contact div{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.14);font-size:15px;color:#b9c2cf}
-.contact a{color:#fff;text-decoration:none}
-footer{background:var(--navy-2);color:#7f8a9c;font-size:12.5px;padding:26px 0}
-footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-footer a{color:#7f8a9c}
-
-/* reveal */
-.rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
-.rv.in{opacity:1;transform:none}
-.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}.d5{transition-delay:.4s}
-.hero .rv{animation:up 1.1s var(--ease) forwards}
-.hero .rv.d1{animation-delay:.12s}.hero .rv.d2{animation-delay:.24s}.hero .rv.d3{animation-delay:.36s}.hero .rv.d4{animation-delay:.5s}
-@keyframes up{to{opacity:1;transform:none}}
-@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.hero .bg{transform:none}}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
 </head>
 <body>
 
-<header class="top" id="hdr"><div class="wrap">
-  <a class="name" href="#top">Dr. Umar Nawaz<span>MBBS · MPH</span></a>
-  <nav class="menu">
-    <a href="#situations">Situations</a>
-    <a href="#practice">Practice</a>
-    <a href="#record">Record</a>
-    <a href="#journey">Journey</a>
-    <a href="#engage">Engagement</a>
-    <a class="cta" href="#enquiries">Enquiries</a>
+<header id="hdr"><div class="wrap">
+  <a class="logo" href="#top"><img class="mark" src="img/logo.svg" alt="" width="42" height="42"><span><b>Dr. Umar Nawaz</b><small>MBBS, MPH</small></span></a>
+  <nav>
+    <a href="#help">How I help</a>
+    <a href="#about">About</a>
+    <a href="#work">My work</a>
+    <a href="#photos">Photos</a>
+    <a class="btn red" href="contact.html">Talk to me</a>
   </nav>
 </div></header>
 
 <section class="hero" id="top">
-  <div class="wrap">
-  <div class="intro-col">
-    <div class="label rv">MBBS · MPH · Faisalabad, Pakistan</div>
-    <h1 class="rv d1">Dr. Umar Nawaz</h1>
-    <div class="title rv d1">Physician · Health Systems &amp; Hospital Management Consultant</div>
-
-    <div class="slider rv d2" id="slider" aria-roledescription="carousel" aria-label="Profile">
-      <div class="slide-tabs" role="tablist">
-        <button role="tab" aria-selected="true">Introduction</button>
-        <button role="tab" aria-selected="false">Profile</button>
-        <button role="tab" aria-selected="false">Track record</button>
-        <button role="tab" aria-selected="false">Education &amp; expertise</button>
-      </div>
-      <div class="slides">
-        <article class="slide on" aria-roledescription="slide">
-          <p class="promise">Hospitals and health programmes that run on systems, not daily firefighting.</p>
-          <p class="lead">Opening a facility, preparing for inspection, or losing money without knowing where? I have run a tehsil hospital, led district health programmes and opened a 100&#8209;bed trust hospital. I put in place the systems that let your team deliver, so you no longer manage every detail yourself.</p>
-        </article>
-        <article class="slide" aria-roledescription="slide">
-          <p class="lead">A physician who chose management. Over ten years, Dr. Nawaz has worked across almost every level of Punjab's health system: primary care, a district headquarters hospital, district health offices, a tehsil hospital as Medical Superintendent, district coordination of maternal, newborn, child health and nutrition programmes, and the outsourcing of primary health facilities.</p>
-          <p class="lead">Since May 2026 he has administered a 100-bed mother and child hospital run by a charitable trust, from first opening through the systems that now govern its operations, compliance and finances. He takes on demanding assignments and stays with them until the systems run without him.</p>
-        </article>
-        <article class="slide" aria-roledescription="slide">
-          <ul class="ticks">
-            <li><b>Red Crescent Hospital, Jhang</b> — 100-bed trust hospital opened to full services in about ten weeks; 15 management systems introduced.</li>
-            <li><b>District Health Authority Faisalabad</b> — led the district to graduation from The Challenge Initiative for family planning.</li>
-            <li><b>Clinic on Wheels &amp; Maryam Nawaz Health Clinics</b> — supervised the launch in Faisalabad.</li>
-            <li><b>THQ Hospital Chak Jhumra</b> — met universal health insurance targets as Medical Superintendent.</li>
-            <li><b>PHFMC</b> — managed the outsourcing of primary health facilities.</li>
-          </ul>
-        </article>
-        <article class="slide" aria-roledescription="slide">
-          <div class="edu">
-            <div><h4>Education</h4><p>Master of Public Health — Times Institute, Multan</p><p>MBBS — University of Lahore</p></div>
-            <div><h4>Expertise</h4><p>Hospital administration · Health systems strengthening · MNCH, family planning &amp; nutrition · Public–private partnerships · Health insurance programmes</p></div>
-            <div><h4>Languages</h4><p>English · Urdu · Punjabi</p></div>
-          </div>
-        </article>
-      </div>
-      <div class="slide-nav">
-        <button class="arrow" data-dir="-1" aria-label="Previous">←</button>
-        <div class="dots"><span class="on"></span><span></span><span></span><span></span></div>
-        <button class="arrow" data-dir="1" aria-label="Next">→</button>
-        <div class="progress"><i></i></div>
-      </div>
+  <div class="bg" role="img" aria-label="Dr. Umar Nawaz giving a talk in Lahore"></div>
+  <div class="wrap"><div class="copy">
+    <div class="eyebrow">Doctor and health consultant</div>
+    <h1>Dr. Umar Nawaz</h1>
+    <p class="lead">I help hospitals and health programs work well. I have run them myself for 10 years.</p>
+    <p class="note">I helped open a 100-bed hospital for mothers and children, and now I run it. Before that, I ran a town hospital and led a district health program.</p>
+    <div class="actions">
+      <a class="btn red" href="contact.html">Book a call</a>
+      <a class="btn line" href="#help">See how I help</a>
     </div>
-
-    <div class="actions rv d3">
-      <a class="btn gold" href="#enquiries">Arrange a confidential conversation <span class="arr">→</span></a>
-      <a class="btn ghost" href="https://www.linkedin.com/in/umar-nawaz-a5271912b" target="_blank" rel="noopener">LinkedIn profile</a>
-    </div>
-    <div class="stats rv d4">
-      <div><b data-count="10">10</b><span>years in health-system leadership</span></div>
-      <div><b data-count="100">100</b><span>bed hospital opened and systematised</span></div>
-      <div><b data-count="15">15</b><span>management systems introduced</span></div>
-      <div><b>42% → <span data-count="0" style="font:inherit;color:inherit">0</span>%</b><span>complaints left without action</span></div>
-    </div>
-  </div>
-  <figure>
-    <img src="img/portrait.jpg" alt="Dr. Umar Nawaz presenting at Faletti's Hotel, Lahore" width="675" height="844">
-  </figure>
-  </div>
-  <a class="scrollcue" href="#situations" aria-label="Scroll down"></a>
+  </div></div>
+  <div class="creds"><div class="wrap">
+    <div><b>MBBS, MPH</b>Doctor with a public health degree</div>
+    <div><b>10 years</b>In hospitals and health programs</div>
+    <div><b>Public and private</b>Government and trust hospitals</div>
+    <div><b>Faisalabad, Pakistan</b>Working across Punjab</div>
+  </div></div>
 </section>
 
-<div class="affil"><div class="wrap row">
-  <span class="label">Worked alongside</span>
-  <div class="marquee"><div class="track" id="track">
-    <img src="img/logos/unicef.png" alt="UNICEF"><img src="img/logos/jica.png" alt="JICA"><span class="wm">Qatar Charity</span><img src="img/logos/tci.png" alt="The Challenge Initiative"><img src="img/logos/greenstar.png" alt="Greenstar"><img src="img/logos/msi.png" alt="MSI Reproductive Choices (Marie Stopes)"><img src="img/logos/rahnuma.png" alt="Rahnuma FPAP"><span class="wm">PHFMC<small>PUNJAB HEALTH FACILITIES MANAGEMENT CO.</small></span>
-  </div></div>
+<div class="band"><div class="wrap">
+  <div class="rv"><b data-count="10">10</b><span>years in health care</span></div>
+  <div class="rv d1"><b data-count="100">100</b><span>bed hospital I helped open and now run</span></div>
+  <div class="rv d2"><b data-count="15">15</b><span>new systems I set up</span></div>
+  <div class="rv d3"><b>0%</b><span>complaints left with no action, down from 42%</span></div>
 </div></div>
 
-<section id="situations"><div class="wrap">
-  <div class="label rv">When clients call</div>
-  <h2 class="rv d1">Situations I am asked to resolve.</h2>
-  <p class="intro rv d2">Most assignments begin with one of these. Each has a practical way through.</p>
-  <div class="sits">
-    <div class="sit rv"><div class="n">01</div><h3>A new facility must open, but systems and staff are not ready.</h3><p>A phased opening plan, rosters, SOPs and day-one reporting — so you start serving patients and earning on schedule, not paying salaries for empty wards.</p></div>
-    <div class="sit rv d1"><div class="n">02</div><h3>An inspection or licence renewal is due.</h3><p>A gap assessment against PHC/MSDS standards, a committee with clear owners and a dated workplan — so you walk into the inspection with evidence, not promises.</p></div>
-    <div class="sit rv d2"><div class="n">03</div><h3>Revenue does not cover costs, and no one can say why.</h3><p>Cost per patient and per service, package prices checked against real costs — so you see which services lose money and set recovery targets the board can track.</p></div>
-    <div class="sit rv"><div class="n">04</div><h3>The board receives figures nobody trusts.</h3><p>One daily record, cross-checked against billing, cash and registers — so decisions rest on numbers that hold up when questioned.</p></div>
-    <div class="sit rv d1"><div class="n">05</div><h3>Programme targets are slipping.</h3><p>District supervision, data and accountability rebuilt around the indicators that count — so funders see progress, not explanations.</p></div>
-    <div class="sit rv d2"><div class="n">06</div><h3>Staff costs and disputes keep rising.</h3><p>Merit-based pay, clear attendance rules and an HR policy staff understand — so you keep skilled people and spend payroll where it earns its keep.</p></div>
+<div class="logos"><div class="wrap">
+  <p class="rv">I have worked with</p>
+  <div class="logo-row rv d1">
+    <img src="img/logos/unicef.png" alt="UNICEF"><img src="img/logos/jica.png" alt="JICA"><img src="img/logos/tci.png" alt="The Challenge Initiative"><img src="img/logos/greenstar.png" alt="Greenstar"><img src="img/logos/msi.png" alt="MSI Reproductive Choices"><img src="img/logos/rahnuma.png" alt="Rahnuma FPAP">
+    <span class="wm">Qatar Charity</span><span class="wm">PHFMC<small>PUNJAB</small></span>
+  </div>
+</div></div>
+
+<section id="help"><div class="wrap">
+  <span class="kicker rv">How I help</span>
+  <h2 class="rv d1">Tell me the problem. I will help you fix it.</h2>
+  <p class="sub rv d2">These are the jobs people ask me to do most.</p>
+  <div class="cards">
+    <div class="card rv"><div class="icon"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M12 7v4M10 9h4"/></svg></div><h3>Open a new hospital</h3><p>I plan the staff, the rooms and each step. Your hospital opens on time.</p></div>
+    <div class="card rv d1"><div class="icon"><svg viewBox="0 0 24 24"><path d="M9 11l3 3 8-8M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg></div><h3>Pass an inspection</h3><p>I find what is missing and fix it with your team. You go in ready.</p></div>
+    <div class="card rv d2"><div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2v20M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h3>Stop losing money</h3><p>I find out what each service costs. You see where the money goes.</p></div>
+    <div class="card rv"><div class="icon"><svg viewBox="0 0 24 24"><path d="M3 3v18h18M7 15l4-4 3 3 6-6"/></svg></div><h3>Get numbers you can trust</h3><p>I set up simple daily reports. You see what is really happening.</p></div>
+    <div class="card rv d1"><div class="icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><path d="M3 21v-2a5 5 0 0 1 5-5h2a5 5 0 0 1 5 5v2M17 11a3 3 0 1 0 0-6M21 21v-2a4 4 0 0 0-3-3.9"/></svg></div><h3>Reach more people</h3><p>I help health programs reach more mothers and children, and meet their goals.</p></div>
+    <div class="card rv d2"><div class="icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></div><h3>Keep good staff</h3><p>I write fair pay rules and clear policies. Good people stay longer.</p></div>
   </div>
 </div></section>
 
-<section class="white" id="practice"><div class="wrap">
-  <div class="label rv">Practice</div>
-  <h2 class="rv d1">Two levels of the health system, one practice.</h2>
-  <p class="intro rv d2">Whether you run one hospital or a district programme, the work joins up: facility operations on one side, programme delivery on the other. Few advisers have managed both.</p>
-  <div class="tabs rv d3" role="tablist">
-    <button class="tab" role="tab" aria-selected="true" aria-controls="p1" id="t1">Health facilities</button>
-    <button class="tab" role="tab" aria-selected="false" aria-controls="p2" id="t2">Programmes &amp; field operations</button>
-    <span class="ink"></span>
-  </div>
-  <div class="panel show" id="p1" role="tabpanel" aria-labelledby="t1">
-    <figure><img src="img/facility.jpg" alt="Dr. Umar Nawaz inspecting a health facility with management and support teams" loading="lazy"></figure>
-    <div>
-      <div class="who">For hospitals, trust and private facilities, and outsourced public facilities.</div>
-      <dl>
-        <dt>Planning and commissioning</dt><dd>Service mix, staffing and equipment plans, phased opening and licensing — so the facility opens on time and on budget.</dd>
-        <dt>Operations and management systems</dt><dd>Reporting, dashboards, billing and revenue controls, pharmacy and stores — so managers see problems the day they start.</dd>
-        <dt>Quality, licensing and patient safety</dt><dd>PHC/MSDS readiness, infection prevention, complaints and incident systems, clinical audit — so standards are met and can be shown.</dd>
-        <dt>Finance and costing</dt><dd>Cost per patient and per service, tariff review, board reporting — so pricing and subsidy decisions rest on real costs.</dd>
-        <dt>Workforce</dt><dd>Organisation design, merit-based pay, HR policy, attendance and payroll — so good staff stay and payroll stays in control.</dd>
-        <dt>Turnaround and interim leadership</dt><dd>Rapid diagnostic, recovery plan and hands-on administration — so a struggling service stabilises quickly.</dd>
-      </dl>
-    </div>
-  </div>
-  <div class="panel" id="p2" role="tabpanel" aria-labelledby="t2">
-    <figure><img src="img/programmes.jpg" alt="Dr. Umar Nawaz monitoring a vaccination team in the field" loading="lazy"></figure>
-    <div>
-      <div class="who">For government departments, development partners and NGOs.</div>
-      <dl>
-        <dt>Maternal, newborn and child health</dt><dd>Family planning, immunisation and nutrition programmes — run to the indicators funders measure.</dd>
-        <dt>Public–private partnerships</dt><dd>Outsourcing of primary health facilities, contract management and oversight — so outsourced services deliver what was paid for.</dd>
-        <dt>Health insurance programmes</dt><dd>Facility performance against universal health insurance targets — so enrolled patients are served and claims are earned.</dd>
-        <dt>District health management</dt><dd>Supervision systems, surveillance and service-delivery targets — so district teams know where they stand each month.</dd>
-        <dt>Mobile and community services</dt><dd>Design and launch of outreach and community clinic models — so services reach people who do not reach facilities.</dd>
-        <dt>Monitoring and assessment</dt><dd>Data systems, baseline and progress assessments, partner reporting — so results can be evidenced.</dd>
-      </dl>
-    </div>
+<section class="soft" id="about"><div class="wrap split">
+  <img class="rv" src="img/photos/vaccination.jpg" alt="Dr. Umar Nawaz checking a vaccine box in the field" loading="lazy" style="aspect-ratio:4/5">
+  <div class="rv d1">
+    <span class="kicker">About me</span>
+    <h2>A doctor who runs health care.</h2>
+    <p>I started as a doctor in a small village clinic. Over time I took on bigger jobs. I ran a town hospital. I led health programs for a whole district. Today I run a 100-bed hospital for mothers and children in Jhang.</p>
+    <p>I know the clinic floor and the office desk. So I can talk to doctors, nurses and owners in a way they all understand.</p>
+    <ul class="checks">
+      <li>I have done the work I advise on</li>
+      <li>I have worked for the government and for private hospitals</li>
+      <li>I measure results before and after</li>
+      <li>I keep patient and staff data private</li>
+    </ul>
   </div>
 </div></section>
 
-<section id="record"><div class="wrap">
-  <div class="label rv">Record of delivery</div>
-  <h2 class="rv d1">Roles held. Results achieved.</h2>
-  <p class="intro rv d2">Public and private health systems in Punjab, Pakistan.</p>
-  <div class="record">
-    <div class="rec rv"><div class="yr">2026 –</div><div><h3>Private trust hospital, 100 beds</h3><div class="role">Administrator · Red Crescent Hospital, Jhang</div></div><ul><li>Phased opening from outpatients to full gynaecology, paediatric, ICU and NICU services in about ten weeks.</li><li>Fifteen management systems introduced across reporting, billing, HR, quality and finance.</li><li>Complaints left without departmental action reduced from 42% to none.</li><li>PHC/MSDS compliance programme structured across ten functional areas.</li></ul></div>
-    <div class="rec rv"><div class="yr">2025</div><div><h3>Primary health facility outsourcing</h3><div class="role">District Manager · Punjab Health Facilities Management Company</div></div><ul><li>Managed the outsourcing of primary health facilities in Faisalabad district.</li></ul></div>
-    <div class="rec rv"><div class="yr">2023 – 2025</div><div><h3>District MNCH &amp; nutrition programme</h3><div class="role">District Coordinator, IRMNCH · District Health Authority Faisalabad</div></div><ul><li>Led the district to graduation from The Challenge Initiative for family planning.</li><li>Supervised the launch of Clinic on Wheels and Maryam Nawaz Health Clinics.</li></ul></div>
-    <div class="rec rv"><div class="yr">2023 – 2024</div><div><h3>Tehsil headquarters hospital</h3><div class="role">Medical Superintendent · THQ Hospital Chak Jhumra</div></div><ul><li>Met universal health insurance targets.</li><li>Held concurrently with the district programme role for sixteen months.</li></ul></div>
-    <div class="rec rv"><div class="yr">2017 – 2023</div><div><h3>District and facility posts</h3><div class="role">Deputy District Health Officer · Medical Officer, DHQ and primary care</div></div><ul><li>District health administration, surveillance coordination and service delivery from Basic Health Unit to teaching hospital.</li></ul></div>
+<section id="work"><div class="wrap">
+  <span class="kicker rv">My work</span>
+  <h2 class="rv d1">Ten years, step by step.</h2>
+  <p class="sub rv d2">Each job taught me something new about how health care really works.</p>
+  <div class="timeline">
+    <div class="step-t now rv"><div class="yr">2026 to now</div><h3>Administrator</h3><div class="where">Red Crescent Hospital, Jhang</div><p>Helped open a 100-bed hospital for mothers and children in about ten weeks. Now I run it. I set up 15 systems for reports, bills, staff and quality.</p></div>
+    <div class="step-t rv"><div class="yr">2025</div><h3>District Manager</h3><div class="where">Punjab Health Facilities Management Company, Faisalabad</div><p>Helped private partners take over and run government clinics.</p></div>
+    <div class="step-t rv"><div class="yr">2023 to 2025</div><h3>District Coordinator, mother and child health</h3><div class="where">District Health Authority, Faisalabad</div><p>Led the district through a family planning program with The Challenge Initiative. Helped start Clinic on Wheels and Maryam Nawaz Health Clinics.</p></div>
+    <div class="step-t rv"><div class="yr">2023 to 2024</div><h3>Medical Superintendent</h3><div class="where">THQ Hospital, Chak Jhumra</div><p>Ran the town hospital and met its health card targets, while also leading the district program.</p></div>
+    <div class="step-t rv"><div class="yr">2022 to 2023</div><h3>Deputy District Health Officer</h3><div class="where">District Health Authority, Faisalabad</div><p>Looked after clinics and health staff across the area.</p></div>
+    <div class="step-t rv"><div class="yr">2016 to 2022</div><h3>Doctor</h3><div class="where">Village clinic, district hospital and health office</div><p>Treated patients and learned how clinics run from the inside.</p></div>
   </div>
 </div></section>
 
-<section class="journey" id="journey"><div class="wrap">
-  <div class="label rv">Journey</div>
-  <h2 class="rv d1">In the field, in facilities, in the training room.</h2>
-  <p class="intro rv d2">A decade of work across Punjab's health system — from cold-chain checks and vaccination teams to district reviews, partner workshops and public health camps.</p>
-  <div class="filters rv d2" role="tablist">
+<section class="soft" id="photos"><div class="wrap">
+  <span class="kicker rv">Photos</span>
+  <h2 class="rv d1">My work in pictures.</h2>
+  <p class="sub rv d2">In the field, in clinics and in the training room.</p>
+  <div class="filters rv d2">
     <button class="on" data-f="all">All</button>
-    <button data-f="field" style="--c:#5fc1b0">Field &amp; immunisation</button>
-    <button data-f="facility" style="--c:#c9a467">Facilities</button>
-    <button data-f="training" style="--c:#8dbbea">Training &amp; partners</button>
-    <button data-f="outreach" style="--c:#e8957a">Outreach</button>
+    <button data-f="field">In the field</button>
+    <button data-f="clinic">Clinics</button>
+    <button data-f="training">Training</button>
   </div>
   <div class="gallery">
-    <figure class="g rv tall" data-cat="field"><img src="img/journey/cold-chain.jpg" alt="" loading="lazy"><figcaption><b>Cold-chain inspection</b>Checking vaccine storage and records at a health facility.</figcaption></figure>
-    <figure class="g rv d1 wide" data-cat="training"><img src="img/journey/nashonuma.jpg" alt="" loading="lazy"><figcaption><b>BISP Nashonuma Programme, January 2024</b>Trickle-down training for facilitation staff, organised by the IRMNCH &amp; Nutrition Programme Faisalabad with UNICEF Punjab.</figcaption></figure>
-    <figure class="g rv d2" data-cat="outreach"><img src="img/journey/clinic-on-wheels.jpg" alt="" loading="lazy"><figcaption><b>Clinic on Wheels</b>Chief Minister's mobile clinic for urban areas — launch supervision, Faisalabad.</figcaption></figure>
-    <figure class="g rv tall" data-cat="field"><img src="img/journey/vaccination.jpg" alt="" loading="lazy"><figcaption><b>Field monitoring</b>Checking a vaccination team's carrier and cold box during a campaign.</figcaption></figure>
-    <figure class="g rv d1" data-cat="facility"><img src="img/journey/bhu-team.jpg" alt="" loading="lazy"><figcaption><b>Basic Health Unit</b>With a primary care facility team during a supervisory visit.</figcaption></figure>
-    <figure class="g rv d2" data-cat="training"><img src="img/journey/lhw-training.jpg" alt="" loading="lazy"><figcaption><b>Lady Health Worker training</b>Family planning capacity building with The Challenge Initiative.</figcaption></figure>
-    <figure class="g rv wide" data-cat="training"><img src="img/journey/sbcc.jpg" alt="" loading="lazy"><figcaption><b>Social and Behaviour Change Strategy for Punjab</b>Workshop with the Population Welfare Department, Pathfinder and the Gates Foundation.</figcaption></figure>
-    <figure class="g rv d1" data-cat="facility"><img src="img/journey/facility-inspection.jpg" alt="" loading="lazy"><figcaption><b>Facility inspection</b>Walking a facility with management and support-service teams.</figcaption></figure>
-    <figure class="g rv d2" data-cat="outreach"><img src="img/journey/health-mela.jpg" alt="" loading="lazy"><figcaption><b>Free Model Health Mela</b>Public health camp with district officials and partners.</figcaption></figure>
-    <figure class="g rv" data-cat="training"><img src="img/journey/presenting.jpg" alt="" loading="lazy"><figcaption><b>Training session</b>Presenting to district health staff.</figcaption></figure>
-    <figure class="g rv d1 wide" data-cat="training"><img src="img/journey/review-meeting.jpg" alt="" loading="lazy"><figcaption><b>District review meeting</b>Integrated services review with programme managers and partners.</figcaption></figure>
+    <figure class="g tall rv" data-cat="clinic"><img src="img/photos/cold-chain.jpg" alt="" loading="lazy"><figcaption><b>Vaccine fridge check</b>Making sure vaccines are kept cold</figcaption></figure>
+    <figure class="g wide rv d1" data-cat="training"><img src="img/photos/nashonuma.jpg" alt="" loading="lazy"><figcaption><b>Child nutrition training, 2024</b>With UNICEF Punjab in Faisalabad</figcaption></figure>
+    <figure class="g rv d2" data-cat="field"><img src="img/photos/clinic-on-wheels.jpg" alt="" loading="lazy"><figcaption><b>Clinic on Wheels</b>A mobile clinic for city areas</figcaption></figure>
+    <figure class="g tall rv" data-cat="field"><img src="img/photos/vaccination.jpg" alt="" loading="lazy"><figcaption><b>Vaccine team check</b>Visiting a team on the road</figcaption></figure>
+    <figure class="g rv d1" data-cat="clinic"><img src="img/photos/bhu-team.jpg" alt="" loading="lazy"><figcaption><b>Village health clinic</b>With the clinic team</figcaption></figure>
+    <figure class="g rv d2" data-cat="training"><img src="img/photos/lhw-training.jpg" alt="" loading="lazy"><figcaption><b>Lady health worker training</b>With The Challenge Initiative</figcaption></figure>
+    <figure class="g wide rv" data-cat="training"><img src="img/photos/sbcc.jpg" alt="" loading="lazy"><figcaption><b>Punjab health workshop</b>With the Population Welfare Department and partners</figcaption></figure>
+    <figure class="g rv d1" data-cat="clinic"><img src="img/photos/facility-visit.jpg" alt="" loading="lazy"><figcaption><b>Clinic visit</b>Checking a new building with the team</figcaption></figure>
+    <figure class="g rv d2" data-cat="field"><img src="img/photos/health-mela.jpg" alt="" loading="lazy"><figcaption><b>Free health camp</b>Care for the public, free of cost</figcaption></figure>
+    <figure class="g rv" data-cat="training"><img src="img/photos/presenting.jpg" alt="" loading="lazy"><figcaption><b>Teaching health staff</b>A district training session</figcaption></figure>
+    <figure class="g wide rv d1" data-cat="training"><img src="img/photos/review-meeting.jpg" alt="" loading="lazy"><figcaption><b>District review meeting</b>Checking progress with partners</figcaption></figure>
   </div>
 </div></section>
 
@@ -451,149 +141,93 @@ footer a{color:#7f8a9c}
   <button class="lb-n" aria-label="Next">→</button>
 </div>
 
-<section class="white" id="engage"><div class="wrap">
-  <div class="split">
-    <div>
-      <div class="label rv">Engagement</div>
-      <h2 class="rv d1">Choose the depth of support you need.</h2>
-      <div class="modes rv d2">
-        <div class="mode"><h3>Assessment</h3><p>An independent review with a prioritised, costed plan, so you know what to fix first and what it will cost.</p></div>
-        <div class="mode"><h3>Implementation</h3><p>Systems installed and staff trained to own them, so the gains last after the engagement ends.</p></div>
-        <div class="mode"><h3>Interim leadership</h3><p>Hands-on administration through an opening, transition or turnaround, so services keep running while the fix is made.</p></div>
-        <div class="mode"><h3>Advisory</h3><p>A senior second opinion on decisions, risks and performance, so your board acts on evidence rather than assumption.</p></div>
+<section id="how"><div class="wrap">
+  <span class="kicker rv">How we work together</span>
+  <h2 class="rv d1">Five simple steps.</h2>
+  <p class="sub rv d2">You always know what happens next.</p>
+  <div class="steps">
+    <div class="st rv"><div class="top"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span><span class="num"></span></div><h3>I visit and listen</h3><p>I see your hospital or program and talk to your team.</p></div>
+    <div class="st rv d1"><div class="top"><span class="ic"><svg viewBox="0 0 24 24"><path d="M9 4h6a1 1 0 0 1 1 1v1h2a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h2V5a1 1 0 0 1 1-1z"/><path d="M9 13l2 2 4-4"/></svg></span><span class="num"></span></div><h3>We agree on a plan</h3><p>I show you the choices. You decide.</p></div>
+    <div class="st rv d2"><div class="top"><span class="ic"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></svg></span><span class="num"></span></div><h3>We build it together</h3><p>Your team helps make every tool, so it fits.</p></div>
+    <div class="st rv d3"><div class="top"><span class="ic"><svg viewBox="0 0 24 24"><path d="M7 11l-4 4 4 4"/><path d="M3 15h11a4 4 0 0 0 0-8h-1"/><path d="M17 3l4 4-4 4"/></svg></span><span class="num"></span></div><h3>I hand it over</h3><p>Each part gets an owner and clear steps to follow.</p></div>
+    <div class="st rv d3"><div class="top"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 6-6"/><path d="M16 8h4v4"/></svg></span><span class="num"></span></div><h3>We check the results</h3><p>We look at the numbers before and after.</p></div>
+  </div>
+</div></section>
+
+<footer>
+  <div class="wrap f-top">
+    <div class="f-brand">
+      <a class="logo" href="#top"><img class="mark" src="img/logo.svg" alt="" width="42" height="42"><span><b>Dr. Umar Nawaz</b><small>MBBS, MPH</small></span></a>
+      <p>Doctor and health consultant. I help hospitals and health programs work well.</p>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/umar-nawaz-a5271912b" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+        <a href="mailto:unc890@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
       </div>
     </div>
-    <figure class="rv d2"><img src="img/meeting.jpg" alt="A divisional health review meeting in Faisalabad" loading="lazy"></figure>
-  </div>
-  <div class="steps" id="steps">
-    <span class="bar"></span>
-    <div class="step rv"><i>1</i><b>Diagnose on site</b><p>Records, registers and every department, before any recommendation.</p></div>
-    <div class="step rv d1"><i>2</i><b>Agree the plan</b><p>Options and a clear recommendation, decided with leadership.</p></div>
-    <div class="step rv d2"><i>3</i><b>Build with your team</b><p>Practical tools tested on live data, not imposed from outside.</p></div>
-    <div class="step rv d3"><i>4</i><b>Hand over</b><p>A named owner, an SOP and a review cycle for each area.</p></div>
-    <div class="step rv d4"><i>5</i><b>Measure</b><p>Baseline and follow-up figures reported to leadership.</p></div>
-  </div>
-</div></section>
-
-
-<section class="enq" id="enquiries"><div class="wrap grid">
-  <div>
-    <div class="label rv">Enquiries</div>
-    <h2 class="rv d1">Tell me about your hospital or programme.</h2>
-    <p class="rv d2">Describe the situation in a few lines. I reply personally and will tell you plainly whether, and how, I can help. Conversations are confidential.</p>
-    <p class="rv d2" style="font-size:15px">I take on a small number of assignments at a time, for hospitals, health trusts, government departments and development partners ready to act on what the work finds.</p>
-    <div class="actions rv d3">
-      <a class="btn gold" href="mailto:unc890@gmail.com?subject=Hospital%20or%20programme%20enquiry">Send an enquiry <span class="arr">→</span></a>
-      <a class="btn ghost" href="https://www.linkedin.com/in/umar-nawaz-a5271912b" target="_blank" rel="noopener">Connect on LinkedIn</a>
+    <div>
+      <h4>Pages</h4>
+      <ul><li><a href="#help">How I help</a></li><li><a href="#about">About me</a></li><li><a href="#work">My work</a></li><li><a href="#photos">Photos</a></li><li><a href="#how">How we work</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul class="f-contact">
+        <li><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:unc890@gmail.com">unc890@gmail.com</a></li>
+        <li><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg><a href="https://www.linkedin.com/in/umar-nawaz-a5271912b" target="_blank" rel="noopener">LinkedIn profile</a></li>
+        <li><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Faisalabad, Pakistan</span></li>
+      </ul>
+    </div>
+    <div class="f-cta">
+      <b>Have a hospital or program to fix?</b>
+      <p>Send me a short note. I will reply myself.</p>
+      <a class="btn red" href="contact.html">Book a call</a>
     </div>
   </div>
-  <div class="contact rv d2">
-    <div>Email · <a href="mailto:unc890@gmail.com">unc890@gmail.com</a></div>
-    <div>LinkedIn · <a href="https://www.linkedin.com/in/umar-nawaz-a5271912b" target="_blank" rel="noopener">umar-nawaz-a5271912b</a></div>
-    <div>Based in Faisalabad, Pakistan</div>
-  </div>
-</div></section>
-<footer><div class="wrap"><span>© 2026 Dr. Umar Nawaz · Health Systems &amp; Hospital Management</span><span>Photographs from Dr. Nawaz's own field and programme work · Logos are trademarks of their owners</span></div></footer>
+  <div class="f-bottom"><div class="wrap">
+    <span>© 2026 Dr. Umar Nawaz. All rights reserved.</span>
+    <a class="totop" href="#top">Back to top ↑</a>
+  </div></div>
+</footer>
 
 <script>
 (function(){
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  // header
   var hdr = document.getElementById('hdr');
-  function onScroll(){ hdr.classList.toggle('solid', window.scrollY > 40); }
+  function onScroll(){ var s = window.scrollY > 40; hdr.classList.toggle('scrolled', s); hdr.classList.toggle('over', !s); }
   onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
-  // reveal + counters + steps
+
   function count(el){
-    var end = +el.getAttribute('data-count'); if (reduce || !end) { el.textContent = end; return; }
-    var t0 = null, dur = 1400;
-    function f(t){ if(!t0) t0=t; var p=Math.min((t-t0)/dur,1); el.textContent=Math.round(end*(1-Math.pow(1-p,3))); if(p<1) requestAnimationFrame(f); }
+    var end = +el.getAttribute('data-count'); if (reduce) { el.textContent = end; return; }
+    var t0 = null; function f(t){ if(!t0) t0 = t; var p = Math.min((t - t0) / 1300, 1);
+      el.textContent = Math.round(end * (1 - Math.pow(1 - p, 3))); if (p < 1) requestAnimationFrame(f); }
     requestAnimationFrame(f);
   }
-  var io = new IntersectionObserver(function(es){
-    es.forEach(function(e){
-      if(!e.isIntersecting) return;
-      e.target.classList.add('in');
-      e.target.querySelectorAll && e.target.querySelectorAll('[data-count]').forEach(count);
-      io.unobserve(e.target);
-    });
-  }, {threshold:.15, rootMargin:'0px 0px -40px 0px'});
-  document.querySelectorAll('.rv, #steps').forEach(function(el){ io.observe(el); });
-  // active nav link
-  var links = [].slice.call(document.querySelectorAll('nav.menu a:not(.cta)'));
-  var secIO = new IntersectionObserver(function(es){
-    es.forEach(function(e){ if(e.isIntersecting){ links.forEach(function(a){ a.classList.toggle('on', a.getAttribute('href') === '#'+e.target.id); }); } });
-  }, {rootMargin:'-45% 0px -50% 0px'});
-  links.forEach(function(a){ var s=document.querySelector(a.getAttribute('href')); if(s) secIO.observe(s); });
-  // tabs
-  var tabs = [].slice.call(document.querySelectorAll('.tab')), ink = document.querySelector('.ink');
-  function place(t){ ink.style.left = t.offsetLeft + 'px'; ink.style.width = t.offsetWidth + 'px'; }
-  function select(t){
-    tabs.forEach(function(x){ var on = x===t; x.setAttribute('aria-selected', on); x.tabIndex = on?0:-1;
-      document.getElementById(x.getAttribute('aria-controls')).classList.toggle('show', on); });
-    place(t);
-  }
-  tabs.forEach(function(t,i){
-    t.addEventListener('click', function(){ select(t); });
-    t.addEventListener('keydown', function(e){ if(e.key==='ArrowRight'||e.key==='ArrowLeft'){ var n=tabs[(i+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length]; n.focus(); select(n);} });
-  });
-  window.addEventListener('load', function(){ place(tabs[0]); });
-  // hero information slider
-  (function(){
-    var root = document.getElementById('slider'); if(!root) return;
-    var slides = [].slice.call(root.querySelectorAll('.slide')), tabsS = [].slice.call(root.querySelectorAll('.slide-tabs button')),
-        dots = [].slice.call(root.querySelectorAll('.dots span')), bar = root.querySelector('.progress i'),
-        box = root.querySelector('.slides'), colors = ['#c9a467','#5fc1b0','#e8957a','#8dbbea'], cur = 0, timer = null;
-    function go(n){
-      n = (n + slides.length) % slides.length; if (n === cur) return restart();
-      slides[cur].classList.add('out'); slides[cur].classList.remove('on');
-      var old = slides[cur]; setTimeout(function(){ old.classList.remove('out'); }, 600);
-      cur = n; slides[cur].classList.add('on');
-      tabsS.forEach(function(t,i){ t.setAttribute('aria-selected', i===cur); });
-      dots.forEach(function(d,i){ d.classList.toggle('on', i===cur); });
-      root.style.setProperty('--sc', colors[cur]); restart();
-    }
-    function restart(){
-      clearTimeout(timer); bar.classList.remove('run'); void bar.offsetWidth;
-      if (reduce) return; bar.classList.add('run');
-      timer = setTimeout(function(){ if(!root.classList.contains('paused')) go(cur+1); else restart(); }, 7000);
-    }
-    tabsS.forEach(function(t,i){ t.addEventListener('click', function(){ go(i); }); });
-    dots.forEach(function(d,i){ d.addEventListener('click', function(){ go(i); }); });
-    root.querySelectorAll('.arrow').forEach(function(a){ a.addEventListener('click', function(){ go(cur + (+a.getAttribute('data-dir'))); }); });
-    root.addEventListener('mouseenter', function(){ root.classList.add('paused'); });
-    root.addEventListener('mouseleave', function(){ root.classList.remove('paused'); });
-    var x0 = null; box.addEventListener('touchstart', function(e){ x0 = e.touches[0].clientX; }, {passive:true});
-    box.addEventListener('touchend', function(e){ if(x0===null) return; var dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 40) go(cur + (dx < 0 ? 1 : -1)); x0 = null; });
-    root.style.setProperty('--sc', colors[0]); restart();
-  })();
-  // journey: filters + lightbox
-  (function(){
-    var figs = [].slice.call(document.querySelectorAll('.g')), btns = [].slice.call(document.querySelectorAll('.filters button'));
-    btns.forEach(function(b){ b.addEventListener('click', function(){
-      btns.forEach(function(x){ x.classList.toggle('on', x===b); });
-      var f = b.getAttribute('data-f');
-      figs.forEach(function(g){ g.classList.toggle('hide', f!=='all' && g.getAttribute('data-cat')!==f); g.classList.add('in'); });
-    }); });
-    var lb = document.getElementById('lb'), lbImg = lb.querySelector('img'), lbCap = lb.querySelector('figcaption'), idx = 0;
-    function visible(){ return figs.filter(function(g){ return !g.classList.contains('hide'); }); }
-    function show(i){ var v = visible(); idx = (i + v.length) % v.length; var g = v[idx];
-      lbImg.src = g.querySelector('img').src; lbCap.innerHTML = g.querySelector('figcaption').innerHTML;
-      lb.classList.add('open'); lb.setAttribute('aria-hidden','false'); }
-    function close(){ lb.classList.remove('open'); lb.setAttribute('aria-hidden','true'); }
-    figs.forEach(function(g){ g.tabIndex = 0;
-      g.addEventListener('click', function(){ show(visible().indexOf(g)); });
-      g.addEventListener('keydown', function(e){ if(e.key==='Enter') show(visible().indexOf(g)); }); });
-    lb.querySelector('.lb-x').addEventListener('click', close);
-    lb.querySelector('.lb-p').addEventListener('click', function(){ show(idx-1); });
-    lb.querySelector('.lb-n').addEventListener('click', function(){ show(idx+1); });
-    lb.addEventListener('click', function(e){ if(e.target===lb) close(); });
-    document.addEventListener('keydown', function(e){ if(!lb.classList.contains('open')) return;
-      if(e.key==='Escape') close(); if(e.key==='ArrowRight') show(idx+1); if(e.key==='ArrowLeft') show(idx-1); });
-  })();
-  // duplicate the logo row once so the marquee loops seamlessly
-  var tr = document.getElementById('track'); tr.innerHTML += tr.innerHTML;
-  [].slice.call(tr.children).slice(tr.children.length / 2).forEach(function(n){ n.setAttribute('aria-hidden','true'); });
-  window.addEventListener('resize', function(){ place(document.querySelector('.tab[aria-selected="true"]')); });
+  var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if(!e.isIntersecting) return;
+    e.target.classList.add('in'); e.target.querySelectorAll('[data-count]').forEach(count);
+    if (e.target.hasAttribute('data-count')) count(e.target); io.unobserve(e.target); }); }, {threshold:.15});
+  document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+
+  var links = [].slice.call(document.querySelectorAll('nav a:not(.btn)'));
+  var sio = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting) links.forEach(function(a){ a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id); }); }); }, {rootMargin:'-45% 0px -50% 0px'});
+  links.forEach(function(a){ var s = document.querySelector(a.getAttribute('href')); if (s) sio.observe(s); });
+
+
+  // gallery filters + lightbox
+  var figs = [].slice.call(document.querySelectorAll('.g')), fb = [].slice.call(document.querySelectorAll('.filters button'));
+  fb.forEach(function(b){ b.addEventListener('click', function(){ fb.forEach(function(x){ x.classList.toggle('on', x===b); });
+    var f = b.getAttribute('data-f'); figs.forEach(function(g){ g.classList.toggle('hide', f !== 'all' && g.getAttribute('data-cat') !== f); g.classList.add('in'); }); }); });
+  var lb = document.getElementById('lb'), li = lb.querySelector('img'), lc = lb.querySelector('figcaption'), idx = 0;
+  function vis(){ return figs.filter(function(g){ return !g.classList.contains('hide'); }); }
+  function open(i){ var v = vis(); idx = (i + v.length) % v.length; li.src = v[idx].querySelector('img').src;
+    lc.innerHTML = v[idx].querySelector('figcaption').innerHTML; lb.classList.add('open'); }
+  function close(){ lb.classList.remove('open'); }
+  figs.forEach(function(g){ g.tabIndex = 0; g.addEventListener('click', function(){ open(vis().indexOf(g)); });
+    g.addEventListener('keydown', function(e){ if (e.key === 'Enter') open(vis().indexOf(g)); }); });
+  lb.querySelector('.lb-x').addEventListener('click', close);
+  lb.querySelector('.lb-p').addEventListener('click', function(){ open(idx - 1); });
+  lb.querySelector('.lb-n').addEventListener('click', function(){ open(idx + 1); });
+  lb.addEventListener('click', function(e){ if (e.target === lb) close(); });
+  document.addEventListener('keydown', function(e){ if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') close(); if (e.key === 'ArrowRight') open(idx + 1); if (e.key === 'ArrowLeft') open(idx - 1); });
 })();
 </script>
 </body>
