@@ -4,342 +4,400 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dr. Umar Nawaz | Health Systems &amp; Hospital Management Consultant</title>
-<meta name="description" content="Dr. Umar Nawaz, MBBS, MPH — physician and health-systems manager advising hospitals, health trusts, government departments and development partners on hospital set-up, operations, quality and health programmes.">
+<meta name="description" content="Dr. Umar Nawaz, MBBS, MPH — physician and health-systems manager. Hospital commissioning, operations, quality, costing and health-programme delivery for hospitals, trusts, government and development partners.">
 <meta property="og:title" content="Dr. Umar Nawaz | Health Systems & Hospital Management Consultant">
-<meta property="og:description" content="Hospital and health-programme leadership, from planning to performance.">
-<meta property="og:image" content="photo.jpg">
+<meta property="og:description" content="Hospitals and health programmes that run on systems, not daily firefighting.">
+<meta property="og:image" content="img/hero.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{
-  --paper:#f9f8f5; --white:#ffffff; --ink:#141b26; --navy:#18263d; --muted:#5b6472;
-  --line:#e2dfd7; --brass:#9c7a45;
-}
+:root{--paper:#f8f7f4;--white:#fff;--ink:#141b26;--navy:#14223a;--navy-2:#0d1729;--muted:#5b6472;--line:#e3e0d8;--brass:#a8844b;--ease:cubic-bezier(.2,.7,.2,1)}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 a{color:inherit}
 img{display:block;max-width:100%}
-.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
-.serif{font-family:Newsreader,Georgia,serif}
-.label{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brass)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
 h1,h2,h3{font-family:Newsreader,Georgia,serif;font-weight:500;color:var(--navy);letter-spacing:-.005em}
-h2{font-size:clamp(30px,3.6vw,40px);line-height:1.15;margin:12px 0 18px}
+h2{font-size:clamp(30px,3.6vw,42px);line-height:1.15;margin:12px 0 16px}
 p{margin:0 0 16px}
+.label{font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--brass)}
+.intro{max-width:700px;color:var(--muted);font-size:17px;margin-bottom:48px}
+section{padding:104px 0}
+.white{background:var(--white)}
 
-header.top{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
-header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
-.name{font-family:Newsreader,Georgia,serif;font-size:21px;font-weight:600;color:var(--navy);text-decoration:none;letter-spacing:.01em}
-.name span{font-family:Inter,sans-serif;font-size:12px;font-weight:500;color:var(--muted);letter-spacing:.08em;margin-left:10px}
+/* header */
+header.top{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .35s var(--ease),box-shadow .35s var(--ease),height .35s}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;transition:height .35s var(--ease)}
+.name{font-family:Newsreader,Georgia,serif;font-size:22px;font-weight:600;color:#fff;text-decoration:none;transition:color .35s}
+.name span{font:500 12px Inter,sans-serif;letter-spacing:.1em;margin-left:10px;color:rgba(255,255,255,.7);transition:color .35s}
 nav.menu{display:flex;gap:30px;align-items:center}
-nav.menu a{font-size:14px;color:var(--muted);text-decoration:none}
-nav.menu a:hover{color:var(--navy)}
-nav.menu a.enq{color:var(--navy);font-weight:600;border-bottom:1px solid var(--brass);padding-bottom:2px}
-@media(max-width:900px){nav.menu a:not(.enq){display:none}}
+nav.menu a{font-size:14px;color:rgba(255,255,255,.82);text-decoration:none;position:relative;transition:color .25s}
+nav.menu a::after{content:"";position:absolute;left:0;bottom:-6px;height:1px;width:100%;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
+nav.menu a:hover::after,nav.menu a.on::after{transform:scaleX(1)}
+nav.menu a.cta{border:1px solid rgba(255,255,255,.55);padding:9px 18px;color:#fff}
+nav.menu a.cta::after{display:none}
+header.top.solid{background:rgba(255,255,255,.96);box-shadow:0 1px 0 var(--line);backdrop-filter:blur(8px)}
+header.top.solid .wrap{height:64px}
+header.top.solid .name{color:var(--navy)}
+header.top.solid .name span{color:var(--muted)}
+header.top.solid nav.menu a{color:var(--muted)}
+header.top.solid nav.menu a:hover,header.top.solid nav.menu a.on{color:var(--navy)}
+header.top.solid nav.menu a.cta{color:#fff;background:var(--navy);border-color:var(--navy)}
+@media(max-width:960px){nav.menu a:not(.cta){display:none}}
 @media(max-width:480px){.name span{display:none}}
 
-.hero{background:var(--white);border-bottom:1px solid var(--line)}
-.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:stretch}
-.hero .text{padding:88px 0 80px}
-.hero h1{font-size:clamp(38px,5vw,58px);line-height:1.08;margin:18px 0 24px}
-.hero .lead{font-size:18px;color:var(--muted);max-width:600px}
-.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
-.btn{display:inline-block;padding:14px 26px;font-size:15px;font-weight:500;text-decoration:none;border:1px solid var(--navy);border-radius:2px;letter-spacing:.01em}
+/* hero */
+.hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;padding:0}
+.hero .bg{position:absolute;inset:0;background:url(img/hero.jpg) center/cover no-repeat;transform:scale(1.08);animation:drift 22s var(--ease) forwards}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(100deg,rgba(13,23,41,.94) 0%,rgba(13,23,41,.82) 42%,rgba(13,23,41,.35) 100%)}
+@keyframes drift{to{transform:scale(1)}}
+.hero .wrap{position:relative;z-index:2;width:100%;padding-top:120px;padding-bottom:70px}
+.hero .label{color:#d2b47e}
+.hero h1{color:#fff;font-size:clamp(38px,4.8vw,62px);line-height:1.06;max-width:860px;margin:16px 0 20px}
+.hero .lead{font-size:clamp(17px,1.6vw,20px);color:rgba(255,255,255,.82);max-width:640px}
+.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:36px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;font-size:15px;font-weight:500;text-decoration:none;border:1px solid var(--navy);transition:background .25s,color .25s,transform .25s var(--ease)}
+.btn:hover{transform:translateY(-2px)}
+.btn .arr{transition:transform .25s var(--ease)}
+.btn:hover .arr{transform:translateX(4px)}
+.btn.gold{background:#c9a467;border-color:#c9a467;color:var(--navy-2)}
+.btn.gold:hover{background:#d8b77d}
+.btn.ghost{border-color:rgba(255,255,255,.5);color:#fff}
+.btn.ghost:hover{background:rgba(255,255,255,.1)}
 .btn.solid{background:var(--navy);color:#fff}
-.btn.solid:hover{background:#0f1a2c}
-.btn.line{color:var(--navy)}
-.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:48px;padding-top:20px;border-top:1px solid var(--line)}
-.facts div{font-size:13.5px;color:var(--muted);line-height:1.45}
-.facts b{display:block;font-family:Newsreader,Georgia,serif;font-size:23px;font-weight:500;color:var(--navy);margin-bottom:4px;white-space:nowrap}
-@media(max-width:600px){.facts{grid-template-columns:1fr 1fr}.facts b{font-size:20px}}
-.hero .portrait{position:relative;min-height:520px}
-.hero .portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%}
-.hero .text,.practice>div,.eng .row>*,.profile>div,.enquiries .grid>div{min-width:0}
-@media(max-width:900px){
-  .hero .wrap{grid-template-columns:minmax(0,1fr);gap:0}
-  .hero h1{font-size:clamp(32px,8.5vw,44px)}
-  .hero .portrait{order:-1;min-height:0;height:min(115vw,560px);margin:0 -24px}
-  .hero .text{padding:48px 0 56px}
-}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:48px;border-top:1px solid rgba(255,255,255,.18)}
+.stats div{padding:22px 20px 0 0}
+.stats b{display:block;font-family:Newsreader,Georgia,serif;font-weight:500;font-size:clamp(30px,3vw,42px);line-height:1.1}
+.stats span{font-size:13.5px;color:rgba(255,255,255,.7)}
+@media(max-width:760px){.stats{grid-template-columns:1fr 1fr}.stats div{padding-bottom:12px}}
+.scrollcue{position:absolute;z-index:2;left:50%;bottom:22px;width:22px;height:36px;border:1px solid rgba(255,255,255,.5);border-radius:12px;transform:translateX(-50%)}
+.scrollcue::after{content:"";position:absolute;left:50%;top:7px;width:2px;height:7px;background:#fff;transform:translateX(-50%);animation:cue 1.8s infinite}
+@keyframes cue{0%{opacity:0;top:6px}40%{opacity:1}100%{opacity:0;top:20px}}
+@media(max-width:760px){.scrollcue{display:none}}
 
-.affil{background:var(--paper);border-bottom:1px solid var(--line)}
-.affil .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:14px 34px;padding-top:26px;padding-bottom:26px}
-.affil .label{color:var(--muted);margin-right:6px}
-.affil span.org{font-family:Newsreader,Georgia,serif;font-size:18px;color:#4a5361}
+/* partners marquee */
+.affil{background:var(--white);border-bottom:1px solid var(--line);padding:26px 0;overflow:hidden}
+.affil .row{display:flex;align-items:center;gap:30px}
+.affil .label{color:var(--muted);white-space:nowrap}
+.marquee{overflow:hidden;flex:1;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.track{display:flex;gap:56px;width:max-content;animation:slide 32s linear infinite}
+.track span{font-family:Newsreader,Georgia,serif;font-size:20px;color:#4a5361;white-space:nowrap}
+@keyframes slide{to{transform:translateX(-50%)}}
 
-section{padding:96px 0;border-bottom:1px solid var(--line)}
-section.white{background:var(--white)}
-.intro{max-width:720px;color:var(--muted);font-size:17px;margin-bottom:48px}
+/* situations */
+.sits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.sit{background:var(--white);border:1px solid var(--line);padding:30px 28px;position:relative;transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .35s}
+.sit::before{content:"";position:absolute;left:0;top:0;height:3px;width:100%;background:var(--brass);transform:scaleX(0);transform-origin:left;transition:transform .45s var(--ease)}
+.sit:hover{transform:translateY(-6px);box-shadow:0 22px 44px -26px rgba(20,34,58,.35);border-color:transparent}
+.sit:hover::before{transform:scaleX(1)}
+.sit .n{font-family:Newsreader,Georgia,serif;color:var(--brass);font-size:15px}
+.sit h3{font-size:21px;line-height:1.3;margin:10px 0 12px}
+.sit p{font-size:15px;color:var(--muted);margin:0}
+@media(max-width:960px){.sits{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.sits{grid-template-columns:1fr}}
 
-.sits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--navy)}
-.sits div{padding:28px 28px 30px 0;border-bottom:1px solid var(--line)}
-.sits div:not(:nth-child(3n+1)){padding-left:28px;border-left:1px solid var(--line)}
-.sits h3{font-size:20px;line-height:1.3;margin:0 0 10px}
-.sits p{font-size:15px;color:var(--muted);margin:0}
-@media(max-width:900px){.sits{grid-template-columns:1fr}.sits div,.sits div:not(:nth-child(3n+1)){padding:24px 0;border-left:0}}
-.practice{display:grid;grid-template-columns:1fr 1fr;gap:56px}
-@media(max-width:860px){.practice{grid-template-columns:1fr;gap:40px}}
-.practice h3{font-size:24px;margin:0 0 6px}
-.practice .sub{font-size:14px;color:var(--muted);margin-bottom:18px}
-.practice dl{margin:0;border-top:1px solid var(--line)}
-.practice dt{font-weight:600;color:var(--navy);padding-top:16px;font-size:15px}
-.practice dd{margin:4px 0 0;padding-bottom:16px;border-bottom:1px solid var(--line);color:var(--muted);font-size:15px}
+/* tabs */
+.tabs{display:flex;gap:6px;border-bottom:1px solid var(--line);position:relative;margin-bottom:44px}
+.tab{background:none;border:0;padding:14px 4px;margin-right:30px;font:500 17px Inter,sans-serif;color:var(--muted);cursor:pointer;transition:color .25s}
+.tab[aria-selected="true"]{color:var(--navy)}
+.tab:focus-visible{outline:2px solid var(--brass);outline-offset:4px}
+.ink{position:absolute;bottom:-1px;height:2px;background:var(--navy);transition:left .4s var(--ease),width .4s var(--ease)}
+.panel{display:none;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.panel.show{display:grid;animation:panelIn .55s var(--ease)}
+@keyframes panelIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.panel figure{margin:0;overflow:hidden;position:sticky;top:96px}
+.panel figure img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform 1.2s var(--ease)}
+.panel figure:hover img{transform:scale(1.04)}
+.panel .who{font-size:14px;color:var(--muted);margin-bottom:18px}
+.panel dl{margin:0;border-top:1px solid var(--line)}
+.panel dt{font-weight:600;color:var(--navy);padding-top:18px}
+.panel dd{margin:4px 0 0;padding-bottom:18px;border-bottom:1px solid var(--line);color:var(--muted);font-size:15px}
+@media(max-width:860px){.panel{grid-template-columns:1fr;gap:28px}.panel figure{position:static}.panel figure img{aspect-ratio:16/10}}
 
-.eng{border-top:1px solid var(--navy)}
-.eng .row{display:grid;grid-template-columns:150px 1fr 1.3fr;gap:32px;padding:30px 0;border-bottom:1px solid var(--line)}
-.eng .yr{font-family:Newsreader,Georgia,serif;font-size:20px;color:var(--brass)}
-.eng h3{font-size:21px;margin:0 0 4px}
-.eng .role{font-size:14px;color:var(--muted)}
-.eng ul{margin:0;padding-left:18px;color:var(--ink);font-size:15px}
-.eng li{margin-bottom:6px}
-@media(max-width:860px){.eng .row{grid-template-columns:1fr;gap:10px}}
+/* record */
+.record{position:relative;margin-left:8px;border-left:1px solid var(--line)}
+.rec{position:relative;display:grid;grid-template-columns:150px 1fr 1.25fr;gap:32px;padding:28px 0 28px 36px}
+.rec::before{content:"";position:absolute;left:-6px;top:38px;width:11px;height:11px;border-radius:50%;background:var(--white);border:2px solid var(--brass)}
+.rec+.rec{border-top:1px solid var(--line)}
+.rec .yr{font-family:Newsreader,Georgia,serif;font-size:20px;color:var(--brass)}
+.rec h3{font-size:21px;margin:0 0 4px}
+.rec .role{font-size:14px;color:var(--muted)}
+.rec ul{margin:0;padding-left:18px;font-size:15px}
+.rec li{margin-bottom:6px}
+@media(max-width:860px){.rec{grid-template-columns:1fr;gap:8px}}
 
-.modes{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--navy)}
-.modes div{padding:28px 26px 8px 0}
-.modes div+div{padding-left:26px;border-left:1px solid var(--line)}
-.modes h3{font-size:21px;margin:0 0 10px}
-.modes p{font-size:15px;color:var(--muted)}
-@media(max-width:900px){.modes{grid-template-columns:1fr 1fr}.modes div:nth-child(3){border-left:0;padding-left:0}}
-@media(max-width:560px){.modes{grid-template-columns:1fr}.modes div+div{border-left:0;padding-left:0;border-top:1px solid var(--line)}}
-.method{margin-top:56px;display:grid;grid-template-columns:.8fr 1.2fr;gap:56px}
-@media(max-width:860px){.method{grid-template-columns:1fr;gap:20px}}
-.method ol{margin:0;padding:0;list-style:none;counter-reset:m}
-.method li{counter-increment:m;padding:14px 0 14px 46px;border-bottom:1px solid var(--line);position:relative;color:var(--muted);font-size:15px}
-.method li::before{content:counter(m,decimal-leading-zero);position:absolute;left:0;top:14px;font-family:Newsreader,Georgia,serif;color:var(--brass);font-size:17px}
-.method li b{color:var(--navy);font-weight:600}
+/* engagement */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+@media(max-width:860px){.split{grid-template-columns:1fr;gap:36px}}
+.split figure{margin:0;overflow:hidden}
+.split figure img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.modes{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--navy)}
+.mode{padding:24px 24px 20px 0;border-bottom:1px solid var(--line)}
+.mode:nth-child(even){padding-left:24px;border-left:1px solid var(--line)}
+.mode h3{font-size:20px;margin:0 0 8px}
+.mode p{font-size:15px;color:var(--muted);margin:0}
+@media(max-width:560px){.modes{grid-template-columns:1fr}.mode:nth-child(even){padding-left:0;border-left:0}}
+.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));margin-top:72px;position:relative}
+.steps::before{content:"";position:absolute;top:19px;left:0;right:0;height:1px;background:var(--line)}
+.steps .bar{position:absolute;top:19px;left:0;height:1px;background:var(--brass);width:0;transition:width 1.6s var(--ease)}
+.steps.in .bar{width:100%}
+.step{position:relative;padding-right:22px}
+.step i{display:flex;align-items:center;justify-content:center;width:39px;height:39px;border-radius:50%;background:var(--paper);border:1px solid var(--brass);font:500 15px Newsreader,serif;font-style:normal;color:var(--brass);margin-bottom:16px;position:relative}
+.step b{display:block;color:var(--navy);margin-bottom:4px}
+.step p{font-size:14.5px;color:var(--muted);margin:0}
+@media(max-width:860px){.steps{grid-template-columns:1fr;gap:22px}.steps::before,.steps .bar{display:none}}
 
-.profile{display:grid;grid-template-columns:1.2fr .8fr;gap:64px}
-@media(max-width:860px){.profile{grid-template-columns:1fr;gap:36px}}
+/* profile */
+.profile{display:grid;grid-template-columns:.8fr 1.2fr .8fr;gap:56px;align-items:start}
+.profile figure{margin:0}
+.profile figure img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.profile figcaption{font-size:13px;color:var(--muted);margin-top:10px}
 .profile p{font-size:16.5px}
-.side h4{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);margin:0 0 10px}
-.side ul{list-style:none;margin:0 0 30px;padding:0;border-top:1px solid var(--line)}
-.side li{padding:11px 0;border-bottom:1px solid var(--line);font-size:15px;display:flex;justify-content:space-between;gap:16px}
-.side li span{color:var(--muted);white-space:nowrap}
+.side h4{font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);margin:0 0 10px}
+.side ul{list-style:none;margin:0 0 28px;padding:0;border-top:1px solid var(--line)}
+.side li{padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
+.side li span{display:block;font-size:13px;color:var(--muted)}
+@media(max-width:1000px){.profile{grid-template-columns:.9fr 1.1fr}.side{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr 1fr;gap:28px}}
+@media(max-width:700px){.profile{grid-template-columns:1fr}.profile figure{max-width:340px}.side{grid-template-columns:1fr}}
 
-.enquiries{background:var(--navy);color:#e9ecf1;border-bottom:0}
-.enquiries h2{color:#fff}
-.enquiries .label{color:#c9a96e}
-.enquiries .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:end}
-@media(max-width:860px){.enquiries .grid{grid-template-columns:1fr;gap:28px}}
-.enquiries p{color:#b8c0cc;font-size:17px;max-width:600px}
-.enquiries .btn.solid{background:#fff;color:var(--navy);border-color:#fff}
-.enquiries .btn.line{color:#fff;border-color:rgba(255,255,255,.4)}
-.contact-list{font-size:15px;color:#b8c0cc}
-.contact-list div{padding:10px 0;border-bottom:1px solid rgba(255,255,255,.12)}
-.contact-list a{color:#fff;text-decoration:none}
-footer{background:var(--navy);color:#8792a3;font-size:13px;padding:0 0 40px}
-footer .wrap{border-top:1px solid rgba(255,255,255,.12);padding-top:26px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
-footer a{color:#8792a3}
+/* enquiries */
+.enq{position:relative;background:var(--navy);color:#dfe4ec;overflow:hidden}
+.enq::before{content:"";position:absolute;inset:0;background:url(img/meeting.jpg) center/cover;opacity:.12}
+.enq .wrap{position:relative}
+.enq h2{color:#fff}
+.enq .label{color:#d2b47e}
+.enq .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:end}
+@media(max-width:860px){.enq .grid{grid-template-columns:1fr;gap:28px}}
+.enq p{color:#b9c2cf;font-size:17px;max-width:620px}
+.contact div{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.14);font-size:15px;color:#b9c2cf}
+.contact a{color:#fff;text-decoration:none}
+footer{background:var(--navy-2);color:#7f8a9c;font-size:12.5px;padding:26px 0}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+footer a{color:#7f8a9c}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}.d5{transition-delay:.4s}
+.hero .rv{animation:up 1.1s var(--ease) forwards}
+.hero .rv.d1{animation-delay:.12s}.hero .rv.d2{animation-delay:.24s}.hero .rv.d3{animation-delay:.36s}.hero .rv.d4{animation-delay:.5s}
+@keyframes up{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.hero .bg{transform:none}}
 </style>
 </head>
 <body>
 
-<header class="top"><div class="wrap">
+<header class="top" id="hdr"><div class="wrap">
   <a class="name" href="#top">Dr. Umar Nawaz<span>MBBS · MPH</span></a>
   <nav class="menu">
     <a href="#situations">Situations</a>
     <a href="#practice">Practice</a>
-    <a href="#engagements">Engagements</a>
-    <a href="#approach">Approach</a>
+    <a href="#record">Record</a>
+    <a href="#engage">Engagement</a>
     <a href="#profile">Profile</a>
-    <a class="enq" href="#enquiries">Enquiries</a>
+    <a class="cta" href="#enquiries">Enquiries</a>
   </nav>
 </div></header>
 
-<section class="hero" id="top" style="padding:0">
+<section class="hero" id="top">
+  <div class="bg" role="img" aria-label="Hospital corridor"></div>
   <div class="wrap">
-    <div class="text">
-      <div class="label">Physician · Health Systems &amp; Hospital Management</div>
-      <h1>Hospitals and health programmes that run on systems, not daily firefighting.</h1>
-      <p class="lead">Opening a facility, preparing for inspection, or losing money without knowing where? I am a physician who has run a tehsil hospital, led district health programmes and opened a 100&#8209;bed trust hospital. I put in place the systems that let your team deliver, so you no longer manage every detail yourself.</p>
-      <div class="actions">
-        <a class="btn solid" href="#enquiries">Arrange a confidential conversation</a>
-        <a class="btn line" href="https://www.linkedin.com/in/umar-nawaz-a5271912b" target="_blank" rel="noopener">LinkedIn profile</a>
-      </div>
-      <div class="facts">
-        <div><b>10 years</b>health-system leadership</div>
-        <div><b>Public &amp; private</b>sector experience</div>
-        <div><b>Facility &amp; field</b>level delivery</div>
-
-      </div>
+    <div class="label rv">Physician · Health Systems &amp; Hospital Management</div>
+    <h1 class="rv d1">Hospitals and health programmes that run on systems, not daily firefighting.</h1>
+    <p class="lead rv d2">Opening a facility, preparing for inspection, or losing money without knowing where? I am a physician who has run a tehsil hospital, led district health programmes and opened a 100&#8209;bed trust hospital. I put in place the systems that let your team deliver, so you no longer manage every detail yourself.</p>
+    <div class="actions rv d3">
+      <a class="btn gold" href="#enquiries">Arrange a confidential conversation <span class="arr">→</span></a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/umar-nawaz-a5271912b" target="_blank" rel="noopener">LinkedIn profile</a>
     </div>
-    <div class="portrait"><img src="photo.jpg" alt="Dr. Umar Nawaz" width="879" height="1100"></div>
+    <div class="stats rv d4">
+      <div><b data-count="10">10</b><span>years in health-system leadership</span></div>
+      <div><b data-count="100">100</b><span>bed hospital opened and systematised</span></div>
+      <div><b data-count="15">15</b><span>management systems introduced</span></div>
+      <div><b>42% → <span data-count="0" style="font:inherit;color:inherit">0</span>%</b><span>complaints left without action</span></div>
+    </div>
   </div>
+  <a class="scrollcue" href="#situations" aria-label="Scroll down"></a>
 </section>
 
-<div class="affil"><div class="wrap">
+<div class="affil"><div class="wrap row">
   <span class="label">Worked alongside</span>
-  <span class="org">UNICEF</span><span class="org">JICA</span><span class="org">Qatar Charity</span><span class="org">The Challenge Initiative</span><span class="org">Greenstar</span><span class="org">Marie Stopes</span><span class="org">Rahnuma</span>
+  <div class="marquee"><div class="track">
+    <span>UNICEF</span><span>JICA</span><span>Qatar Charity</span><span>The Challenge Initiative</span><span>Greenstar</span><span>Marie Stopes</span><span>Rahnuma</span><span>Punjab Health Facilities Management Company</span>
+    <span>UNICEF</span><span>JICA</span><span>Qatar Charity</span><span>The Challenge Initiative</span><span>Greenstar</span><span>Marie Stopes</span><span>Rahnuma</span><span>Punjab Health Facilities Management Company</span>
+  </div></div>
 </div></div>
 
-<section class="white" id="situations"><div class="wrap">
-  <div class="label">When clients call</div>
-  <h2>Situations I am asked to resolve.</h2>
-  <p class="intro">Most assignments begin with one of these. Each has a practical way through.</p>
+<section id="situations"><div class="wrap">
+  <div class="label rv">When clients call</div>
+  <h2 class="rv d1">Situations I am asked to resolve.</h2>
+  <p class="intro rv d2">Most assignments begin with one of these. Each has a practical way through.</p>
   <div class="sits">
-    <div><h3>A new facility must open, but systems and staff are not ready.</h3><p>A phased opening plan, rosters, SOPs and day-one reporting — so you start serving patients and earning on schedule, not paying salaries for empty wards.</p></div>
-    <div><h3>An inspection or licence renewal is due.</h3><p>A gap assessment against PHC/MSDS standards, a committee with clear owners and a dated workplan — so you walk into the inspection with evidence, not promises.</p></div>
-    <div><h3>Revenue does not cover costs, and no one can say why.</h3><p>Cost per patient and per service, package prices checked against real costs — so you see which services lose money and set recovery targets the board can track.</p></div>
-    <div><h3>The board receives figures nobody trusts.</h3><p>One daily record, cross-checked against billing, cash and registers — so decisions rest on numbers that hold up when questioned.</p></div>
-    <div><h3>Programme targets are slipping.</h3><p>District supervision, data and accountability rebuilt around the indicators that count — so funders see progress, not explanations.</p></div>
-    <div><h3>Staff costs and disputes keep rising.</h3><p>Merit-based pay, clear attendance rules and an HR policy staff understand — so you keep skilled people and spend payroll where it earns its keep.</p></div>
+    <div class="sit rv"><div class="n">01</div><h3>A new facility must open, but systems and staff are not ready.</h3><p>A phased opening plan, rosters, SOPs and day-one reporting — so you start serving patients and earning on schedule, not paying salaries for empty wards.</p></div>
+    <div class="sit rv d1"><div class="n">02</div><h3>An inspection or licence renewal is due.</h3><p>A gap assessment against PHC/MSDS standards, a committee with clear owners and a dated workplan — so you walk into the inspection with evidence, not promises.</p></div>
+    <div class="sit rv d2"><div class="n">03</div><h3>Revenue does not cover costs, and no one can say why.</h3><p>Cost per patient and per service, package prices checked against real costs — so you see which services lose money and set recovery targets the board can track.</p></div>
+    <div class="sit rv"><div class="n">04</div><h3>The board receives figures nobody trusts.</h3><p>One daily record, cross-checked against billing, cash and registers — so decisions rest on numbers that hold up when questioned.</p></div>
+    <div class="sit rv d1"><div class="n">05</div><h3>Programme targets are slipping.</h3><p>District supervision, data and accountability rebuilt around the indicators that count — so funders see progress, not explanations.</p></div>
+    <div class="sit rv d2"><div class="n">06</div><h3>Staff costs and disputes keep rising.</h3><p>Merit-based pay, clear attendance rules and an HR policy staff understand — so you keep skilled people and spend payroll where it earns its keep.</p></div>
   </div>
 </div></section>
 
-<section id="practice"><div class="wrap">
-  <div class="label">Practice</div>
-  <h2>Two levels of the health system, one practice.</h2>
-  <p class="intro">Whether you run one hospital or a district programme, the work joins up: facility operations on one side, programme delivery on the other. Few advisers have managed both.</p>
-  <div class="practice">
+<section class="white" id="practice"><div class="wrap">
+  <div class="label rv">Practice</div>
+  <h2 class="rv d1">Two levels of the health system, one practice.</h2>
+  <p class="intro rv d2">Whether you run one hospital or a district programme, the work joins up: facility operations on one side, programme delivery on the other. Few advisers have managed both.</p>
+  <div class="tabs rv d3" role="tablist">
+    <button class="tab" role="tab" aria-selected="true" aria-controls="p1" id="t1">Health facilities</button>
+    <button class="tab" role="tab" aria-selected="false" aria-controls="p2" id="t2">Programmes &amp; field operations</button>
+    <span class="ink"></span>
+  </div>
+  <div class="panel show" id="p1" role="tabpanel" aria-labelledby="t1">
+    <figure><img src="img/facility.jpg" alt="A modern hospital ward with beds by a window" loading="lazy"></figure>
     <div>
-      <h3>Health facilities</h3>
-      <div class="sub">Hospitals, trust and private facilities, outsourced public facilities</div>
+      <div class="who">For hospitals, trust and private facilities, and outsourced public facilities.</div>
       <dl>
-        <dt>Planning and commissioning</dt><dd>Service mix, staffing and equipment plans, phased opening, licensing.</dd>
-        <dt>Operations and management systems</dt><dd>Reporting, dashboards, billing and revenue controls, pharmacy and stores.</dd>
-        <dt>Quality, licensing and patient safety</dt><dd>PHC/MSDS readiness, infection prevention, complaints and incident systems, clinical audit.</dd>
-        <dt>Finance and costing</dt><dd>Cost per patient and per service, tariff review, board-level financial reporting.</dd>
-        <dt>Workforce</dt><dd>Organisation design, merit-based pay structures, HR policy, attendance and payroll.</dd>
-        <dt>Turnaround and interim leadership</dt><dd>Rapid diagnostic, recovery plan and hands-on administration.</dd>
-      </dl>
-    </div>
-    <div>
-      <h3>Programmes and field operations</h3>
-      <div class="sub">Government departments, development partners, NGOs</div>
-      <dl>
-        <dt>Maternal, newborn and child health</dt><dd>Including family planning, immunisation and nutrition programmes.</dd>
-        <dt>Public–private partnerships</dt><dd>Outsourcing of primary health facilities, contract management and oversight.</dd>
-        <dt>Health insurance programmes</dt><dd>Facility performance against universal health insurance targets.</dd>
-        <dt>District health management</dt><dd>Supervision systems, surveillance and service-delivery targets.</dd>
-        <dt>Mobile and community services</dt><dd>Design and launch of outreach and community clinic models.</dd>
-        <dt>Monitoring and assessment</dt><dd>Data systems, baseline and progress assessments, reporting to partners.</dd>
+        <dt>Planning and commissioning</dt><dd>Service mix, staffing and equipment plans, phased opening and licensing — so the facility opens on time and on budget.</dd>
+        <dt>Operations and management systems</dt><dd>Reporting, dashboards, billing and revenue controls, pharmacy and stores — so managers see problems the day they start.</dd>
+        <dt>Quality, licensing and patient safety</dt><dd>PHC/MSDS readiness, infection prevention, complaints and incident systems, clinical audit — so standards are met and can be shown.</dd>
+        <dt>Finance and costing</dt><dd>Cost per patient and per service, tariff review, board reporting — so pricing and subsidy decisions rest on real costs.</dd>
+        <dt>Workforce</dt><dd>Organisation design, merit-based pay, HR policy, attendance and payroll — so good staff stay and payroll stays in control.</dd>
+        <dt>Turnaround and interim leadership</dt><dd>Rapid diagnostic, recovery plan and hands-on administration — so a struggling service stabilises quickly.</dd>
       </dl>
     </div>
   </div>
-</div></section>
-
-<section class="white" id="engagements"><div class="wrap">
-  <div class="label">Selected engagements</div>
-  <h2>Record of delivery.</h2>
-  <p class="intro">Roles held and results achieved in public and private health systems in Punjab, Pakistan.</p>
-  <div class="eng">
-    <div class="row">
-      <div class="yr">2026 –</div>
-      <div><h3>Private trust hospital, 100 beds</h3><div class="role">Administrator · Red Crescent Hospital, Jhang</div></div>
-      <ul>
-        <li>Phased opening from outpatients to full gynaecology, paediatric, ICU and NICU services in about ten weeks.</li>
-        <li>Fifteen management systems introduced across reporting, billing, HR, quality and finance.</li>
-        <li>Complaints left without departmental action reduced from 42% to none.</li>
-        <li>PHC/MSDS compliance programme structured across ten functional areas.</li>
-      </ul>
-    </div>
-    <div class="row">
-      <div class="yr">2023 – 2025</div>
-      <div><h3>District MNCH &amp; nutrition programme</h3><div class="role">District Coordinator, IRMNCH · District Health Authority Faisalabad</div></div>
-      <ul>
-        <li>Led the district to graduation from The Challenge Initiative for family planning.</li>
-        <li>Supervised the launch of Clinic on Wheels and Maryam Nawaz Health Clinics.</li>
-      </ul>
-    </div>
-    <div class="row">
-      <div class="yr">2023 – 2024</div>
-      <div><h3>Tehsil headquarters hospital</h3><div class="role">Medical Superintendent · THQ Hospital Chak Jhumra</div></div>
-      <ul>
-        <li>Met universal health insurance targets.</li>
-        <li>Held concurrently with the district programme role for sixteen months.</li>
-      </ul>
-    </div>
-    <div class="row">
-      <div class="yr">2025</div>
-      <div><h3>Primary health facility outsourcing</h3><div class="role">District Manager · Punjab Health Facilities Management Company</div></div>
-      <ul>
-        <li>Managed the outsourcing of primary health facilities in Faisalabad district.</li>
-      </ul>
-    </div>
-    <div class="row">
-      <div class="yr">2017 – 2023</div>
-      <div><h3>District and facility posts</h3><div class="role">Deputy District Health Officer · Medical Officer, DHQ and primary care</div></div>
-      <ul>
-        <li>District health administration, surveillance coordination and service delivery from Basic Health Unit to teaching hospital.</li>
-      </ul>
-    </div>
-  </div>
-</div></section>
-
-<section id="approach"><div class="wrap">
-  <div class="label">Engagement</div>
-  <h2>How assignments are structured.</h2>
-  <div class="modes">
-    <div><h3>Assessment</h3><p>An independent review with a prioritised, costed plan, so you know what to fix first and what it will cost.</p></div>
-    <div><h3>Implementation</h3><p>Systems installed and staff trained to own them, so the gains last after the engagement ends.</p></div>
-    <div><h3>Interim leadership</h3><p>Hands-on administration through an opening, transition or turnaround, so services keep running while the fix is made.</p></div>
-    <div><h3>Advisory</h3><p>A senior second opinion on decisions, risks and performance, so your board acts on evidence rather than assumption.</p></div>
-  </div>
-  <div class="method">
+  <div class="panel" id="p2" role="tabpanel" aria-labelledby="t2">
+    <figure><img src="img/programmes.jpg" alt="A health team planning a programme around a table" loading="lazy"></figure>
     <div>
-      <div class="label">Approach</div>
-      <h2 style="font-size:30px">On site, measured, handed over.</h2>
-      <p style="color:var(--muted)">Dr. Nawaz takes on demanding assignments — facilities that must open on schedule, programmes with hard targets, services that need to be turned around — and stays with them until the systems run without him.</p>
+      <div class="who">For government departments, development partners and NGOs.</div>
+      <dl>
+        <dt>Maternal, newborn and child health</dt><dd>Family planning, immunisation and nutrition programmes — run to the indicators funders measure.</dd>
+        <dt>Public–private partnerships</dt><dd>Outsourcing of primary health facilities, contract management and oversight — so outsourced services deliver what was paid for.</dd>
+        <dt>Health insurance programmes</dt><dd>Facility performance against universal health insurance targets — so enrolled patients are served and claims are earned.</dd>
+        <dt>District health management</dt><dd>Supervision systems, surveillance and service-delivery targets — so district teams know where they stand each month.</dd>
+        <dt>Mobile and community services</dt><dd>Design and launch of outreach and community clinic models — so services reach people who do not reach facilities.</dd>
+        <dt>Monitoring and assessment</dt><dd>Data systems, baseline and progress assessments, partner reporting — so results can be evidenced.</dd>
+      </dl>
     </div>
-    <ol>
-      <li><b>Diagnose on site.</b> Records, registers and every department, before any recommendation.</li>
-      <li><b>Agree the plan.</b> Options and a clear recommendation, decided with leadership.</li>
-      <li><b>Build with the team.</b> Practical tools tested on live data, not imposed from outside.</li>
-      <li><b>Hand over.</b> A named owner, a standard operating procedure and a review cycle for each area.</li>
-      <li><b>Measure.</b> Baseline and follow-up figures reported to leadership.</li>
-    </ol>
+  </div>
+</div></section>
+
+<section id="record"><div class="wrap">
+  <div class="label rv">Record of delivery</div>
+  <h2 class="rv d1">Roles held. Results achieved.</h2>
+  <p class="intro rv d2">Public and private health systems in Punjab, Pakistan.</p>
+  <div class="record">
+    <div class="rec rv"><div class="yr">2026 –</div><div><h3>Private trust hospital, 100 beds</h3><div class="role">Administrator · Red Crescent Hospital, Jhang</div></div><ul><li>Phased opening from outpatients to full gynaecology, paediatric, ICU and NICU services in about ten weeks.</li><li>Fifteen management systems introduced across reporting, billing, HR, quality and finance.</li><li>Complaints left without departmental action reduced from 42% to none.</li><li>PHC/MSDS compliance programme structured across ten functional areas.</li></ul></div>
+    <div class="rec rv"><div class="yr">2025</div><div><h3>Primary health facility outsourcing</h3><div class="role">District Manager · Punjab Health Facilities Management Company</div></div><ul><li>Managed the outsourcing of primary health facilities in Faisalabad district.</li></ul></div>
+    <div class="rec rv"><div class="yr">2023 – 2025</div><div><h3>District MNCH &amp; nutrition programme</h3><div class="role">District Coordinator, IRMNCH · District Health Authority Faisalabad</div></div><ul><li>Led the district to graduation from The Challenge Initiative for family planning.</li><li>Supervised the launch of Clinic on Wheels and Maryam Nawaz Health Clinics.</li></ul></div>
+    <div class="rec rv"><div class="yr">2023 – 2024</div><div><h3>Tehsil headquarters hospital</h3><div class="role">Medical Superintendent · THQ Hospital Chak Jhumra</div></div><ul><li>Met universal health insurance targets.</li><li>Held concurrently with the district programme role for sixteen months.</li></ul></div>
+    <div class="rec rv"><div class="yr">2017 – 2023</div><div><h3>District and facility posts</h3><div class="role">Deputy District Health Officer · Medical Officer, DHQ and primary care</div></div><ul><li>District health administration, surveillance coordination and service delivery from Basic Health Unit to teaching hospital.</li></ul></div>
+  </div>
+</div></section>
+
+<section class="white" id="engage"><div class="wrap">
+  <div class="split">
+    <div>
+      <div class="label rv">Engagement</div>
+      <h2 class="rv d1">Choose the depth of support you need.</h2>
+      <div class="modes rv d2">
+        <div class="mode"><h3>Assessment</h3><p>An independent review with a prioritised, costed plan, so you know what to fix first and what it will cost.</p></div>
+        <div class="mode"><h3>Implementation</h3><p>Systems installed and staff trained to own them, so the gains last after the engagement ends.</p></div>
+        <div class="mode"><h3>Interim leadership</h3><p>Hands-on administration through an opening, transition or turnaround, so services keep running while the fix is made.</p></div>
+        <div class="mode"><h3>Advisory</h3><p>A senior second opinion on decisions, risks and performance, so your board acts on evidence rather than assumption.</p></div>
+      </div>
+    </div>
+    <figure class="rv d2"><img src="img/meeting.jpg" alt="A management team in a planning meeting" loading="lazy"></figure>
+  </div>
+  <div class="steps" id="steps">
+    <span class="bar"></span>
+    <div class="step rv"><i>1</i><b>Diagnose on site</b><p>Records, registers and every department, before any recommendation.</p></div>
+    <div class="step rv d1"><i>2</i><b>Agree the plan</b><p>Options and a clear recommendation, decided with leadership.</p></div>
+    <div class="step rv d2"><i>3</i><b>Build with your team</b><p>Practical tools tested on live data, not imposed from outside.</p></div>
+    <div class="step rv d3"><i>4</i><b>Hand over</b><p>A named owner, an SOP and a review cycle for each area.</p></div>
+    <div class="step rv d4"><i>5</i><b>Measure</b><p>Baseline and follow-up figures reported to leadership.</p></div>
   </div>
 </div></section>
 
 <section id="profile"><div class="wrap profile">
-  <div>
+  <figure class="rv"><img src="img/headshot.jpg" alt="Dr. Umar Nawaz" width="880" height="1100" loading="lazy"><figcaption>Dr. Umar Nawaz, MBBS, MPH</figcaption></figure>
+  <div class="rv d1">
     <div class="label">Profile</div>
-    <h2>Dr. Umar Nawaz</h2>
-    <p>Dr. Umar Nawaz is a physician and public-health manager based in Faisalabad, Pakistan. He trained in medicine at the University of Lahore and holds a Master of Public Health, with a focus on epidemiology, maternal and child health and hospital management.</p>
-    <p>His career has moved deliberately from clinical practice into management, across almost every level of Punjab's health system: primary care, a district headquarters hospital, district health offices, a tehsil hospital as Medical Superintendent, and district coordination of maternal, newborn, child health and nutrition programmes. He has also worked on the public–private side, managing the outsourcing of primary health facilities.</p>
-    <p>Since May 2026 he has been Administrator of a 100-bed mother and child hospital run by a charitable trust, leading it from first opening through the systems that now govern its daily operations, compliance and finances.</p>
-    <p>He works with clinicians and managers alike, and is equally at ease with a district programme review and a hospital ward round.</p>
+    <h2>A physician who chose management.</h2>
+    <p>Dr. Umar Nawaz trained in medicine at the University of Lahore and holds a Master of Public Health, with a focus on epidemiology, maternal and child health and hospital management.</p>
+    <p>His career has moved deliberately from clinical practice into management, across almost every level of Punjab's health system: primary care, a district headquarters hospital, district health offices, a tehsil hospital as Medical Superintendent, and district coordination of maternal, newborn, child health and nutrition programmes. He has also managed the outsourcing of primary health facilities.</p>
+    <p>Since May 2026 he has administered a 100-bed mother and child hospital run by a charitable trust, leading it from first opening through the systems that now govern its daily operations, compliance and finances.</p>
+    <p>He takes on demanding assignments — facilities that must open on schedule, programmes with hard targets, services that need to be turned around — and stays with them until the systems run without him.</p>
   </div>
-  <div class="side">
-    <h4>Education</h4>
-    <ul>
-      <li>Master of Public Health<span>Times Institute, Multan</span></li>
-      <li>MBBS<span>University of Lahore</span></li>
-    </ul>
-    <h4>Expertise</h4>
-    <ul>
-      <li>Hospital administration</li>
-      <li>Health systems strengthening</li>
-      <li>MNCH, family planning &amp; nutrition</li>
-      <li>Public–private partnerships</li>
-      <li>Health insurance programmes</li>
-      <li>Health data and reporting</li>
-    </ul>
-    <h4>Languages</h4>
-    <ul><li>English · Urdu · Punjabi</li></ul>
+  <div class="side rv d2">
+    <div><h4>Education</h4><ul><li>Master of Public Health<span>Times Institute, Multan</span></li><li>MBBS<span>University of Lahore</span></li></ul></div>
+    <div><h4>Expertise</h4><ul><li>Hospital administration</li><li>Health systems strengthening</li><li>MNCH, family planning &amp; nutrition</li><li>Public–private partnerships</li><li>Health insurance programmes</li></ul></div>
+    <div><h4>Languages</h4><ul><li>English · Urdu · Punjabi</li></ul></div>
   </div>
 </div></section>
 
-<section class="enquiries" id="enquiries"><div class="wrap">
-  <div class="grid">
-    <div>
-      <div class="label">Enquiries</div>
-      <h2>Tell me about your hospital or programme.</h2>
-      <p>Describe the situation in a few lines. I reply personally and will tell you plainly whether, and how, I can help. Conversations are confidential.</p>
-      <p style="font-size:15px">I take on a small number of assignments at a time, for hospitals, health trusts, government departments and development partners ready to act on what the work finds.</p>
-      <div class="actions">
-        <a class="btn solid" href="mailto:unc890@gmail.com?subject=Hospital%20or%20programme%20enquiry">Send an enquiry</a>
-        <a class="btn line" href="https://www.linkedin.com/in/umar-nawaz-a5271912b" target="_blank" rel="noopener">Connect on LinkedIn</a>
-      </div>
-    </div>
-    <div class="contact-list">
-      <div>Email · <a href="mailto:unc890@gmail.com">unc890@gmail.com</a></div>
-      <div>LinkedIn · <a href="https://www.linkedin.com/in/umar-nawaz-a5271912b" target="_blank" rel="noopener">umar-nawaz-a5271912b</a></div>
-      <div>Based in Faisalabad, Pakistan</div>
+<section class="enq" id="enquiries"><div class="wrap grid">
+  <div>
+    <div class="label rv">Enquiries</div>
+    <h2 class="rv d1">Tell me about your hospital or programme.</h2>
+    <p class="rv d2">Describe the situation in a few lines. I reply personally and will tell you plainly whether, and how, I can help. Conversations are confidential.</p>
+    <p class="rv d2" style="font-size:15px">I take on a small number of assignments at a time, for hospitals, health trusts, government departments and development partners ready to act on what the work finds.</p>
+    <div class="actions rv d3">
+      <a class="btn gold" href="mailto:unc890@gmail.com?subject=Hospital%20or%20programme%20enquiry">Send an enquiry <span class="arr">→</span></a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/umar-nawaz-a5271912b" target="_blank" rel="noopener">Connect on LinkedIn</a>
     </div>
   </div>
+  <div class="contact rv d2">
+    <div>Email · <a href="mailto:unc890@gmail.com">unc890@gmail.com</a></div>
+    <div>LinkedIn · <a href="https://www.linkedin.com/in/umar-nawaz-a5271912b" target="_blank" rel="noopener">umar-nawaz-a5271912b</a></div>
+    <div>Based in Faisalabad, Pakistan</div>
+  </div>
 </div></section>
-<footer><div class="wrap"><span>© 2026 Dr. Umar Nawaz</span><span>Health Systems &amp; Hospital Management</span></div></footer>
+<footer><div class="wrap"><span>© 2026 Dr. Umar Nawaz · Health Systems &amp; Hospital Management</span><span>Photography: Tasha Kostyuk, César Vermorel Forest, Sweet Life, UK Black Tech — <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></span></div></footer>
 
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // header
+  var hdr = document.getElementById('hdr');
+  function onScroll(){ hdr.classList.toggle('solid', window.scrollY > 40); }
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+  // reveal + counters + steps
+  function count(el){
+    var end = +el.getAttribute('data-count'); if (reduce || !end) { el.textContent = end; return; }
+    var t0 = null, dur = 1400;
+    function f(t){ if(!t0) t0=t; var p=Math.min((t-t0)/dur,1); el.textContent=Math.round(end*(1-Math.pow(1-p,3))); if(p<1) requestAnimationFrame(f); }
+    requestAnimationFrame(f);
+  }
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting) return;
+      e.target.classList.add('in');
+      e.target.querySelectorAll && e.target.querySelectorAll('[data-count]').forEach(count);
+      io.unobserve(e.target);
+    });
+  }, {threshold:.15, rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.rv, #steps').forEach(function(el){ io.observe(el); });
+  // active nav link
+  var links = [].slice.call(document.querySelectorAll('nav.menu a:not(.cta)'));
+  var secIO = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ links.forEach(function(a){ a.classList.toggle('on', a.getAttribute('href') === '#'+e.target.id); }); } });
+  }, {rootMargin:'-45% 0px -50% 0px'});
+  links.forEach(function(a){ var s=document.querySelector(a.getAttribute('href')); if(s) secIO.observe(s); });
+  // tabs
+  var tabs = [].slice.call(document.querySelectorAll('.tab')), ink = document.querySelector('.ink');
+  function place(t){ ink.style.left = t.offsetLeft + 'px'; ink.style.width = t.offsetWidth + 'px'; }
+  function select(t){
+    tabs.forEach(function(x){ var on = x===t; x.setAttribute('aria-selected', on); x.tabIndex = on?0:-1;
+      document.getElementById(x.getAttribute('aria-controls')).classList.toggle('show', on); });
+    place(t);
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click', function(){ select(t); });
+    t.addEventListener('keydown', function(e){ if(e.key==='ArrowRight'||e.key==='ArrowLeft'){ var n=tabs[(i+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length]; n.focus(); select(n);} });
+  });
+  window.addEventListener('load', function(){ place(tabs[0]); });
+  window.addEventListener('resize', function(){ place(document.querySelector('.tab[aria-selected="true"]')); });
+})();
+</script>
 </body>
 </html>
