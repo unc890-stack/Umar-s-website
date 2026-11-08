@@ -85,6 +85,38 @@ header.top.solid nav.menu a.cta{color:#fff;background:var(--navy);border-color:v
 @keyframes cue{0%{opacity:0;top:6px}40%{opacity:1}100%{opacity:0;top:20px}}
 @media(max-width:760px){.scrollcue{display:none}}
 
+/* hero slider */
+.slider{margin-top:6px;max-width:640px}
+.slide-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.slide-tabs button{--c:#c9a467;background:transparent;border:1px solid var(--c);color:var(--c);font:500 13px Inter,sans-serif;padding:7px 14px;cursor:pointer;transition:background .3s,color .3s}
+.slide-tabs button:nth-child(2){--c:#5fc1b0}.slide-tabs button:nth-child(3){--c:#e8957a}.slide-tabs button:nth-child(4){--c:#8dbbea}
+.slide-tabs button[aria-selected="true"],.slide-tabs button:hover{background:var(--c);color:#0d1729}
+.slides{position:relative;min-height:236px;border-left:2px solid var(--sc,#c9a467);padding-left:22px;transition:border-color .5s}
+.slide{position:absolute;inset:0 0 auto 22px;opacity:0;transform:translateX(28px);transition:opacity .6s var(--ease),transform .6s var(--ease);pointer-events:none}
+.slide.on{position:relative;inset:auto;opacity:1;transform:none;pointer-events:auto}
+.slide.out{transform:translateX(-28px)}
+.slide .promise{font-family:Newsreader,Georgia,serif;font-size:clamp(22px,2.2vw,28px);line-height:1.3;color:#fff;margin:0 0 14px}
+.slide .lead{font-size:16px;color:rgba(255,255,255,.8);margin:0 0 12px}
+.slide ul.ticks{list-style:none;margin:0;padding:0}
+.slide ul.ticks li{position:relative;padding:5px 0 5px 22px;font-size:15px;color:rgba(255,255,255,.8)}
+.slide ul.ticks li::before{content:"";position:absolute;left:0;top:14px;width:8px;height:8px;background:#e8957a}
+.slide ul.ticks b{color:#fff;font-weight:600}
+.edu{display:grid;gap:14px}
+.edu h4{margin:0 0 2px;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:#8dbbea;font-weight:600}
+.edu p{margin:0;font-size:15.5px;color:rgba(255,255,255,.85)}
+.slide-nav{display:flex;align-items:center;gap:14px;margin-top:18px;position:relative}
+.arrow{width:38px;height:38px;border:1px solid rgba(255,255,255,.35);background:transparent;color:#fff;cursor:pointer;transition:background .25s,border-color .25s}
+.arrow:hover{background:rgba(255,255,255,.12);border-color:#fff}
+.dots{display:flex;gap:8px}
+.dots span{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.3);cursor:pointer;transition:background .3s,transform .3s}
+.dots span.on{background:#fff;transform:scale(1.25)}
+.progress{flex:1;height:2px;background:rgba(255,255,255,.14);overflow:hidden}
+.progress i{display:block;height:100%;width:0;background:var(--sc,#c9a467)}
+.progress i.run{animation:prog 7s linear forwards}
+.slider.paused .progress i{animation-play-state:paused}
+@keyframes prog{to{width:100%}}
+@media(max-width:600px){.slides{min-height:330px}}
+
 /* partners marquee */
 .affil{background:var(--white);border-bottom:1px solid var(--line);padding:26px 0;overflow:hidden}
 .affil .row{display:flex;align-items:center;gap:30px}
@@ -103,18 +135,27 @@ header.top.solid nav.menu a.cta{color:#fff;background:var(--navy);border-color:v
 .sit::before{content:"";position:absolute;left:0;top:0;height:3px;width:100%;background:var(--brass);transform:scaleX(0);transform-origin:left;transition:transform .45s var(--ease)}
 .sit:hover{transform:translateY(-6px);box-shadow:0 22px 44px -26px rgba(20,34,58,.35);border-color:transparent}
 .sit:hover::before{transform:scaleX(1)}
-.sit .n{font-family:Newsreader,Georgia,serif;color:var(--brass);font-size:15px}
+.sit{--c:#1f7a6d;border-top:3px solid var(--c)}
+.sit:nth-child(2){--c:#b0702a}.sit:nth-child(3){--c:#2d5f9a}.sit:nth-child(4){--c:#8a4f7d}.sit:nth-child(5){--c:#c0573e}.sit:nth-child(6){--c:#4f7a2a}
+.sit::before{background:var(--c)!important}
+.sit .n{font-family:Newsreader,Georgia,serif;color:var(--c);font-size:15px;font-weight:600}
 .sit h3{font-size:21px;line-height:1.3;margin:10px 0 12px}
 .sit p{font-size:15px;color:var(--muted);margin:0}
 @media(max-width:960px){.sits{grid-template-columns:1fr 1fr}}
 @media(max-width:620px){.sits{grid-template-columns:1fr}}
 
 /* tabs */
-.tabs{display:flex;gap:6px;border-bottom:1px solid var(--line);position:relative;margin-bottom:44px}
-.tab{background:none;border:0;padding:14px 4px;margin-right:30px;font:500 17px Inter,sans-serif;color:var(--muted);cursor:pointer;transition:color .25s}
-.tab[aria-selected="true"]{color:var(--navy)}
-.tab:focus-visible{outline:2px solid var(--brass);outline-offset:4px}
-.ink{position:absolute;bottom:-1px;height:2px;background:var(--navy);transition:left .4s var(--ease),width .4s var(--ease)}
+.tabs{display:flex;flex-wrap:wrap;gap:12px;position:relative;margin-bottom:40px}
+.tab{--c:#1f7a6d;background:#fff;border:1.5px solid var(--c);color:var(--c);padding:13px 24px;font:600 16px Inter,sans-serif;cursor:pointer;transition:background .3s,color .3s,box-shadow .3s,transform .3s var(--ease)}
+#t2{--c:#b0702a}
+.tab:hover{transform:translateY(-2px);box-shadow:0 10px 22px -14px var(--c)}
+.tab[aria-selected="true"]{background:var(--c);color:#fff}
+.tab:focus-visible{outline:2px solid var(--c);outline-offset:4px}
+.ink{display:none}
+#p1{--c:#1f7a6d}#p2{--c:#b0702a}
+.panel{border-top:3px solid var(--c);padding-top:32px}
+.panel dt{color:var(--c)}
+.panel figure{outline:1.5px solid var(--c);outline-offset:8px}
 .panel{display:none;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
 .panel.show{display:grid;animation:panelIn .55s var(--ease)}
 @keyframes panelIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
@@ -206,19 +247,58 @@ footer a{color:#7f8a9c}
     <a href="#practice">Practice</a>
     <a href="#record">Record</a>
     <a href="#engage">Engagement</a>
-    <a href="#profile">Profile</a>
     <a class="cta" href="#enquiries">Enquiries</a>
   </nav>
 </div></header>
 
 <section class="hero" id="top">
   <div class="wrap">
-  <div>
+  <div class="intro-col">
     <div class="label rv">MBBS · MPH · Faisalabad, Pakistan</div>
     <h1 class="rv d1">Dr. Umar Nawaz</h1>
     <div class="title rv d1">Physician · Health Systems &amp; Hospital Management Consultant</div>
-    <p class="promise rv d2">Hospitals and health programmes that run on systems, not daily firefighting.</p>
-    <p class="lead rv d2">Opening a facility, preparing for inspection, or losing money without knowing where? I have run a tehsil hospital, led district health programmes and opened a 100&#8209;bed trust hospital. I put in place the systems that let your team deliver, so you no longer manage every detail yourself.</p>
+
+    <div class="slider rv d2" id="slider" aria-roledescription="carousel" aria-label="Profile">
+      <div class="slide-tabs" role="tablist">
+        <button role="tab" aria-selected="true">Introduction</button>
+        <button role="tab" aria-selected="false">Profile</button>
+        <button role="tab" aria-selected="false">Track record</button>
+        <button role="tab" aria-selected="false">Education &amp; expertise</button>
+      </div>
+      <div class="slides">
+        <article class="slide on" aria-roledescription="slide">
+          <p class="promise">Hospitals and health programmes that run on systems, not daily firefighting.</p>
+          <p class="lead">Opening a facility, preparing for inspection, or losing money without knowing where? I have run a tehsil hospital, led district health programmes and opened a 100&#8209;bed trust hospital. I put in place the systems that let your team deliver, so you no longer manage every detail yourself.</p>
+        </article>
+        <article class="slide" aria-roledescription="slide">
+          <p class="lead">A physician who chose management. Over ten years, Dr. Nawaz has worked across almost every level of Punjab's health system: primary care, a district headquarters hospital, district health offices, a tehsil hospital as Medical Superintendent, district coordination of maternal, newborn, child health and nutrition programmes, and the outsourcing of primary health facilities.</p>
+          <p class="lead">Since May 2026 he has administered a 100-bed mother and child hospital run by a charitable trust, from first opening through the systems that now govern its operations, compliance and finances. He takes on demanding assignments and stays with them until the systems run without him.</p>
+        </article>
+        <article class="slide" aria-roledescription="slide">
+          <ul class="ticks">
+            <li><b>Red Crescent Hospital, Jhang</b> — 100-bed trust hospital opened to full services in about ten weeks; 15 management systems introduced.</li>
+            <li><b>District Health Authority Faisalabad</b> — led the district to graduation from The Challenge Initiative for family planning.</li>
+            <li><b>Clinic on Wheels &amp; Maryam Nawaz Health Clinics</b> — supervised the launch in Faisalabad.</li>
+            <li><b>THQ Hospital Chak Jhumra</b> — met universal health insurance targets as Medical Superintendent.</li>
+            <li><b>PHFMC</b> — managed the outsourcing of primary health facilities.</li>
+          </ul>
+        </article>
+        <article class="slide" aria-roledescription="slide">
+          <div class="edu">
+            <div><h4>Education</h4><p>Master of Public Health — Times Institute, Multan</p><p>MBBS — University of Lahore</p></div>
+            <div><h4>Expertise</h4><p>Hospital administration · Health systems strengthening · MNCH, family planning &amp; nutrition · Public–private partnerships · Health insurance programmes</p></div>
+            <div><h4>Languages</h4><p>English · Urdu · Punjabi</p></div>
+          </div>
+        </article>
+      </div>
+      <div class="slide-nav">
+        <button class="arrow" data-dir="-1" aria-label="Previous">←</button>
+        <div class="dots"><span class="on"></span><span></span><span></span><span></span></div>
+        <button class="arrow" data-dir="1" aria-label="Next">→</button>
+        <div class="progress"><i></i></div>
+      </div>
+    </div>
+
     <div class="actions rv d3">
       <a class="btn gold" href="#enquiries">Arrange a confidential conversation <span class="arr">→</span></a>
       <a class="btn ghost" href="https://www.linkedin.com/in/umar-nawaz-a5271912b" target="_blank" rel="noopener">LinkedIn profile</a>
@@ -231,8 +311,7 @@ footer a{color:#7f8a9c}
     </div>
   </div>
   <figure>
-    <img src="img/portrait.jpg" alt="Dr. Umar Nawaz on a field supervision visit" width="760" height="951">
-    <figcaption><b>In the field</b>District health programme supervision, Punjab</figcaption>
+    <img src="img/portrait.jpg" alt="Dr. Umar Nawaz" width="960" height="1200">
   </figure>
   </div>
   <a class="scrollcue" href="#situations" aria-label="Scroll down"></a>
@@ -335,21 +414,6 @@ footer a{color:#7f8a9c}
   </div>
 </div></section>
 
-<section id="profile"><div class="wrap profile">
-  <div class="rv d1">
-    <div class="label">Profile</div>
-    <h2>A physician who chose management.</h2>
-    <p>Dr. Umar Nawaz trained in medicine at the University of Lahore and holds a Master of Public Health, with a focus on epidemiology, maternal and child health and hospital management.</p>
-    <p>His career has moved deliberately from clinical practice into management, across almost every level of Punjab's health system: primary care, a district headquarters hospital, district health offices, a tehsil hospital as Medical Superintendent, and district coordination of maternal, newborn, child health and nutrition programmes. He has also managed the outsourcing of primary health facilities.</p>
-    <p>Since May 2026 he has administered a 100-bed mother and child hospital run by a charitable trust, leading it from first opening through the systems that now govern its daily operations, compliance and finances.</p>
-    <p>He takes on demanding assignments — facilities that must open on schedule, programmes with hard targets, services that need to be turned around — and stays with them until the systems run without him.</p>
-  </div>
-  <div class="side rv d2">
-    <div><h4>Education</h4><ul><li>Master of Public Health<span>Times Institute, Multan</span></li><li>MBBS<span>University of Lahore</span></li></ul></div>
-    <div><h4>Expertise</h4><ul><li>Hospital administration</li><li>Health systems strengthening</li><li>MNCH, family planning &amp; nutrition</li><li>Public–private partnerships</li><li>Health insurance programmes</li></ul></div>
-    <div><h4>Languages</h4><ul><li>English · Urdu · Punjabi</li></ul></div>
-  </div>
-</div></section>
 
 <section class="enq" id="enquiries"><div class="wrap grid">
   <div>
@@ -412,6 +476,35 @@ footer a{color:#7f8a9c}
     t.addEventListener('keydown', function(e){ if(e.key==='ArrowRight'||e.key==='ArrowLeft'){ var n=tabs[(i+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length]; n.focus(); select(n);} });
   });
   window.addEventListener('load', function(){ place(tabs[0]); });
+  // hero information slider
+  (function(){
+    var root = document.getElementById('slider'); if(!root) return;
+    var slides = [].slice.call(root.querySelectorAll('.slide')), tabsS = [].slice.call(root.querySelectorAll('.slide-tabs button')),
+        dots = [].slice.call(root.querySelectorAll('.dots span')), bar = root.querySelector('.progress i'),
+        box = root.querySelector('.slides'), colors = ['#c9a467','#5fc1b0','#e8957a','#8dbbea'], cur = 0, timer = null;
+    function go(n){
+      n = (n + slides.length) % slides.length; if (n === cur) return restart();
+      slides[cur].classList.add('out'); slides[cur].classList.remove('on');
+      var old = slides[cur]; setTimeout(function(){ old.classList.remove('out'); }, 600);
+      cur = n; slides[cur].classList.add('on');
+      tabsS.forEach(function(t,i){ t.setAttribute('aria-selected', i===cur); });
+      dots.forEach(function(d,i){ d.classList.toggle('on', i===cur); });
+      root.style.setProperty('--sc', colors[cur]); restart();
+    }
+    function restart(){
+      clearTimeout(timer); bar.classList.remove('run'); void bar.offsetWidth;
+      if (reduce) return; bar.classList.add('run');
+      timer = setTimeout(function(){ if(!root.classList.contains('paused')) go(cur+1); else restart(); }, 7000);
+    }
+    tabsS.forEach(function(t,i){ t.addEventListener('click', function(){ go(i); }); });
+    dots.forEach(function(d,i){ d.addEventListener('click', function(){ go(i); }); });
+    root.querySelectorAll('.arrow').forEach(function(a){ a.addEventListener('click', function(){ go(cur + (+a.getAttribute('data-dir'))); }); });
+    root.addEventListener('mouseenter', function(){ root.classList.add('paused'); });
+    root.addEventListener('mouseleave', function(){ root.classList.remove('paused'); });
+    var x0 = null; box.addEventListener('touchstart', function(e){ x0 = e.touches[0].clientX; }, {passive:true});
+    box.addEventListener('touchend', function(e){ if(x0===null) return; var dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 40) go(cur + (dx < 0 ? 1 : -1)); x0 = null; });
+    root.style.setProperty('--sc', colors[0]); restart();
+  })();
   // duplicate the logo row once so the marquee loops seamlessly
   var tr = document.getElementById('track'); tr.innerHTML += tr.innerHTML;
   [].slice.call(tr.children).slice(tr.children.length / 2).forEach(function(n){ n.setAttribute('aria-hidden','true'); });
