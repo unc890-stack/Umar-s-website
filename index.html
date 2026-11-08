@@ -71,6 +71,12 @@ section{padding:96px 0;border-bottom:1px solid var(--line)}
 section.white{background:var(--white)}
 .intro{max-width:720px;color:var(--muted);font-size:17px;margin-bottom:48px}
 
+.sits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--navy)}
+.sits div{padding:28px 28px 30px 0;border-bottom:1px solid var(--line)}
+.sits div:not(:nth-child(3n+1)){padding-left:28px;border-left:1px solid var(--line)}
+.sits h3{font-size:20px;line-height:1.3;margin:0 0 10px}
+.sits p{font-size:15px;color:var(--muted);margin:0}
+@media(max-width:900px){.sits{grid-template-columns:1fr}.sits div,.sits div:not(:nth-child(3n+1)){padding:24px 0;border-left:0}}
 .practice{display:grid;grid-template-columns:1fr 1fr;gap:56px}
 @media(max-width:860px){.practice{grid-template-columns:1fr;gap:40px}}
 .practice h3{font-size:24px;margin:0 0 6px}
@@ -131,6 +137,7 @@ footer a{color:#8792a3}
 <header class="top"><div class="wrap">
   <a class="name" href="#top">Dr. Umar Nawaz<span>MBBS · MPH</span></a>
   <nav class="menu">
+    <a href="#situations">Situations</a>
     <a href="#practice">Practice</a>
     <a href="#engagements">Engagements</a>
     <a href="#approach">Approach</a>
@@ -143,10 +150,10 @@ footer a{color:#8792a3}
   <div class="wrap">
     <div class="text">
       <div class="label">Physician · Health Systems &amp; Hospital Management</div>
-      <h1>Hospital and health-programme leadership, from planning to performance.</h1>
-      <p class="lead">Dr. Umar Nawaz advises hospitals, health trusts, government departments and development partners. Over ten years he has led district health programmes, run a tehsil hospital and, since 2026, administered a 100&#8209;bed private trust hospital through its opening and consolidation.</p>
+      <h1>Hospitals and health programmes that run on systems, not daily firefighting.</h1>
+      <p class="lead">Opening a facility, preparing for inspection, or losing money without knowing where? I am a physician who has run a tehsil hospital, led district health programmes and opened a 100&#8209;bed trust hospital. I put in place the systems that let your team deliver, so you no longer manage every detail yourself.</p>
       <div class="actions">
-        <a class="btn solid" href="#enquiries">Discuss an assignment</a>
+        <a class="btn solid" href="#enquiries">Arrange a confidential conversation</a>
         <a class="btn line" href="https://www.linkedin.com/in/umar-nawaz-a5271912b" target="_blank" rel="noopener">LinkedIn profile</a>
       </div>
       <div class="facts">
@@ -165,10 +172,24 @@ footer a{color:#8792a3}
   <span class="org">UNICEF</span><span class="org">JICA</span><span class="org">Qatar Charity</span><span class="org">The Challenge Initiative</span><span class="org">Greenstar</span><span class="org">Marie Stopes</span><span class="org">Rahnuma</span>
 </div></div>
 
-<section class="white" id="practice"><div class="wrap">
+<section class="white" id="situations"><div class="wrap">
+  <div class="label">When clients call</div>
+  <h2>Situations I am asked to resolve.</h2>
+  <p class="intro">Most assignments begin with one of these. Each has a practical way through.</p>
+  <div class="sits">
+    <div><h3>A new facility must open, but systems and staff are not ready.</h3><p>A phased opening plan, rosters, SOPs and day-one reporting — so you start serving patients and earning on schedule, not paying salaries for empty wards.</p></div>
+    <div><h3>An inspection or licence renewal is due.</h3><p>A gap assessment against PHC/MSDS standards, a committee with clear owners and a dated workplan — so you walk into the inspection with evidence, not promises.</p></div>
+    <div><h3>Revenue does not cover costs, and no one can say why.</h3><p>Cost per patient and per service, package prices checked against real costs — so you see which services lose money and set recovery targets the board can track.</p></div>
+    <div><h3>The board receives figures nobody trusts.</h3><p>One daily record, cross-checked against billing, cash and registers — so decisions rest on numbers that hold up when questioned.</p></div>
+    <div><h3>Programme targets are slipping.</h3><p>District supervision, data and accountability rebuilt around the indicators that count — so funders see progress, not explanations.</p></div>
+    <div><h3>Staff costs and disputes keep rising.</h3><p>Merit-based pay, clear attendance rules and an HR policy staff understand — so you keep skilled people and spend payroll where it earns its keep.</p></div>
+  </div>
+</div></section>
+
+<section id="practice"><div class="wrap">
   <div class="label">Practice</div>
   <h2>Two levels of the health system, one practice.</h2>
-  <p class="intro">Assignments span the individual health facility and the wider programme around it — the combination most health organisations in the region actually need, and few advisers cover.</p>
+  <p class="intro">Whether you run one hospital or a district programme, the work joins up: facility operations on one side, programme delivery on the other. Few advisers have managed both.</p>
   <div class="practice">
     <div>
       <h3>Health facilities</h3>
@@ -197,7 +218,7 @@ footer a{color:#8792a3}
   </div>
 </div></section>
 
-<section id="engagements"><div class="wrap">
+<section class="white" id="engagements"><div class="wrap">
   <div class="label">Selected engagements</div>
   <h2>Record of delivery.</h2>
   <p class="intro">Roles held and results achieved in public and private health systems in Punjab, Pakistan.</p>
@@ -245,14 +266,14 @@ footer a{color:#8792a3}
   </div>
 </div></section>
 
-<section class="white" id="approach"><div class="wrap">
+<section id="approach"><div class="wrap">
   <div class="label">Engagement</div>
   <h2>How assignments are structured.</h2>
   <div class="modes">
-    <div><h3>Advisory</h3><p>Ongoing counsel to boards, owners and senior management on decisions, risks and performance.</p></div>
-    <div><h3>Assessment</h3><p>An independent review of a facility or programme with a prioritised, costed plan.</p></div>
-    <div><h3>Implementation</h3><p>Design and installation of systems, with the staff who will run them trained and accountable.</p></div>
-    <div><h3>Interim leadership</h3><p>Hands-on administration for openings, transitions and turnarounds, through to handover.</p></div>
+    <div><h3>Assessment</h3><p>An independent review with a prioritised, costed plan, so you know what to fix first and what it will cost.</p></div>
+    <div><h3>Implementation</h3><p>Systems installed and staff trained to own them, so the gains last after the engagement ends.</p></div>
+    <div><h3>Interim leadership</h3><p>Hands-on administration through an opening, transition or turnaround, so services keep running while the fix is made.</p></div>
+    <div><h3>Advisory</h3><p>A senior second opinion on decisions, risks and performance, so your board acts on evidence rather than assumption.</p></div>
   </div>
   <div class="method">
     <div>
@@ -303,10 +324,11 @@ footer a{color:#8792a3}
   <div class="grid">
     <div>
       <div class="label">Enquiries</div>
-      <h2>Discuss an assignment.</h2>
-      <p>For advisory, assessment, implementation or interim leadership assignments with hospitals, health trusts, government departments and development partners — in Pakistan and the region.</p>
+      <h2>Tell me about your hospital or programme.</h2>
+      <p>Describe the situation in a few lines. I reply personally and will tell you plainly whether, and how, I can help. Conversations are confidential.</p>
+      <p style="font-size:15px">I take on a small number of assignments at a time, for hospitals, health trusts, government departments and development partners ready to act on what the work finds.</p>
       <div class="actions">
-        <a class="btn solid" href="mailto:unc890@gmail.com?subject=Assignment%20enquiry">Send an enquiry</a>
+        <a class="btn solid" href="mailto:unc890@gmail.com?subject=Hospital%20or%20programme%20enquiry">Send an enquiry</a>
         <a class="btn line" href="https://www.linkedin.com/in/umar-nawaz-a5271912b" target="_blank" rel="noopener">Connect on LinkedIn</a>
       </div>
     </div>
