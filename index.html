@@ -56,7 +56,7 @@ header.top.solid nav.menu a.cta{color:#fff;background:var(--navy);border-color:v
 .hero .promise{font-family:Newsreader,Georgia,serif;font-size:clamp(22px,2.2vw,28px);line-height:1.3;color:#fff;max-width:620px;margin:0 0 16px}
 .hero .lead{font-size:clamp(16px,1.4vw,18px);color:rgba(255,255,255,.78);max-width:620px}
 .hero figure{margin:0;position:relative;justify-self:end;width:100%;max-width:440px}
-.hero figure img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 25%;box-shadow:0 40px 80px -30px rgba(0,0,0,.6);animation:photoIn 1.4s var(--ease) both .2s}
+.hero figure img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 15%;box-shadow:0 40px 80px -30px rgba(0,0,0,.6);animation:photoIn 1.4s var(--ease) both .2s}
 .hero figure::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid rgba(201,164,103,.55);z-index:-1}
 .hero figcaption{position:absolute;left:-28px;bottom:28px;background:#fff;color:var(--navy);padding:14px 20px;font-size:13px;box-shadow:0 20px 40px -20px rgba(0,0,0,.5)}
 .hero figcaption b{display:block;font-family:Newsreader,Georgia,serif;font-size:17px;font-weight:500}
@@ -180,6 +180,33 @@ header.top.solid nav.menu a.cta{color:#fff;background:var(--navy);border-color:v
 .rec li{margin-bottom:6px}
 @media(max-width:860px){.rec{grid-template-columns:1fr;gap:8px}}
 
+/* journey gallery */
+.journey{background:var(--navy);color:#dfe4ec}
+.journey h2{color:#fff}.journey .label{color:#d2b47e}.journey .intro{color:#b9c2cf}
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin:-20px 0 34px}
+.filters button{--c:#fff;background:transparent;border:1px solid var(--c);color:var(--c);padding:8px 16px;font:500 14px Inter,sans-serif;cursor:pointer;transition:background .3s,color .3s}
+.filters button.on,.filters button:hover{background:var(--c);color:var(--navy)}
+.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:220px;grid-auto-flow:dense;gap:14px}
+.g{margin:0;position:relative;overflow:hidden;cursor:zoom-in;background:#0d1729}
+.g.wide{grid-column:span 2}.g.tall{grid-row:span 2}
+.g img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease),filter .6s}
+.g figcaption{position:absolute;inset:auto 0 0 0;padding:44px 16px 14px;font-size:13px;line-height:1.45;color:rgba(255,255,255,.86);background:linear-gradient(transparent,rgba(9,16,30,.92));transform:translateY(38%);opacity:.0;transition:transform .5s var(--ease),opacity .5s}
+.g figcaption b{display:block;font:500 16px Newsreader,Georgia,serif;color:#fff;margin-bottom:2px}
+.g:hover img{transform:scale(1.06)}
+.g:hover figcaption,.g:focus-within figcaption{transform:none;opacity:1}
+.g.hide{display:none}
+@media(hover:none){.g figcaption{transform:none;opacity:1}}
+@media(max-width:900px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:180px}}
+@media(max-width:520px){.gallery{grid-template-columns:1fr;grid-auto-rows:240px}.g.wide{grid-column:auto}.g.tall{grid-row:span 1}}
+.lightbox{position:fixed;inset:0;z-index:100;background:rgba(6,11,22,.94);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .35s}
+.lightbox.open{opacity:1;pointer-events:auto}
+.lightbox figure{margin:0;max-width:min(1100px,88vw);text-align:center}
+.lightbox img{max-width:100%;max-height:78vh;margin:0 auto;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.lightbox figcaption{color:#cfd6e2;font-size:15px;margin-top:14px}
+.lightbox figcaption b{display:block;font:500 20px Newsreader,Georgia,serif;color:#fff}
+.lightbox button{position:absolute;background:transparent;border:1px solid rgba(255,255,255,.35);color:#fff;width:46px;height:46px;font-size:20px;cursor:pointer}
+.lb-x{top:20px;right:20px}.lb-p{left:20px;top:50%}.lb-n{right:20px;top:50%}
+
 /* engagement */
 .split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
 @media(max-width:860px){.split{grid-template-columns:1fr;gap:36px}}
@@ -246,6 +273,7 @@ footer a{color:#7f8a9c}
     <a href="#situations">Situations</a>
     <a href="#practice">Practice</a>
     <a href="#record">Record</a>
+    <a href="#journey">Journey</a>
     <a href="#engage">Engagement</a>
     <a class="cta" href="#enquiries">Enquiries</a>
   </nav>
@@ -311,7 +339,7 @@ footer a{color:#7f8a9c}
     </div>
   </div>
   <figure>
-    <img src="img/portrait.jpg" alt="Dr. Umar Nawaz" width="960" height="1200">
+    <img src="img/portrait.jpg" alt="Dr. Umar Nawaz presenting at Faletti's Hotel, Lahore" width="675" height="844">
   </figure>
   </div>
   <a class="scrollcue" href="#situations" aria-label="Scroll down"></a>
@@ -348,7 +376,7 @@ footer a{color:#7f8a9c}
     <span class="ink"></span>
   </div>
   <div class="panel show" id="p1" role="tabpanel" aria-labelledby="t1">
-    <figure><img src="img/facility.jpg" alt="A surgical team operating in a Pakistani hospital theatre" loading="lazy"></figure>
+    <figure><img src="img/facility.jpg" alt="Dr. Umar Nawaz inspecting a health facility with management and support teams" loading="lazy"></figure>
     <div>
       <div class="who">For hospitals, trust and private facilities, and outsourced public facilities.</div>
       <dl>
@@ -362,7 +390,7 @@ footer a{color:#7f8a9c}
     </div>
   </div>
   <div class="panel" id="p2" role="tabpanel" aria-labelledby="t2">
-    <figure><img src="img/programmes.jpg" alt="A doctor checking a patient's blood pressure in a Pakistani clinic" loading="lazy"></figure>
+    <figure><img src="img/programmes.jpg" alt="Dr. Umar Nawaz monitoring a vaccination team in the field" loading="lazy"></figure>
     <div>
       <div class="who">For government departments, development partners and NGOs.</div>
       <dl>
@@ -390,6 +418,39 @@ footer a{color:#7f8a9c}
   </div>
 </div></section>
 
+<section class="journey" id="journey"><div class="wrap">
+  <div class="label rv">Journey</div>
+  <h2 class="rv d1">In the field, in facilities, in the training room.</h2>
+  <p class="intro rv d2">A decade of work across Punjab's health system — from cold-chain checks and vaccination teams to district reviews, partner workshops and public health camps.</p>
+  <div class="filters rv d2" role="tablist">
+    <button class="on" data-f="all">All</button>
+    <button data-f="field" style="--c:#5fc1b0">Field &amp; immunisation</button>
+    <button data-f="facility" style="--c:#c9a467">Facilities</button>
+    <button data-f="training" style="--c:#8dbbea">Training &amp; partners</button>
+    <button data-f="outreach" style="--c:#e8957a">Outreach</button>
+  </div>
+  <div class="gallery">
+    <figure class="g rv tall" data-cat="field"><img src="img/journey/cold-chain.jpg" alt="" loading="lazy"><figcaption><b>Cold-chain inspection</b>Checking vaccine storage and records at a health facility.</figcaption></figure>
+    <figure class="g rv d1 wide" data-cat="training"><img src="img/journey/nashonuma.jpg" alt="" loading="lazy"><figcaption><b>BISP Nashonuma Programme, January 2024</b>Trickle-down training for facilitation staff, organised by the IRMNCH &amp; Nutrition Programme Faisalabad with UNICEF Punjab.</figcaption></figure>
+    <figure class="g rv d2" data-cat="outreach"><img src="img/journey/clinic-on-wheels.jpg" alt="" loading="lazy"><figcaption><b>Clinic on Wheels</b>Chief Minister's mobile clinic for urban areas — launch supervision, Faisalabad.</figcaption></figure>
+    <figure class="g rv tall" data-cat="field"><img src="img/journey/vaccination.jpg" alt="" loading="lazy"><figcaption><b>Field monitoring</b>Checking a vaccination team's carrier and cold box during a campaign.</figcaption></figure>
+    <figure class="g rv d1" data-cat="facility"><img src="img/journey/bhu-team.jpg" alt="" loading="lazy"><figcaption><b>Basic Health Unit</b>With a primary care facility team during a supervisory visit.</figcaption></figure>
+    <figure class="g rv d2" data-cat="training"><img src="img/journey/lhw-training.jpg" alt="" loading="lazy"><figcaption><b>Lady Health Worker training</b>Family planning capacity building with The Challenge Initiative.</figcaption></figure>
+    <figure class="g rv wide" data-cat="training"><img src="img/journey/sbcc.jpg" alt="" loading="lazy"><figcaption><b>Social and Behaviour Change Strategy for Punjab</b>Workshop with the Population Welfare Department, Pathfinder and the Gates Foundation.</figcaption></figure>
+    <figure class="g rv d1" data-cat="facility"><img src="img/journey/facility-inspection.jpg" alt="" loading="lazy"><figcaption><b>Facility inspection</b>Walking a facility with management and support-service teams.</figcaption></figure>
+    <figure class="g rv d2" data-cat="outreach"><img src="img/journey/health-mela.jpg" alt="" loading="lazy"><figcaption><b>Free Model Health Mela</b>Public health camp with district officials and partners.</figcaption></figure>
+    <figure class="g rv" data-cat="training"><img src="img/journey/presenting.jpg" alt="" loading="lazy"><figcaption><b>Training session</b>Presenting to district health staff.</figcaption></figure>
+    <figure class="g rv d1 wide" data-cat="training"><img src="img/journey/review-meeting.jpg" alt="" loading="lazy"><figcaption><b>District review meeting</b>Integrated services review with programme managers and partners.</figcaption></figure>
+  </div>
+</div></section>
+
+<div class="lightbox" id="lb" aria-hidden="true">
+  <button class="lb-x" aria-label="Close">×</button>
+  <button class="lb-p" aria-label="Previous">←</button>
+  <figure><img alt=""><figcaption></figcaption></figure>
+  <button class="lb-n" aria-label="Next">→</button>
+</div>
+
 <section class="white" id="engage"><div class="wrap">
   <div class="split">
     <div>
@@ -402,7 +463,7 @@ footer a{color:#7f8a9c}
         <div class="mode"><h3>Advisory</h3><p>A senior second opinion on decisions, risks and performance, so your board acts on evidence rather than assumption.</p></div>
       </div>
     </div>
-    <figure class="rv d2"><img src="img/meeting.jpg" alt="A management team in a planning meeting" loading="lazy"></figure>
+    <figure class="rv d2"><img src="img/meeting.jpg" alt="A divisional health review meeting in Faisalabad" loading="lazy"></figure>
   </div>
   <div class="steps" id="steps">
     <span class="bar"></span>
@@ -432,7 +493,7 @@ footer a{color:#7f8a9c}
     <div>Based in Faisalabad, Pakistan</div>
   </div>
 </div></section>
-<footer><div class="wrap"><span>© 2026 Dr. Umar Nawaz · Health Systems &amp; Hospital Management</span><span>Photography: Umesa Memon, Imadclicks (<a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a>) · UK Black Tech (<a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>) · Logos are trademarks of their owners</span></div></footer>
+<footer><div class="wrap"><span>© 2026 Dr. Umar Nawaz · Health Systems &amp; Hospital Management</span><span>Photographs from Dr. Nawaz's own field and programme work · Logos are trademarks of their owners</span></div></footer>
 
 <script>
 (function(){
@@ -504,6 +565,30 @@ footer a{color:#7f8a9c}
     var x0 = null; box.addEventListener('touchstart', function(e){ x0 = e.touches[0].clientX; }, {passive:true});
     box.addEventListener('touchend', function(e){ if(x0===null) return; var dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 40) go(cur + (dx < 0 ? 1 : -1)); x0 = null; });
     root.style.setProperty('--sc', colors[0]); restart();
+  })();
+  // journey: filters + lightbox
+  (function(){
+    var figs = [].slice.call(document.querySelectorAll('.g')), btns = [].slice.call(document.querySelectorAll('.filters button'));
+    btns.forEach(function(b){ b.addEventListener('click', function(){
+      btns.forEach(function(x){ x.classList.toggle('on', x===b); });
+      var f = b.getAttribute('data-f');
+      figs.forEach(function(g){ g.classList.toggle('hide', f!=='all' && g.getAttribute('data-cat')!==f); g.classList.add('in'); });
+    }); });
+    var lb = document.getElementById('lb'), lbImg = lb.querySelector('img'), lbCap = lb.querySelector('figcaption'), idx = 0;
+    function visible(){ return figs.filter(function(g){ return !g.classList.contains('hide'); }); }
+    function show(i){ var v = visible(); idx = (i + v.length) % v.length; var g = v[idx];
+      lbImg.src = g.querySelector('img').src; lbCap.innerHTML = g.querySelector('figcaption').innerHTML;
+      lb.classList.add('open'); lb.setAttribute('aria-hidden','false'); }
+    function close(){ lb.classList.remove('open'); lb.setAttribute('aria-hidden','true'); }
+    figs.forEach(function(g){ g.tabIndex = 0;
+      g.addEventListener('click', function(){ show(visible().indexOf(g)); });
+      g.addEventListener('keydown', function(e){ if(e.key==='Enter') show(visible().indexOf(g)); }); });
+    lb.querySelector('.lb-x').addEventListener('click', close);
+    lb.querySelector('.lb-p').addEventListener('click', function(){ show(idx-1); });
+    lb.querySelector('.lb-n').addEventListener('click', function(){ show(idx+1); });
+    lb.addEventListener('click', function(e){ if(e.target===lb) close(); });
+    document.addEventListener('keydown', function(e){ if(!lb.classList.contains('open')) return;
+      if(e.key==='Escape') close(); if(e.key==='ArrowRight') show(idx+1); if(e.key==='ArrowLeft') show(idx-1); });
   })();
   // duplicate the logo row once so the marquee loops seamlessly
   var tr = document.getElementById('track'); tr.innerHTML += tr.innerHTML;
