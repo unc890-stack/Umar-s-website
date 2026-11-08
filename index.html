@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr. Umar Nawaz</title>
+<meta name="description" content="Dr. Umar Nawaz — MBBS, MPH. Public health and hospital administrator building health systems that work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f4ef; --surface:#fffdf8; --ink:#1d2421; --muted:#5d6762; --line:#e2ddd2;
+  --accent:#1f6f5c; --accent-soft:#e3efe9; --warm:#b4532a;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121614; --surface:#1a201d; --ink:#e9ece9; --muted:#9aa59f; --line:#2a322e;
+    --accent:#5fbf9f; --accent-soft:#1e2e28; --warm:#e08a5f;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121614; --surface:#1a201d; --ink:#e9ece9; --muted:#9aa59f; --line:#2a322e;
+  --accent:#5fbf9f; --accent-soft:#1e2e28; --warm:#e08a5f;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-family:Fraunces,serif;font-weight:650;font-size:19px;color:var(--ink);text-decoration:none}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+nav ul a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500}
+nav ul a:hover{color:var(--ink)}
+@media(max-width:720px){nav ul{display:none}}
+header.hero{padding:88px 0 64px}
+.eyebrow{color:var(--accent);font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+h1{font-family:Fraunces,serif;font-weight:650;font-size:clamp(40px,7vw,68px);line-height:1.05;margin:14px 0 18px;letter-spacing:-.01em}
+.lead{font-size:clamp(18px,2.3vw,21px);color:var(--muted);max-width:680px;margin:0}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-block;padding:12px 20px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:1px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--bg)}
+.btn.ghost{color:var(--accent)}
+.creds{display:flex;gap:10px;flex-wrap:wrap;margin-top:34px}
+.chip{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:13px;color:var(--muted)}
+section{padding:64px 0;border-top:1px solid var(--line)}
+h2{font-family:Fraunces,serif;font-weight:650;font-size:clamp(28px,4vw,38px);margin:0 0 10px}
+.sub{color:var(--muted);margin:0 0 36px;max-width:640px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px}
+.card h3{margin:0 0 8px;font-size:17px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.num{font-family:Fraunces,serif;font-size:40px;color:var(--accent);line-height:1}
+.stats{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));margin-bottom:28px}
+.stats .card p{margin-top:8px}
+.timeline{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}
+.timeline li{position:relative;padding:0 0 26px 26px}
+.timeline li::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--surface);border:2px solid var(--accent)}
+.timeline li.now::before{background:var(--accent)}
+.timeline strong{display:block;font-size:17px}
+.timeline span{color:var(--muted);font-size:15px}
+.two{display:grid;gap:40px;grid-template-columns:1.1fr .9fr}
+@media(max-width:820px){.two{grid-template-columns:1fr}}
+blockquote{margin:0;padding:24px 26px;background:var(--accent-soft);border-radius:16px;font-family:Fraunces,serif;font-size:21px;line-height:1.45}
+blockquote cite{display:block;margin-top:12px;font:500 14px Inter,sans-serif;color:var(--muted);font-style:normal}
+.tag{display:inline-block;font-size:12px;font-weight:600;color:var(--warm);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+ul.ticks{margin:0;padding:0;list-style:none}
+ul.ticks li{padding:6px 0 6px 26px;position:relative;color:var(--muted)}
+ul.ticks li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
+.contact{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:40px;text-align:center}
+footer{padding:30px 0 50px;color:var(--muted);font-size:13px;text-align:center}
+.toggle{background:none;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:6px 12px;cursor:pointer;font:500 13px Inter,sans-serif}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="brand" href="#top">Dr. Umar Nawaz</a>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#initiatives">Initiatives</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="toggle" id="themeBtn" aria-label="Toggle colour theme">Theme</button>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+  <div class="eyebrow">Public health · Hospital administration · Health systems</div>
+  <h1>I build health systems<br>that actually run.</h1>
+  <p class="lead">Doctor turned health manager. Eight years running facilities and programmes in the Punjab Health Department, now leading the revamp of a 100-bed mother and child hospital — and turning what works into a consultancy for hospitals, trusts and outsourced facilities.</p>
+  <div class="cta">
+    <a class="btn primary" href="#contact">Work with me</a>
+    <a class="btn ghost" href="#work">See the work</a>
+  </div>
+  <div class="creds">
+    <span class="chip">MBBS — University of Lahore</span>
+    <span class="chip">MPH — Times Institute, Multan</span>
+    <span class="chip">8+ years, Punjab Health Department</span>
+    <span class="chip">Based in Faisalabad, Pakistan</span>
+  </div>
+</div></header>
+
+<section id="about"><div class="wrap two">
+  <div>
+    <h2>About</h2>
+    <p>I started as a medical officer at a Basic Health Unit and moved step by step into management — district health offices, a tehsil hospital as Medical Superintendent, and district-level maternal, newborn and child health programmes.</p>
+    <p>Since May 2026 I have been Administrator of a 100-bed gynaecology and paediatrics hospital in Jhang, with ICU and NICU, run by a charitable trust. I joined on day one of its revamp: opening OPD, then emergency, theatres and wards, and then building the systems that let a new hospital report, comply and improve.</p>
+    <p>What I care about: making the next person's job easier. If you learned something the hard way, it is on you to make it easier for whoever comes next. That is how systems, professions and nations grow.</p>
+  </div>
+  <div>
+    <blockquote>“It's not a building problem. The real work is getting people to use the system every day — and leaders to look at the numbers.”<cite>— a lesson from the hospital revamp</cite></blockquote>
+  </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <h2>Career path</h2>
+  <p class="sub">From primary care to running a hospital.</p>
+  <ul class="timeline">
+    <li class="now"><strong>Administrator — 100-bed mother &amp; child hospital, Jhang</strong><span>Trust-run, gynae and paediatrics with ICU/NICU · since May 2026</span></li>
+    <li><strong>District Coordinator, IRMNCH — District Health Authority, Faisalabad</strong><span>Integrated maternal, newborn and child health and nutrition programme</span></li>
+    <li><strong>Medical Superintendent — THQ Hospital, Chak Jhumra</strong><span>Achieved Universal Health Insurance targets</span></li>
+    <li><strong>Deputy District Health Officer — DHA Faisalabad</strong><span>Outsourcing of health facilities · Clinic on Wheels</span></li>
+    <li><strong>Medical Officer — DHQ Hospital Faisalabad, DDHO office Sangla Hill, BHU Bhulair</strong><span>Tertiary, district and primary care</span></li>
+  </ul>
+</div></section>
+
+<section id="work"><div class="wrap">
+  <h2>Selected work: a hospital revamp</h2>
+  <p class="sub">A new hospital, commissioned and systematised in six months. Documented as a case study — problem, what we did, results, lessons.</p>
+  <div class="stats">
+    <div class="card"><div class="num">6 mo</div><p>From first OPD to full services, then a full systems build-out</p></div>
+    <div class="card"><div class="num">15</div><p>Connected reporting systems: daily stats, dashboard, complaints, HR, quality, finance</p></div>
+    <div class="card"><div class="num">42% → 0%</div><p>Complaints left without a department action, after the new complaints system</p></div>
+    <div class="card"><div class="num">10</div><p>Functional areas in a structured PHC/MSDS compliance programme</p></div>
+  </div>
+  <div class="grid">
+    <div class="card"><span class="tag">Data &amp; reporting</span><h3>Daily stats to a live dashboard</h3><p>Paper daily reports moved into one data log, per-metric pages and a management dashboard, with rules for holidays and working days so trends stay honest.</p></div>
+    <div class="card"><span class="tag">Patient experience</span><h3>Complaints &amp; grievance system</h3><p>A policy, locked response timelines, escalation levels, positive-feedback logging and monthly department reviews.</p></div>
+    <div class="card"><span class="tag">Quality</span><h3>PHC / MSDS compliance</h3><p>Committee, focal persons for each functional area, a phased workplan and weekly progress reporting to leadership.</p></div>
+    <div class="card"><span class="tag">People</span><h3>HR policy &amp; merit pay framework</h3><p>An experience-points matrix, merit levels, a service-commitment scheme for critical-care staff, and a staff handbook in English and Urdu.</p></div>
+    <div class="card"><span class="tag">Finance</span><h3>Costing &amp; source tie-outs</h3><p>Step-down cost per patient, phased cost-recovery targets, and a rule that every figure is cross-checked against at least one other source.</p></div>
+    <div class="card"><span class="tag">Front desk</span><h3>Billing at the counter</h3><p>A mobile web form that puts each department's money beside its patient count, with a reviewer check — reconciliation built in at entry.</p></div>
+  </div>
+</div></section>
+
+<section id="services"><div class="wrap">
+  <h2>Consultancy services</h2>
+  <p class="sub">For private and trust hospitals, outsourced public facilities and NGO-run programmes — in Pakistan and for overseas-funded hospitals.</p>
+  <div class="grid">
+    <div class="card"><h3>Operations systems setup</h3><p>Data collection, daily reporting and a management dashboard your team will actually use.</p></div>
+    <div class="card"><h3>Quality &amp; licensing readiness</h3><p>PHC/MSDS gap assessment, committees, SOP sets (e.g. infection prevention), audits and indicators.</p></div>
+    <div class="card"><h3>Patient experience</h3><p>Complaints and feedback systems with timelines, escalation and monthly department reviews.</p></div>
+    <div class="card"><h3>Costing &amp; financial clarity</h3><p>Cost per patient and per service, package pricing checks and plain-language finance reports for boards.</p></div>
+    <div class="card"><h3>HR &amp; payroll systems</h3><p>Attendance-to-payroll rules, merit pay scales, HR policy manuals and staff handbooks.</p></div>
+    <div class="card"><h3>Commissioning support</h3><p>Opening or turning around a facility: sequencing services, first-30-days checklists, reporting from day one.</p></div>
+  </div>
+</div></section>
+
+<section id="initiatives"><div class="wrap">
+  <h2>Initiatives</h2>
+  <p class="sub">Work alongside the hospital, aimed at the people who come next.</p>
+  <div class="grid">
+    <div class="card"><span class="tag">Learning programme</span><h3>Health Guide</h3><p>A practical programme — later an LMS — that helps new medical graduates cover the administrative gaps of running a BHU, RHC or private clinic. Starting with a free “First 30 Days as Facility In-Charge” checklist.</p></div>
+    <div class="card"><span class="tag">Mentoring</span><h3>Lessons for the Next Administrator</h3><p>Honest, practical guidance for new graduates and stuck administrators in management roles — including the financial reality — showing administration and public health as careers as valuable as clinical practice.</p></div>
+    <div class="card"><span class="tag">In development</span><h3>An academy for AI-assisted teams</h3><p>Training AI assistants like professionals — curriculum, real cases, exams — for quality, finance and operations reporting, so small hospitals get senior-level support.</p></div>
+  </div>
+</div></section>
+
+<section id="learning"><div class="wrap two">
+  <div>
+    <h2>Always learning</h2>
+    <p class="sub">A deliberate path, matched to time and budget.</p>
+    <ul class="ticks">
+      <li>Fellowship in healthcare quality (ISQua) — planned, 2026</li>
+      <li>Certified Professional in Healthcare Quality (CPHQ) — planned, 2027</li>
+      <li>Lean Six Sigma Green Belt — planned, 2027</li>
+      <li>Later: executive certificate in hospital management, then a postgraduate diploma or health MBA</li>
+    </ul>
+  </div>
+  <div>
+    <h2>How I work</h2>
+    <ul class="ticks">
+      <li>All options and a recommendation on the table first</li>
+      <li>Measure before and after — numbers, not adjectives</li>
+      <li>Systems over heroics: one owner, one form, one review rhythm</li>
+      <li>Patient and staff confidentiality, always</li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <div class="contact">
+    <h2>Let's talk</h2>
+    <p class="sub" style="margin:0 auto 24px">Running a hospital, a trust facility or a health programme that needs systems that work? I'd be glad to hear about it.</p>
+    <a class="btn primary" href="mailto:unc890@gmail.com">Email me</a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">© 2026 Dr. Umar Nawaz · Faisalabad, Pakistan</div></footer>
+
+<script>
+(function(){
+  var root=document.documentElement, key='theme';
+  try{var s=localStorage.getItem(key); if(s) root.setAttribute('data-theme',s);}catch(e){}
+  document.getElementById('themeBtn').addEventListener('click',function(){
+    var dark = root.getAttribute('data-theme') ? root.getAttribute('data-theme')==='dark'
+             : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var next = dark ? 'light' : 'dark';
+    root.setAttribute('data-theme',next);
+    try{localStorage.setItem(key,next);}catch(e){}
+  });
+})();
+</script>
+</body>
+</html>
