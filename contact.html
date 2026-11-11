@@ -25,7 +25,6 @@
     <a href="index.html#help">How I help</a>
     <a href="index.html#about">About</a>
     <a href="index.html#work">My work</a>
-    <a href="index.html#photos">Photos</a>
     <a class="btn red" href="contact.html">Talk to me</a>
   </nav>
 </div></header>
@@ -35,7 +34,7 @@
   <div class="wrap">
     <div class="eyebrow">Contact</div>
     <h1>Let's talk.</h1>
-    <p>Tell me about your hospital or health program. I read every message myself and reply in person.</p>
+    <p>Tell me about your hospital or health program. Write here or on WhatsApp. I read every message and reply myself.</p>
     <div class="crumbs"><a href="index.html">Home</a> &nbsp;/&nbsp; Contact</div>
   </div>
 </section>
@@ -48,9 +47,9 @@
     <form id="cform" novalidate>
       <div class="fields">
         <div class="field"><label for="f-name">Your name <span>*</span></label><input id="f-name" name="name" required autocomplete="name"></div>
-        <div class="field"><label for="f-org">Hospital or organisation</label><input id="f-org" name="org" autocomplete="organization"></div>
+        <div class="field"><label for="f-org">Hospital or organization</label><input id="f-org" name="org" autocomplete="organization"></div>
         <div class="field"><label for="f-email">Your email <span>*</span></label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
-        <div class="field"><label for="f-phone">Phone <em>(if you want a call)</em></label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+        <div class="field"><label for="f-phone">WhatsApp number <em>(if you want a call)</em></label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
         <div class="field full"><label for="f-topic">What do you need help with?</label>
           <select id="f-topic" name="topic">
             <option>Opening a new hospital</option>
@@ -64,10 +63,10 @@
         <div class="field full"><label for="f-msg">Your message <span>*</span></label><textarea id="f-msg" name="message" required placeholder="What is happening, and what would you like to change?"></textarea></div>
       </div>
       <div class="form-foot">
-        <button class="btn red" type="submit">Send message</button>
-        <small>Your email app will open with the message ready. Just press send.</small>
+        <button class="btn red" type="submit">Send by email</button><button class="btn line" type="button" id="wa-send">Send on WhatsApp</button>
+        <small>Your email app or WhatsApp will open with the message ready. Just press send.</small>
       </div>
-      <div class="sent" id="sent" role="status">Thank you. Your email app should now be open with your message. If it did not open, write to me at unc890@gmail.com.</div>
+      <div class="sent" id="sent" role="status">Thank you. Your email app should now be open with your message. If it did not open, write to me at unc890@gmail.com or on WhatsApp at 0300 0400494.</div>
     </form>
   </div>
 
@@ -84,10 +83,10 @@
       <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
       <span><b>Based in</b><span>Faisalabad, Pakistan. I work across Punjab and online.</span></span>
     </div>
-    <div class="i-card dark rv d2">
-      <span class="ic"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span>
-      <span><b>Want a call?</b><span>Add your phone number and a good time. I will call you.</span></span>
-    </div>
+    <a class="i-card dark rv d2" href="https://wa.me/923000400494" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg></span>
+      <span><b>WhatsApp</b><span>0300 0400494. Send a message or ask for a call.</span></span>
+    </a>
   </aside>
 
 </div></section>
@@ -95,11 +94,11 @@
 <section class="soft"><div class="wrap">
   <span class="kicker rv">What happens next</span>
   <h2 class="rv d1">Three easy steps.</h2>
-  <p class="sub rv d2">No cost and no promise needed to start.</p>
+  <p class="sub rv d2">No promise needed to start.</p>
   <div class="next" style="counter-reset:s">
     <div class="st rv"><div class="top"><span class="ic"><svg viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span><span class="num"></span></div><h3>I read your message</h3><p>I read it myself, not a team or a robot.</p></div>
     <div class="st rv d1"><div class="top"><span class="ic"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><span class="num"></span></div><h3>I reply with a few questions</h3><p>So I understand your hospital or program well.</p></div>
-    <div class="st rv d2"><div class="top"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span><span class="num"></span></div><h3>We set a short call</h3><p>We talk for 30 minutes and see if I can help.</p></div>
+    <div class="st rv d2"><div class="top"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span><span class="num"></span></div><h3>We talk on WhatsApp</h3><p>A short chat or call to see if I can help.</p></div>
   </div>
 </div></section>
 
@@ -109,17 +108,19 @@
       <a class="logo" href="index.html"><img class="mark" src="img/logo.svg" alt="" width="42" height="42"><span><b>Dr. Umar Nawaz</b><small>MBBS, MPH</small></span></a>
       <p>Doctor and health consultant. I help hospitals and health programs work well.</p>
       <div class="social">
+        <a href="https://wa.me/923000400494" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg></a>
         <a href="https://www.linkedin.com/in/umar-nawaz-a5271912b" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
         <a href="mailto:unc890@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
       </div>
     </div>
     <div>
       <h4>Pages</h4>
-      <ul><li><a href="index.html#help">How I help</a></li><li><a href="index.html#about">About me</a></li><li><a href="index.html#work">My work</a></li><li><a href="index.html#photos">Photos</a></li><li><a href="index.html#how">How we work</a></li><li><a href="contact.html">Contact</a></li></ul>
+      <ul><li><a href="index.html#help">How I help</a></li><li><a href="index.html#about">About me</a></li><li><a href="index.html#work">My work</a></li><li><a href="index.html#journey">Photo journey</a></li><li><a href="index.html#how">How we work</a></li><li><a href="contact.html">Contact</a></li></ul>
     </div>
     <div>
       <h4>Contact</h4>
       <ul class="f-contact">
+        <li><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg><a href="https://wa.me/923000400494" target="_blank" rel="noopener">WhatsApp 0300 0400494</a></li>
         <li><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:unc890@gmail.com">unc890@gmail.com</a></li>
         <li><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg><a href="https://www.linkedin.com/in/umar-nawaz-a5271912b" target="_blank" rel="noopener">LinkedIn profile</a></li>
         <li><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Faisalabad, Pakistan</span></li>
@@ -156,10 +157,17 @@
     if (bad) { bad.focus(); return; }
     var v = function(id){ return document.getElementById(id).value.trim(); };
     var subject = 'Enquiry: ' + v('f-topic') + (v('f-org') ? ' (' + v('f-org') + ')' : '');
-    var body = 'Name: ' + v('f-name') + '\nOrganisation: ' + (v('f-org') || '-') + '\nEmail: ' + v('f-email') +
+    var body = 'Name: ' + v('f-name') + '\nOrganization: ' + (v('f-org') || '-') + '\nEmail: ' + v('f-email') +
                '\nPhone: ' + (v('f-phone') || '-') + '\nTopic: ' + v('f-topic') + '\n\n' + v('f-msg');
     window.location.href = 'mailto:unc890@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
     sent.classList.add('show');
+  });
+  document.getElementById('wa-send').addEventListener('click', function(){
+    var v = function(id){ return document.getElementById(id).value.trim(); }, need = ['f-name','f-msg'], bad = null;
+    need.forEach(function(id){ var f = document.getElementById(id), ok = !!f.value.trim(); f.style.borderColor = ok ? '' : 'var(--red)'; if (!ok && !bad) bad = f; });
+    if (bad) { bad.focus(); return; }
+    var text = 'Hello Dr. Umar. I am ' + v('f-name') + (v('f-org') ? ' from ' + v('f-org') : '') + '.\nTopic: ' + v('f-topic') + '\n\n' + v('f-msg');
+    window.open('=' + encodeURIComponent(text), '_blank', 'noopener');
   });
 })();
 </script>

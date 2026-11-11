@@ -139,20 +139,44 @@ header.over .logo small{color:rgba(255,255,255,.7)}
 .step-t .where{color:var(--grey);font-size:15px;margin-bottom:6px}
 .step-t p{margin:0}
 
-/* gallery */
-.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
-.filters button{background:#fff;border:2px solid var(--line);color:var(--grey);padding:9px 18px;border-radius:999px;font:600 15px Inter,sans-serif;cursor:pointer;transition:all .25s}
-.filters button.on,.filters button:hover{border-color:var(--red);color:#fff;background:var(--red)}
-.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:230px;grid-auto-flow:dense;gap:14px}
-.g{margin:0;position:relative;overflow:hidden;border-radius:16px;cursor:zoom-in;background:#eee}
-.g.wide{grid-column:span 2}.g.tall{grid-row:span 2}
-.g img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
-.g:hover img{transform:scale(1.05)}
-.g figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 16px 14px;color:#fff;font-size:14px;line-height:1.4;background:linear-gradient(transparent,rgba(30,8,12,.85))}
-.g figcaption b{display:block;font-size:16px}
-.g.hide{display:none}
-@media(max-width:900px){.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:190px}}
-@media(max-width:520px){.gallery{grid-template-columns:1fr;grid-auto-rows:250px}.g.wide{grid-column:auto}.g.tall{grid-row:auto}}
+/* My work tabs: Timeline | Photo journey */
+.wtabs{display:inline-flex;gap:4px;padding:5px;background:var(--red-soft);border-radius:999px;margin:6px 0 34px}
+.wtabs button{border:0;background:transparent;color:var(--red-dark);padding:10px 22px;border-radius:999px;font:600 15px Inter,sans-serif;cursor:pointer;transition:background .25s,color .25s,box-shadow .25s;display:inline-flex;align-items:center;gap:8px}
+.wtabs button:hover{color:var(--red)}
+.wtabs button.on{background:#fff;color:var(--red);box-shadow:0 6px 16px -8px rgba(125,12,29,.45)}
+.wtabs .cnt{font-size:12px;background:var(--red);color:#fff;border-radius:999px;padding:1px 8px}
+.wpanel[hidden]{display:none}
+.wpanel.on{animation:wfade .45s var(--ease)}
+@keyframes wfade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.peek{margin-top:6px;background:none;border:0;padding:0;color:var(--red);font:600 15px Inter,sans-serif;cursor:pointer}
+.peek:hover{text-decoration:underline}
+.jintro{color:var(--grey);margin:0 0 18px;max-width:640px}
+/* journey filters + story cards */
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px}
+.filters button{--c:var(--red);background:#fff;border:2px solid var(--line);color:var(--grey);padding:8px 16px;border-radius:999px;font:600 14px Inter,sans-serif;cursor:pointer;transition:all .25s}
+.filters button:hover{border-color:var(--c);color:var(--c)}
+.filters button.on{border-color:var(--c);color:#fff;background:var(--c)}
+.jgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.jc{margin:0;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;cursor:zoom-in;display:flex;flex-direction:column;transition:transform .35s var(--ease),box-shadow .35s}
+.jc:hover,.jc:focus-visible{transform:translateY(-4px);box-shadow:0 18px 34px -18px rgba(125,12,29,.4);outline:none}
+.jc.hide{display:none}
+.ji{aspect-ratio:4/3;overflow:hidden;background:#f1eaeb}
+.ji img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.jc:hover .ji img{transform:scale(1.04)}
+.jc figcaption{padding:16px 18px 20px;font-size:15px;line-height:1.55}
+.jc figcaption b{display:block;font:600 18px/1.3 Lora,serif;color:var(--ink);margin:8px 0 4px}
+.jc figcaption em{display:block;font-style:normal;font-size:13px;color:var(--grey);margin-bottom:8px}
+.jc figcaption p{margin:0;color:#444}
+.jtag{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.02em;padding:3px 10px;border-radius:999px;background:var(--red-soft);color:var(--red-dark)}
+.jc[data-ch="doctor"] .jtag{background:#e6f3f1;color:#1f7a6d}
+.jc[data-ch="ddho"] .jtag{background:#e9f0f8;color:#2d5f9a}
+.jc[data-ch="ms"] .jtag{background:#f8efe4;color:#8a561d}
+.lightbox .jtag{display:none}
+.lightbox figcaption b{display:block;font:600 19px Lora,serif;color:#fff}
+.lightbox figcaption em{display:block;font-style:normal;font-size:14px;opacity:.8;margin:2px 0 6px}
+.lightbox figcaption p{margin:0 auto;max-width:640px;font-size:15px}
+@media(max-width:960px){.jgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.jgrid{grid-template-columns:1fr}.wtabs{display:flex}.wtabs button{flex:1;justify-content:center;padding:10px 8px;white-space:nowrap;font-size:14px}}
 .lightbox{position:fixed;inset:0;z-index:100;background:rgba(20,6,9,.94);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s}
 .lightbox.open{opacity:1;pointer-events:auto}
 .lightbox figure{margin:0;max-width:min(1200px,90vw);text-align:center}
@@ -288,3 +312,23 @@ header .wrap{gap:12px}
 }
 @media(max-width:360px){.logo b{font-size:15.5px}nav .btn{padding:8px 13px;font-size:13px}}
 @media(max-width:430px){.hero h1{font-size:clamp(34px,10.4vw,44px)}.hero .eyebrow{font-size:11.5px;letter-spacing:.12em;gap:10px}.hero .eyebrow::before{width:28px}}
+
+/* WhatsApp icon is a filled shape */
+.f-contact svg[fill="currentColor"]{fill:#e46a7d;stroke:none}
+.i-card .ic svg[fill="currentColor"],.social svg[fill="currentColor"]{fill:currentColor;stroke:none}
+.form-foot .btn.line{cursor:pointer;font-family:inherit}
+.form-foot .btn{cursor:pointer;font-family:inherit}
+
+/* timeline details */
+.step-t ul{margin:10px 0 0;padding-left:20px;color:var(--ink)}
+.step-t li{margin:4px 0;font-size:16px;line-height:1.55}
+.step-t li::marker{color:var(--red)}
+.step-t .learn{margin-top:12px;padding:10px 14px;background:var(--red-soft);border-left:3px solid var(--red);border-radius:0 10px 10px 0;font-size:15px;color:var(--red-dark)}
+
+/* numbers card: three rows of three */
+.band .wrap{grid-template-columns:repeat(3,1fr)}
+.band .wrap>div:nth-child(3n+1)::before{display:none}
+.band .wrap>div:nth-child(n+4){border-top:1px solid var(--line)}
+@media(max-width:760px){.band .wrap{grid-template-columns:1fr 1fr}.band .wrap>div::before{display:none}.band .wrap>div:nth-child(even)::before{display:block}.band .wrap>div:nth-child(n+3){border-top:1px solid var(--line)}.band .wrap>div:nth-child(9){grid-column:1/-1}}
+
+@media(min-width:1100px){.logo-row{gap:26px 34px;flex-wrap:nowrap}.logo-row img{height:40px}}
