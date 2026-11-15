@@ -21,11 +21,13 @@
 
 <header id="hdr"><div class="wrap">
   <a class="logo" href="index.html"><img class="mark" src="img/logo.svg" alt="" width="42" height="42"><span><b>Dr. Umar Nawaz</b><small>MBBS, MPH</small></span></a>
-  <nav>
+  <nav aria-label="Main">
     <a href="index.html#help">How I help</a>
     <a href="index.html#about">About</a>
+    <a href="index.html#results">Results</a>
     <a href="index.html#work">My work</a>
-    <a class="btn red" href="contact.html">Talk to me</a>
+    <a href="index.html#faq">FAQ</a>
+    <a class="btn cta" href="contact.html" aria-current="page">Contact me</a>
   </nav>
 </div></header>
 
@@ -115,7 +117,7 @@
     </div>
     <div>
       <h4>Pages</h4>
-      <ul><li><a href="index.html#help">How I help</a></li><li><a href="index.html#about">About me</a></li><li><a href="index.html#work">My work</a></li><li><a href="index.html#journey">Photo journey</a></li><li><a href="index.html#how">How we work</a></li><li><a href="contact.html">Contact</a></li></ul>
+      <ul><li><a href="index.html#help">How I help</a></li><li><a href="index.html#about">About me</a></li><li><a href="index.html#results">Results</a></li><li><a href="index.html#work">My work</a></li><li><a href="index.html#journey">Photo journey</a></li><li><a href="index.html#how">How we work</a></li><li><a href="contact.html">Contact</a></li></ul>
     </div>
     <div>
       <h4>Contact</h4>
@@ -167,7 +169,7 @@
     need.forEach(function(id){ var f = document.getElementById(id), ok = !!f.value.trim(); f.style.borderColor = ok ? '' : 'var(--red)'; if (!ok && !bad) bad = f; });
     if (bad) { bad.focus(); return; }
     var text = 'Hello Dr. Umar. I am ' + v('f-name') + (v('f-org') ? ' from ' + v('f-org') : '') + '.\nTopic: ' + v('f-topic') + '\n\n' + v('f-msg');
-    window.open('=' + encodeURIComponent(text), '_blank', 'noopener');
+    window.open('https://wa.me/923000400494?text=' + encodeURIComponent(text), '_blank', 'noopener');
   });
 })();
 </script>

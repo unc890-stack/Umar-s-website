@@ -16,31 +16,42 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/site.css">
+<script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
 <header id="hdr"><div class="wrap">
   <a class="logo" href="#top"><img class="mark" src="img/logo.svg" alt="" width="42" height="42"><span><b>Dr. Umar Nawaz</b><small>MBBS, MPH</small></span></a>
-  <nav>
+  <nav aria-label="Main">
     <a href="#help">How I help</a>
     <a href="#about">About</a>
+    <a href="#results">Results</a>
     <a href="#work">My work</a>
-    <a class="btn red" href="contact.html">Talk to me</a>
+    <a href="#faq">FAQ</a>
+    <a class="btn cta" href="#contact">Contact me</a>
   </nav>
 </div></header>
 
-<section class="hero" id="top">
-  <div class="bg" role="img" aria-label="Dr. Umar Nawaz giving a talk in Lahore"></div>
-  <div class="wrap"><div class="copy">
-    <div class="eyebrow">Doctor and health consultant</div>
-    <h1>Dr. Umar Nawaz</h1>
-    <p class="lead">I help hospitals and health programs work well. I have worked in them for 10 years and run them myself.</p>
-    <p class="note">I helped open a 100-bed hospital for mothers and children, and now I run it. Before that, I ran a town hospital and led a district health program.</p>
-    <div class="actions">
-      <a class="btn red" href="contact.html">Book a call</a>
-      <a class="btn line" href="#help">See how I help</a>
+<main id="main">
+<section class="hero v11" id="top">
+  <div class="wrap">
+    <div class="copy">
+      <div class="eyebrow">Doctor and health consultant</div>
+      <h1>Dr. Umar Nawaz</h1>
+      <div class="creds-row"><span><b>MBBS</b> Doctor</span><span><b>MPH</b> Public health</span><span><b>10</b> years in health care</span></div>
+      <p class="lead">I help hospitals and health programs work well. I have worked in them for 10 years and run them myself.</p>
+      <p class="note">I helped open a 100-bed hospital for mothers and children, and now I run it. Before that, I ran a town hospital and led a district health program.</p>
+      <div class="actions">
+        <a class="btn red lg" href="#contact">Book a call <span class="arr">→</span></a>
+        <a class="txt-link" href="#help">See how I help</a>
+      </div>
     </div>
-  </div></div>
+    <figure class="portrait" style="margin:0">
+      <img src="img/photos/portrait.jpg" alt="Dr. Umar Nawaz speaking at a health meeting in Lahore" width="675" height="844" fetchpriority="high">
+      <figcaption class="tag"><b>Now</b>Running a 100-bed hospital for mothers and children in Jhang</figcaption>
+    </figure>
+  </div>
 </section>
 
 <div class="band"><div class="wrap">
@@ -57,9 +68,31 @@
 
 <div class="logos"><div class="wrap">
   <p class="rv">Partners I have helped reach their goals</p>
-  <div class="logo-row rv d1">
-    <img src="img/logos/unicef.png" alt="UNICEF"><img src="img/logos/jica.png" alt="JICA"><img src="img/logos/tci.png" alt="The Challenge Initiative"><img src="img/logos/greenstar.png" alt="Greenstar"><img src="img/logos/msi.png" alt="MSI Reproductive Choices"><img src="img/logos/rahnuma.png" alt="Rahnuma FPAP">
-    <img src="img/logos/ssmt.png" alt="Sheikh Sharif Memorial Trust" class="wide"><span class="wm">Qatar Charity</span><span class="wm">PHFMC<small>PUNJAB</small></span>
+  <div class="logo-grid rv d1">
+    <div class="lg"><img src="img/logos/unicef.png" alt="UNICEF" loading="lazy"></div>
+    <div class="lg"><img src="img/logos/jica.png" alt="JICA" loading="lazy"></div>
+    <div class="lg"><img src="img/logos/tci.png" alt="The Challenge Initiative" loading="lazy"></div>
+    <div class="lg"><img src="img/logos/greenstar.png" alt="Greenstar" loading="lazy"></div>
+    <div class="lg"><img src="img/logos/msi.png" alt="MSI Reproductive Choices" loading="lazy"></div>
+    <div class="lg"><img src="img/logos/rahnuma.png" alt="Rahnuma FPAP" loading="lazy"></div>
+    <div class="lg mt" role="img" aria-label="Qatar Charity" data-name="Qatar Charity"><span class="mono">QC</span></div>
+    <div class="lg mt" role="img" aria-label="World Food Programme" data-name="World Food Programme"><span class="mono">WFP</span></div>
+    <div class="lg mt" role="img" aria-label="Pathfinder International" data-name="Pathfinder"><span class="mono">PF</span></div>
+  </div>
+</div></div>
+
+<div class="logos depts"><div class="wrap">
+  <p class="rv">Departments and institutions I have worked with</p>
+  <div class="logo-grid rv d1">
+    <div class="lg mt" role="img" aria-label="Primary and Secondary Healthcare Department, Punjab" data-name="Primary &amp; Secondary Healthcare Department, Punjab"><span class="mono m5">P&amp;SHD</span></div>
+    <div class="lg mt" role="img" aria-label="Specialized Healthcare and Medical Education Department, Punjab" data-name="Specialized Healthcare &amp; Medical Education Department, Punjab"><span class="mono m5">SH&amp;ME</span></div>
+    <div class="lg mt" role="img" aria-label="District Health Authority, Faisalabad" data-name="District Health Authority, Faisalabad"><span class="mono">DHA</span></div>
+    <div class="lg mt" role="img" aria-label="Punjab Health Facilities Management Company" data-name="Punjab Health Facilities Management Company"><span class="mono m5">PHFMC</span></div>
+    <div class="lg mt" role="img" aria-label="Punjab Healthcare Commission" data-name="Punjab Healthcare Commission"><span class="mono">PHC</span></div>
+    <div class="lg mt" role="img" aria-label="Sehat Sahulat Program" data-name="Sehat Sahulat Program"><span class="mono">SSP</span></div>
+    <div class="lg mt" role="img" aria-label="Population Welfare Department, Punjab" data-name="Population Welfare Department, Punjab"><span class="mono">PWD</span></div>
+    <div class="lg mt" role="img" aria-label="Benazir Income Support Programme and Benazir Nutrition Programme" data-name="Benazir Income Support Programme / Benazir Nutrition Programme"><span class="mono m2">BISP<br>BNP</span></div>
+    <div class="lg" data-name="Sheikh Sharif Memorial Trust"><img src="img/logos/ssmt.png" alt="Sheikh Sharif Memorial Trust" loading="lazy"></div>
   </div>
 </div></div>
 
@@ -68,34 +101,102 @@
   <h2 class="rv d1">Tell me the problem. I will help you fix it.</h2>
   <p class="sub rv d2">These are the jobs people ask me to do most.</p>
   <div class="cards">
-    <div class="card rv"><div class="icon"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M12 7v4M10 9h4"/></svg></div><h3>Open a new hospital</h3><p>I plan the staff, the rooms and each step. Your hospital opens on time.</p></div>
-    <div class="card rv d1"><div class="icon"><svg viewBox="0 0 24 24"><path d="M9 11l3 3 8-8M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg></div><h3>Pass a PHC inspection</h3><p>I check your hospital against PHC standards (MSDS) and close the gaps with your team. You go in ready.</p></div>
-    <div class="card rv d2"><div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2v20M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h3>Stop losing money</h3><p>I find out what each service costs. You see where the money goes.</p></div>
-    <div class="card rv"><div class="icon"><svg viewBox="0 0 24 24"><path d="M3 3v18h18M7 15l4-4 3 3 6-6"/></svg></div><h3>Get numbers you can trust</h3><p>I set up daily reporting, HMIS and dashboards. You see what is really happening.</p></div>
-    <div class="card rv d1"><div class="icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><path d="M3 21v-2a5 5 0 0 1 5-5h2a5 5 0 0 1 5 5v2M17 11a3 3 0 1 0 0-6M21 21v-2a4 4 0 0 0-3-3.9"/></svg></div><h3>Reach more people</h3><p>I help MNCH, Nutrition and Family Planning programs reach more mothers and children, and meet their targets.</p></div>
-    <div class="card rv d2"><div class="icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></div><h3>Keep good staff</h3><p>I write fair pay structures and clear HR policies. Good people stay longer.</p></div>
+    <div class="card rv"><div class="icon"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M12 7v4M10 9h4"/></svg></div><h3>Open a new hospital</h3><p>I plan the staff, the rooms and each step. Your hospital opens on time.</p>
+      <details class="more"><summary>Learn more</summary><ul><li>Staff plan and job roles</li><li>Room and equipment checklists</li><li>Opening plan with an owner for each step</li><li>Daily reports from the first day</li></ul><a href="#contact" data-topic="Opening a new hospital">Ask me about this →</a></details></div>
+    <div class="card rv d1"><div class="icon"><svg viewBox="0 0 24 24"><path d="M9 11l3 3 8-8M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg></div><h3>Pass a PHC inspection</h3><p>I check your hospital against PHC standards (MSDS) and close the gaps with your team. You go in ready.</p>
+      <details class="more"><summary>Learn more</summary><ul><li>Gap check against PHC MSDS</li><li>SOPs and policies that fit your hospital</li><li>Focal persons and a step by step plan</li><li>Weekly progress report</li></ul><a href="#contact" data-topic="Passing an inspection">Ask me about this →</a></details></div>
+    <div class="card rv d2"><div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2v20M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h3>Stop losing money</h3><p>I find out what each service costs. You see where the money goes.</p>
+      <details class="more"><summary>Learn more</summary><ul><li>Cost of each service</li><li>Where money is lost</li><li>One simple money report each month</li></ul><a href="#contact" data-topic="Costs and money">Ask me about this →</a></details></div>
+    <div class="card rv"><div class="icon"><svg viewBox="0 0 24 24"><path d="M3 3v18h18M7 15l4-4 3 3 6-6"/></svg></div><h3>Get numbers you can trust</h3><p>I set up daily reporting, HMIS and dashboards. You see what is really happening.</p>
+      <details class="more"><summary>Learn more</summary><ul><li>Daily stats forms for each department</li><li>HMIS set up so clinical staff find it easy</li><li>One dashboard for leaders</li></ul><a href="#contact" data-topic="Reports and numbers">Ask me about this →</a></details></div>
+    <div class="card rv d1"><div class="icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><path d="M3 21v-2a5 5 0 0 1 5-5h2a5 5 0 0 1 5 5v2M17 11a3 3 0 1 0 0-6M21 21v-2a4 4 0 0 0-3-3.9"/></svg></div><h3>Reach more people</h3><p>I help MNCH, Nutrition and Family Planning programs reach more mothers and children, and meet their targets.</p>
+      <details class="more"><summary>Learn more</summary><ul><li>Indicator reviews with LHVs, LHSs and LHWs</li><li>EMR and report data checks</li><li>Field checks where the work happens</li><li>Joint plans with partner NGOs</li></ul><a href="#contact" data-topic="A health program">Ask me about this →</a></details></div>
+    <div class="card rv d2"><div class="icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></div><h3>Keep good staff</h3><p>I write fair pay structures and clear HR policies. Good people stay longer.</p>
+      <details class="more"><summary>Learn more</summary><ul><li>Fair pay structure</li><li>Clear HR policies</li><li>Staff training to meet standards</li></ul><a href="#contact" data-topic="Staff and pay">Ask me about this →</a></details></div>
   </div>
 </div></section>
 
 <section class="soft" id="about"><div class="wrap split">
-  <img class="rv" src="img/photos/journey/j36.jpg" alt="Dr. Umar Nawaz talking with a health worker during a polio campaign" loading="lazy" style="aspect-ratio:4/5;object-position:50% 30%">
-  <div class="rv d1">
+  <figure class="about-photo rv" style="margin:0">
+    <img src="img/photos/journey/j36.jpg" alt="Dr. Umar Nawaz talking with a health worker during a polio campaign" loading="lazy">
+    <figcaption>On a polio campaign field visit, Faisalabad</figcaption>
+  </figure>
+  <div class="about-copy rv d1">
     <span class="kicker">About me</span>
     <h2>A doctor who runs health care.</h2>
-    <p>I started as a doctor in a small village clinic. Over time I took on bigger jobs. I ran a town hospital. I led health programs for a whole district. Today I run a 100-bed hospital for mothers and children in Jhang.</p>
-    <p>I know the clinic floor and the office desk. So I can talk to doctors, nurses and owners in a way they all understand.</p>
+    <p class="intro">I started as a doctor in a small village clinic. Today I run a 100-bed hospital for mothers and children in Jhang.</p>
+    <p>In between, I ran a town hospital and led health programs for a whole district. I know the clinic floor and the office desk. So I can talk to doctors, nurses and owners in a way they all understand.</p>
+    <div class="quals">
+      <div class="qual"><b>MBBS</b><span>University of Lahore<br>2010 to 2015</span></div>
+      <div class="qual"><b>MPH</b><span>Master of Public Health<br>Times Institute, Multan · 2020 to 2022</span></div>
+    </div>
     <ul class="checks">
       <li>I have done the work I advise on</li>
       <li>I have worked for the government and for private hospitals</li>
       <li>I measure results before and after</li>
       <li>I keep patient and staff data private</li>
     </ul>
+    <div class="cv-row">
+      <a class="btn red" href="cv/Dr-Umar-Nawaz-CV.pdf" download>Download my CV <span class="arr">↓</span></a>
+      <a class="btn line" href="https://www.linkedin.com/in/umar-nawaz-a5271912b" target="_blank" rel="noopener">See me on LinkedIn</a>
+    </div>
   </div>
+</div></section>
+
+<section id="results"><div class="wrap">
+  <span class="kicker rv">Results</span>
+  <h2 class="rv d1">Results I can show.</h2>
+  <p class="sub rv d2">Numbers from my own work, with where, when and how.</p>
+  <div class="ach">
+    <div class="a feat rv">
+      <div class="big">42% → 0%<small>Complaints left with no action</small></div>
+      <div>
+        <h3>Every patient complaint is now tracked to action.</h3>
+        <p>When I joined Red Crescent Hospital, complaints reached management as a monthly PDF, and 42% got no action from any department.</p>
+        <span class="where">Red Crescent Hospital, Jhang · late August to mid October 2026</span>
+        <button class="xbtn" type="button" aria-expanded="false" aria-controls="rx0" data-more="Show more" data-less="Show less">Show more</button>
+        <div class="xp" id="rx0"><div><ul>
+          <li>Moved every complaint into one tracking system on the hospital dashboard</li>
+          <li>Each complaint has a named owner, a deadline and a follow-up call to the patient</li>
+          <li>A complaint stays open until the department acts</li>
+          <li>Department-wise and consultant-wise complaint reviews now go to the MD each month</li>
+        </ul></div></div>
+      </div>
+    </div>
+    <div class="a rv"><b>#1</b><h3>Sehat Card claim in the district</h3><p>In one month, my hospital made the highest Sehat Card claim in Faisalabad district.</p><span class="where">THQ Hospital, Chak Jhumra · 2023 to 2024</span>
+      <button class="xbtn" type="button" aria-expanded="false" aria-controls="rx1" data-more="Show more" data-less="Show less">Show more</button>
+      <div class="xp" id="rx1"><div><ul><li>Audited all earlier patient files and completed the missing ones</li><li>Set up a claims system with dedicated staff</li><li>Worked closely with the staff deputed by the Sehat Sahulat Program</li><li>Turned lost insurance income into money the hospital could use</li></ul></div></div></div>
+    <div class="a rv d1"><b>170+</b><h3>Facilities outsourced</h3><p>Dispensaries, BHUs and RHCs handed to private partners without losing track of a single asset.</p><span class="where">Faisalabad district · 2023 to 2025</span>
+      <button class="xbtn" type="button" aria-expanded="false" aria-controls="rx2" data-more="Show more" data-less="Show less">Show more</button>
+      <div class="xp" id="rx2"><div><ul><li>Stock and equipment of each facility checked against a list before handover</li><li>Every partner took over a known, recorded position</li><li>Coordinated the district side with PHFMC and the partners</li></ul></div></div></div>
+    <div class="a rv d2"><b>30+</b><h3>Clinic on Wheels vehicles</h3><p>Mobile clinics run across 5 tehsils in two phases.</p><span class="where">Faisalabad district · 2023 to 2025</span>
+      <button class="xbtn" type="button" aria-expanded="false" aria-controls="rx3" data-more="Show more" data-less="Show less">Show more</button>
+      <div class="xp" id="rx3"><div><ul><li>Took health services to areas that get the least care</li><li>Checked camps and data in the field, not just on paper</li><li>Worked with district health leaders at every level</li></ul></div></div></div>
+    <div class="a rv"><b>2 → 3</b><h3>Dialysis shifts a day</h3><p>50% more dialysis capacity with the same machines.</p><span class="where">THQ Hospital, Chak Jhumra · 2023 to 2024</span>
+      <button class="xbtn" type="button" aria-expanded="false" aria-controls="rx4" data-more="Show more" data-less="Show less">Show more</button>
+      <div class="xp" id="rx4"><div><ul><li>Gynae theatre raised from 3 to 5 mornings a week</li><li>General surgery theatre extended to evenings</li><li>Paeds OPD and ultrasound OPD opened in evening shifts</li><li>24/7 indoor and ER pharmacy and 24/7 lab set up</li></ul></div></div></div>
+    <div class="a rv d1"><b>15</b><h3>Working systems in 7 weeks</h3><p>Paper and WhatsApp reports replaced by one live dashboard.</p><span class="where">Red Crescent Hospital · 2026</span>
+      <button class="xbtn" type="button" aria-expanded="false" aria-controls="rx5" data-more="Show more" data-less="Show less">Show more</button>
+      <div class="xp" id="rx5"><div><ul><li>Daily stats, complaints, HR, quality, pharmacy stock and equipment checks</li><li>Simple daily forms that department staff fill in themselves</li><li>One dashboard for hospital leaders</li><li>HMIS shaped so clinical staff find it easy</li></ul></div></div></div>
+    <div class="a rv d2"><b>21</b><h3>Focal persons for PHC standards</h3><p>One named person answerable for each PHC MSDS standard area.</p><span class="where">Red Crescent Hospital · 2026</span>
+      <button class="xbtn" type="button" aria-expanded="false" aria-controls="rx6" data-more="Show more" data-less="Show less">Show more</button>
+      <div class="xp" id="rx6"><div><ul><li>Implementation committee with written terms of reference</li><li>10-phase plan from gap check to re-verification</li><li>Weekly progress report to the Managing Director</li></ul></div></div></div>
+    <div class="a rv"><b>48</b><h3>Union councils, campaign by campaign</h3><p>Microplanned and ran polio, EPI and MR campaigns across a whole tehsil.</p><span class="where">Tehsil Sadar, Faisalabad · 2022 to 2023</span>
+      <button class="xbtn" type="button" aria-expanded="false" aria-controls="rx7" data-more="Show more" data-less="Show less">Show more</button>
+      <div class="xp" id="rx7"><div><ul><li>Polio coverage rose during my tenure</li><li>Put the 2022 WHO fixed-site policy into practice with BCG and MR session days, which drew a massive response</li><li>Kept the session days running after I moved to the district post</li><li>Regular meetings with MOs and WMOs to close service gaps</li></ul></div></div></div>
+    <div class="a rv d1"><b>16 months</b><h3>Two big jobs at once</h3><p>Ran a tehsil hospital while leading the district mother-and-child health program.</p><span class="where">May 2023 to September 2024</span>
+      <button class="xbtn" type="button" aria-expanded="false" aria-controls="rx8" data-more="Show more" data-less="Show less">Show more</button>
+      <div class="xp" id="rx8"><div><ul><li>Beds increased by government notification during my tenure</li><li>Better ER triage and clinical shift handover</li><li>Building revamp through a proper tender; water supply restored</li><li>Recovered dues from the outsourced parking and canteen</li></ul></div></div></div>
+    <div class="a rv d2"><b>After I left</b><h3>Savings that outlasted my posting</h3><p>At my first posting, money I saved paid for flooring the whole building after my contract ended.</p><span class="where">BHU Bhulair, Nankana Sahib · 2017 to 2018</span>
+      <button class="xbtn" type="button" aria-expanded="false" aria-controls="rx9" data-more="Show more" data-less="Show less">Show more</button>
+      <div class="xp" id="rx9"><div><ul><li>Prepared the BHU for PHC (MSDS) inspection</li><li>Repainted, repaired the entrance and put up signage from Health Council funds</li><li>Ran a 24/7 BHU: OPD, EPI, labour room, staff and accounts</li></ul></div></div></div>
+  </div>
+  <p class="rv" style="margin:28px 0 0;text-align:center;color:var(--grey)">Want the detail behind a number? <a href="#contact" style="color:var(--red);font-weight:600">Ask me for the full case →</a></p>
 </div></section>
 
 <section id="work"><div class="wrap">
   <span class="kicker rv">My work</span>
-  <h2 class="rv d1">Ten years, step by step.</h2>
+  <h2 class="rv d1">10 years, step by step.</h2>
   <p class="sub rv d2">Each job taught me something new about how health care really works.</p>
   <div class="wtabs rv d2" role="tablist" aria-label="My work">
     <button class="on" role="tab" aria-selected="true" aria-controls="wp-timeline" data-t="timeline">Timeline</button>
@@ -103,77 +204,204 @@
   </div>
 
   <div class="wpanel on" id="wp-timeline" role="tabpanel">
-  <div class="timeline">
-    <div class="step-t now rv"><div class="yr">2026 to now</div><h3>Administrator</h3><div class="where">Red Crescent Hospital, Jhang</div><p>I helped open a 100-bed hospital for mothers and children, and now I run it.</p>
-      <ul><li>Set up 15 working systems for daily reporting, complaints, HR, quality and pharmacy stock, all in one dashboard.</li><li>Complaints left with no action fell from 42% to 0%.</li><li>Customized the HMIS so it is easy for clinical staff and gives an accurate picture of clinical care.</li><li>Wrote SOPs and policies that meet national and international standards and fit ground realities.</li><li>Started a 10-phase plan to meet PHC Minimum Service Delivery Standards (MSDS). A committee and 21 focal persons carry it out, with a weekly progress report.</li></ul>
-      <div class="learn">What I learned: building a system is easy. Getting people to use it every day is the real work.</div></div>
-    <div class="step-t rv"><div class="yr">2025</div><h3>District Manager</h3><div class="where">Punjab Health Facilities Management Company, Faisalabad</div><p>I helped private partners take over and run government clinics.</p>
-      <ul><li>Evaluated stock and equipment of each health facility before outsourcing.</li><li>Oversaw the outsourcing of Maryam Nawaz Health Clinics.</li></ul>
-      <div class="learn">What I learned: how to bring in a big change across a whole district.</div></div>
-    <div class="step-t rv"><div class="yr">2023 to 2025</div><h3>District Coordinator, IRMNCH and Nutrition Program</h3><div class="where">District Health Authority, Faisalabad</div><p>Our district was last in Punjab on every service indicator for months. I set out to change that.</p>
-      <ul><li>Held regular review meetings and explained each indicator to LHVs, LHSs and LHWs.</li><li>Improved the data quality of EMR and of daily, weekly and monthly reports.</li><li>Led the district to graduation from The Challenge Initiative (TCI) Family Planning program.</li><li>Managed the outsourcing of 170+ Dispensaries, BHUs and RHCs.</li><li>Managed 30+ Clinic on Wheels (COW) vehicles in 5 tehsils over two phases, and helped launch Maryam Nawaz Health Clinics.</li><li>Worked with UNICEF, JICA, TCI and other NGOs on Nutrition and Family Planning goals.</li><li>Ran the Free Model Health Mela 2025 with partner NGOs: Hepatitis B and C screening, diabetes, nutrition and Family Planning.</li></ul>
-      <div class="learn">What I learned: when staff understand an indicator, they work to improve it.</div></div>
-    <div class="step-t rv"><div class="yr">2023 to 2024</div><h3>Medical Superintendent</h3><div class="where">THQ Hospital, Chak Jhumra</div><p>I ran the town hospital while also leading the district program.</p>
-      <ul><li>Met the Universal Health Insurance (UHI) targets.</li><li>Increased the number of beds with limited HR.</li><li>Maintained the supply chain and used the budget well.</li><li>Started implementing PHC Minimum Service Delivery Standards (MSDS).</li></ul>
-      <div class="learn">What I learned: with few staff and a fixed budget, good planning makes the difference.</div></div>
-    <div class="step-t rv"><div class="yr">2022 to 2023</div><h3>Deputy District Health Officer</h3><div class="where">District Health Authority, Faisalabad</div><p>I led service delivery at all health facilities of the tehsil.</p>
-      <ul><li>Ran EPI, Polio and MR campaigns and Dengue control across 48 UCs.</li><li>Worked to meet campaign targets and the indicators of each health facility.</li><li>Implemented EMR and EPI SOPs.</li><li>Led case response to notifiable diseases.</li><li>Managed the budget of all health facilities in the tehsil, including BHUs and RHCs.</li><li>Supervised Polio teams in the field and the revamp of an RHC.</li></ul>
-      <div class="learn">What I learned: field visits show what reports do not.</div></div>
-    <div class="step-t rv"><div class="yr">2020 to 2022</div><h3>Medical Officer</h3><div class="where">DDHO Office, Sangla Hill, Nankana Sahib</div><p>I supported tehsil health administration and service monitoring.</p>
-      <ul><li>Also held the extra charge of District Surveillance Coordinator.</li><li>Also held the extra charge of Deputy District Officer Health, Nankana Sahib.</li></ul>
-      <div class="learn">What I learned: how to step into any role and keep services running.</div></div>
-    <div class="step-t rv"><div class="yr">2019 to 2020</div><h3>Medical Officer, Medical Unit V</h3><div class="where">DHQ Hospital (Allied Hospital II), Faisalabad</div><p>I treated patients in the ward, OPD and Emergency, through the start of COVID-19.</p>
-      <ul><li>Kept care going during COVID-19, on both the medical side and the management side.</li><li>Worked with the Medical Superintendent to keep a good place to work for doctors and nurses.</li></ul>
-      <div class="learn">What I learned: going back to the ward after an admin post sharpened my clinical skills again.</div></div>
-    <div class="step-t rv"><div class="yr">2017 to 2018</div><h3>Medical Officer</h3><div class="where">BHU Bhulair, Nankana Sahib</div><p>I ran Primary Healthcare services at a Basic Health Unit.</p>
-      <ul><li>Also held the extra charge of Deputy District Officer Health for more than 11 months.</li></ul>
-      <div class="learn">What I learned: how to run tehsil-level operations, learned on the job without formal orientation.</div></div>
-    <div class="step-t rv"><div class="yr">2016 to 2017</div><h3>House Officer</h3><div class="where">Teaching hospitals in Lahore and Faisalabad</div><p>One year of training in medicine, radiology, surgery and ENT.</p></div>
-  </div>  <button class="peek" type="button" data-open="journey">See this journey in 20 photos →</button>
+  <div class="overlap rv">
+    <h3>2022 to 2026 at a glance</h3>
+    <p>From 2023 to 2025 I held more than one job at a time. This chart shows how they fit together.</p>
+    <div class="gantt" role="img" aria-label="Chart of jobs from 2022 to 2026. Deputy District Health Officer May 2022 to May 2023. Medical Superintendent May 2023 to September 2024. District Coordinator April 2023 to December 2025. District Manager from March 2025. Administrator May 2026 to now.">
+      <div class="g-row"><div class="lbl">Deputy District Health Officer<small>May 2022 to May 2023</small></div><div class="g-track"><span class="g-bar c2" style="left:6.7%;width:20%"></span></div></div>
+      <div class="g-row"><div class="lbl">Medical Superintendent, THQ<small>May 2023 to Sep 2024</small></div><div class="g-track"><span class="g-bar c3" style="left:26.7%;width:28.3%"></span></div></div>
+      <div class="g-row"><div class="lbl">District Coordinator, IRMNCH<small>Apr 2023 to Dec 2025</small></div><div class="g-track"><span class="g-bar" style="left:25%;width:55%"></span></div></div>
+      <div class="g-row"><div class="lbl">District Manager, PHFMC<small>2025, from March</small></div><div class="g-track"><span class="g-bar open" style="left:63.3%;width:16.7%"></span></div></div>
+      <div class="g-row"><div class="lbl">Administrator, Red Crescent<small>May 2026 to now</small></div><div class="g-track"><span class="g-bar c4" style="left:86.7%;width:11.7%"></span></div></div>
+      <div class="g-axis"><span></span><div class="ticks"><span>2022</span><span>2023</span><span>2024</span><span>2025</span><span>2026</span></div></div>
+    </div>
+  </div>
+
+  <ol class="jlist" aria-label="Jobs, newest first">
+    <li class="jr now rv">
+      <div class="jr-head">
+        <span class="mono img" role="img" aria-label="Sheikh Sharif Memorial Trust" title="Sheikh Sharif Memorial Trust"><img src="img/logos/ssmt.png" alt="" loading="lazy"></span>
+        <div class="jr-main">
+          <div class="jr-t"><h3>Administrator</h3><span class="lvl trust">Private / Trust</span></div>
+          <div class="jr-org">Red Crescent Hospital, Jhang (Sheikh Sharif Memorial Trust) <span class="jr-d">May 2026 to now</span></div>
+          <p>Helped open a 100-bed hospital for mothers and children, and now run it.</p>
+        </div>
+        <button class="xbtn jr-btn" type="button" aria-expanded="false" aria-controls="jx1">Details</button>
+      </div>
+      <div class="xp" id="jx1"><div><div class="jr-body">
+        <div class="kh">Key achievements</div>
+        <ul><li><strong>15 working systems</strong> feeding one dashboard: daily stats, complaints, HR, quality, pharmacy stock, equipment</li><li>Complaints left with no action fell from <strong>42% to 0%</strong></li><li><strong>10-phase PHC MSDS plan</strong> with a committee and <strong>21 focal persons</strong></li><li>Pharmacy and hospital registration with PHC in progress</li><li>HR policy that is strict on performance and fair on basic needs</li><li>Building an A-to-Z reporting system for higher management</li></ul>
+        <p class="learn">What I learned: In government you fill in the charts. Here every decision and outcome is yours. An institution can become bigger than any one person's name when the right SOPs are in place.</p>
+      </div></div></div>
+    </li>
+    <li class="jr rv">
+      <div class="jr-head">
+        <span class="mono m5" role="img" aria-label="Punjab Health Facilities Management Company" title="Punjab Health Facilities Management Company">PHFMC</span>
+        <div class="jr-main">
+          <div class="jr-t"><h3>District Manager</h3><span class="lvl co">Company</span></div>
+          <div class="jr-org">Punjab Health Facilities Management Company (PHFMC), Faisalabad <span class="jr-d">2025, from March</span></div>
+          <p>Helped private partners take over and run government clinics.</p>
+        </div>
+        <button class="xbtn jr-btn" type="button" aria-expanded="false" aria-controls="jx2">Details</button>
+      </div>
+      <div class="xp" id="jx2"><div><div class="jr-body">
+        <div class="kh">Key achievements</div>
+        <ul><li>Evaluated stock and equipment of each health facility before outsourcing</li><li>Oversaw the outsourcing of <strong>Maryam Nawaz Health Clinics</strong></li></ul>
+        <p class="learn">What I learned: How to bring in a big change across a whole district.</p>
+      </div></div></div>
+    </li>
+    <li class="jr rv">
+      <div class="jr-head">
+        <span class="mono" role="img" aria-label="District Health Authority, Faisalabad" title="District Health Authority, Faisalabad">DHA</span>
+        <div class="jr-main">
+          <div class="jr-t"><h3>District Coordinator, IRMNCH &amp; Nutrition Program</h3><span class="lvl dist">District</span></div>
+          <div class="jr-org">District Health Authority, Faisalabad <span class="jr-d">April 2023 to December 2025</span></div>
+          <p>Led mother, newborn and child health services across Faisalabad district.</p>
+        </div>
+        <button class="xbtn jr-btn" type="button" aria-expanded="false" aria-controls="jx3">Details</button>
+      </div>
+      <div class="xp" id="jx3"><div><div class="jr-body">
+        <div class="kh">Key achievements</div>
+        <ul><li>Managed the outsourcing of <strong>170+ dispensaries, BHUs and RHCs</strong></li><li>Ran <strong>30+ Clinic on Wheels</strong> vehicles in <strong>5 tehsils</strong> over two phases</li><li>ANC visits, nutrition screening, family planning, LHW field work and timely referrals</li><li>Effective surveillance of the RAS ambulance system; monthly reports counter-checked</li><li>Orientation sessions and monthly meetings with LHVs and LHSs on every indicator</li><li>Trained <strong>all LHVs</strong> on Implanon NXT and new contraceptive methods</li><li>Rationalised HR to keep 24/7 centres fully functional</li><li>Improved office records, main store and medicine supply chain</li><li>Trained new health managers and newly hired staff</li><li>Free Model Health Mela 2025 with partner NGOs</li><li>Worked with UNICEF, JICA, WFP, Qatar Charity, Greenstar/TCI, BNP and the Population Welfare Department; supported the district's graduation from The Challenge Initiative</li></ul>
+        <p class="learn">What I learned: The versatility of this role opened my eyes to administration. When staff understand an indicator, they work to improve it.</p>
+      </div></div></div>
+    </li>
+    <li class="jr rv">
+      <div class="jr-head">
+        <span class="mono m5" role="img" aria-label="Primary and Secondary Healthcare Department, Punjab" title="Primary &amp; Secondary Healthcare Department, Punjab">P&amp;SHD</span>
+        <div class="jr-main">
+          <div class="jr-t"><h3>Medical Superintendent</h3><span class="lvl sec">Secondary care</span></div>
+          <div class="jr-org">THQ Hospital, Chak Jhumra <span class="jr-d">May 2023 to September 2024</span></div>
+          <p>Ran the tehsil hospital for 16 months alongside the district program.</p>
+        </div>
+        <button class="xbtn jr-btn" type="button" aria-expanded="false" aria-controls="jx4">Details</button>
+      </div>
+      <div class="xp" id="jx4"><div><div class="jr-body">
+        <div class="kh">Key achievements</div>
+        <ul><li><strong>Highest Sehat Card claim in the district</strong> in one month, after auditing and completing all files</li><li>Gynae theatre <strong>3 → 5 mornings</strong> a week; surgery theatre extended to evenings</li><li>Dialysis <strong>2 → 3 shifts</strong> a day; paeds and ultrasound OPDs in evening shifts</li><li><strong>24/7 indoor and ER pharmacy</strong> and 24/7 lab</li><li>Better ER triage, shift handover, pre-op work-up and anaesthetist cover</li><li>Beds increased by government notification</li><li>Building revamp through a proper tender; water supply restored; signage and information screens</li><li>Better staff attendance and careful use of the budget</li><li>Facilitated BISP and Population Welfare Department services; recovered dues from outsourced parking and canteen</li></ul>
+        <p class="learn">What I learned: Being MS was more technical than supervising pre-decided SOPs. I had to build the systems myself.</p>
+      </div></div></div>
+    </li>
+    <li class="jr rv">
+      <div class="jr-head">
+        <span class="mono" role="img" aria-label="District Health Authority, Faisalabad" title="District Health Authority, Faisalabad">DHA</span>
+        <div class="jr-main">
+          <div class="jr-t"><h3>Deputy District Health Officer</h3><span class="lvl dist">District</span></div>
+          <div class="jr-org">District Health Authority, Faisalabad (Tehsil Sadar) <span class="jr-d">May 2022 to May 2023</span></div>
+          <p>Led service delivery at all health facilities of a 48-UC tehsil.</p>
+        </div>
+        <button class="xbtn jr-btn" type="button" aria-expanded="false" aria-controls="jx5">Details</button>
+      </div>
+      <div class="xp" id="jx5"><div><div class="jr-body">
+        <div class="kh">Key achievements</div>
+        <ul><li>Microplanned and ran polio, EPI and MR campaigns and dengue control across <strong>48 UCs</strong></li><li>Polio coverage rose during my tenure</li><li>Put the <strong>2022 WHO fixed-site policy</strong> into practice with BCG and MR session days</li><li>EPI audit; BHU and RHC indicators including BEmONC and CEmONC</li><li>Regular meetings with MOs and WMOs to understand needs and close gaps</li><li>Coordinated with PHFMC for the facilities it ran</li><li>Managed facility budgets; supervised polio teams and an RHC revamp</li></ul>
+        <p class="learn">What I learned: MOs and WMOs can do far more than they realise. Field visits show what reports do not.</p>
+      </div></div></div>
+    </li>
+    <li class="jr rv">
+      <div class="jr-head">
+        <span class="mono m5" role="img" aria-label="Primary and Secondary Healthcare Department, Punjab" title="Primary &amp; Secondary Healthcare Department, Punjab">P&amp;SHD</span>
+        <div class="jr-main">
+          <div class="jr-t"><h3>Medical Officer</h3><span class="lvl dist">District</span></div>
+          <div class="jr-org">DDHO Office, Sangla Hill, Nankana Sahib <span class="jr-d">August 2020 to May 2022</span></div>
+          <p>Supported tehsil health administration and service monitoring.</p>
+        </div>
+        <button class="xbtn jr-btn" type="button" aria-expanded="false" aria-controls="jx6">Details</button>
+      </div>
+      <div class="xp" id="jx6"><div><div class="jr-body">
+        <div class="kh">Key achievements</div>
+        <ul><li>Extra charge of District Surveillance Coordinator</li><li>Extra charge of Deputy District Health Officer, Nankana Sahib</li></ul>
+        <p class="learn">What I learned: How to step into any role and keep services running.</p>
+      </div></div></div>
+    </li>
+    <li class="jr rv">
+      <div class="jr-head">
+        <span class="mono m5" role="img" aria-label="Specialized Healthcare and Medical Education Department, Punjab" title="Specialized Healthcare &amp; Medical Education Department, Punjab">SH&amp;ME</span>
+        <div class="jr-main">
+          <div class="jr-t"><h3>Medical Officer, Medical Unit V</h3><span class="lvl ter">Tertiary care</span></div>
+          <div class="jr-org">DHQ Hospital (Allied Hospital II), Faisalabad <span class="jr-d">May 2019 to August 2020</span></div>
+          <p>Ward, OPD and Emergency care through the start of COVID-19.</p>
+        </div>
+        <button class="xbtn jr-btn" type="button" aria-expanded="false" aria-controls="jx7">Details</button>
+      </div>
+      <div class="xp" id="jx7"><div><div class="jr-body">
+        <div class="kh">Key achievements</div>
+        <ul><li>Worked through every section of the general medicine ward</li><li>During COVID-19, helped start ICU services, relocate the ER and set patient flow from ER to ward and ICU</li></ul>
+        <p class="learn">What I learned: A tertiary hospital tested my clinical temperament against current practice.</p>
+      </div></div></div>
+    </li>
+    <li class="jr rv">
+      <div class="jr-head">
+        <span class="mono m5" role="img" aria-label="Primary and Secondary Healthcare Department, Punjab" title="Primary &amp; Secondary Healthcare Department, Punjab">P&amp;SHD</span>
+        <div class="jr-main">
+          <div class="jr-t"><h3>Medical Officer</h3><span class="lvl pri">Primary care</span></div>
+          <div class="jr-org">BHU Bhulair, Nankana Sahib <span class="jr-d">July 2017 to November 2018</span></div>
+          <p>Ran a 24/7 Basic Health Unit.</p>
+        </div>
+        <button class="xbtn jr-btn" type="button" aria-expanded="false" aria-controls="jx8">Details</button>
+      </div>
+      <div class="xp" id="jx8"><div><div class="jr-body">
+        <div class="kh">Key achievements</div>
+        <ul><li>OPD, EPI, labour room, staff and Health Council accounts</li><li>Prepared the BHU for PHC (MSDS) inspection</li><li>Repainted, repaired the entrance and put up signage; savings paid for flooring after I left</li><li>Extra charge of Deputy District Health Officer: polio, dengue and anti-quackery work</li></ul>
+        <p class="learn">What I learned: MSDS was my first SOP. It turned "make it better" into something you can check.</p>
+      </div></div></div>
+    </li>
+    <li class="jr rv">
+      <div class="jr-head">
+        <span class="mono m5" role="img" aria-label="Specialized Healthcare and Medical Education Department, Punjab" title="Specialized Healthcare &amp; Medical Education Department, Punjab">SH&amp;ME</span>
+        <div class="jr-main">
+          <div class="jr-t"><h3>House Officer</h3><span class="lvl ter">Tertiary care</span></div>
+          <div class="jr-org">Teaching hospitals in Lahore and Faisalabad <span class="jr-d">June 2016 to June 2017</span></div>
+          <p>One year of training in medicine, radiology, surgery and ENT.</p>
+        </div>
+      </div>
+    </li>
+  </ol>
+  <button class="peek" type="button" data-open="journey">See this journey in 20 photos →</button>
   </div>
 
   <div class="wpanel" id="wp-journey" role="tabpanel" hidden>
     <p class="jintro">My career in pictures, from hospital doctor to district leader. Tap any photo to see it larger.</p>
-    <div class="filters">
-      <button class="on" data-f="all">All</button>
-      <button data-f="doctor" style="--c:#1f7a6d">Hospital doctor</button>
-      <button data-f="ddho" style="--c:#2d5f9a">District health officer</button>
-      <button data-f="ms" style="--c:#b0702a">Hospital head</button>
-      <button data-f="dc" style="--c:#b3132b">District programs</button>
+    <div class="filters" role="group" aria-label="Filter photos">
+      <button class="on" data-f="all" aria-pressed="true">All <span class="n">20</span></button>
+      <button data-f="doctor" style="--c:#1f7a6d" aria-pressed="false">Hospital doctor <span class="n">2</span></button>
+      <button data-f="ddho" style="--c:#2d5f9a" aria-pressed="false">District health officer <span class="n">2</span></button>
+      <button data-f="ms" style="--c:#8a561d" aria-pressed="false">Hospital head <span class="n">2</span></button>
+      <button data-f="dc" style="--c:#b3132b" aria-pressed="false">District programs <span class="n">14</span></button>
     </div>
     <div class="jgrid">
-      <figure class="jc" data-ch="doctor"><div class="ji"><img src="img/photos/journey/j09.jpg" alt="Hospital team during COVID-19" loading="lazy"></div><figcaption><span class="jtag">Hospital doctor</span><b>Caring for patients during COVID&#8209;19</b><em>Medical Officer · Large teaching hospital</em><p>We kept care going in hard days. I helped close gaps on both the medical side and the management side, so patients and families did not lose hope.</p></figcaption></figure>
-      <figure class="jc" data-ch="doctor"><div class="ji"><img src="img/photos/journey/j13.jpg" alt="With hospital leaders" loading="lazy"></div><figcaption><span class="jtag">Hospital doctor</span><b>Teamwork with hospital leaders</b><em>Doctor · Allied Hospital II, Faisalabad</em><p>I worked closely with the Medical Superintendent to keep a good place to work for doctors and nurses.</p></figcaption></figure>
-      <figure class="jc" data-ch="ddho"><div class="ji"><img src="img/photos/journey/j06.jpg" alt="Visiting a health center under repair" loading="lazy"></div><figcaption><span class="jtag">District health officer</span><b>Rebuilding a rural health center</b><em>Deputy District Health Officer · Faisalabad</em><p>I visited a rural health center under repair with the district team. When a clinic's future is at stake, every brick counts.</p></figcaption></figure>
-      <figure class="jc" data-ch="ddho"><div class="ji"><img src="img/photos/journey/j36.jpg" alt="Polio campaign field visit" loading="lazy"></div><figcaption><span class="jtag">District health officer</span><b>Checking the polio campaign</b><em>Deputy District Health Officer · Faisalabad</em><p>I visited polio teams at work. Our aim was simple: every drop reaches every child.</p></figcaption></figure>
-      <figure class="jc" data-ch="ms"><div class="ji"><img src="img/photos/journey/j16.jpg" alt="Senior officials visiting the hospital" loading="lazy"></div><figcaption><span class="jtag">Hospital head</span><b>Leading visits by senior officials</b><em>Medical Superintendent · THQ Hospital, Chak Jhumra</em><p>As head of a town hospital, I showed senior officials our work. The job is a duty, not a title. Hundreds of patients come each day, and each day sharpens your skills.</p></figcaption></figure>
-      <figure class="jc" data-ch="ms"><div class="ji"><img src="img/photos/journey/j23.jpg" alt="Working with the town management team" loading="lazy"></div><figcaption><span class="jtag">Hospital head</span><b>Working with the town's management</b><em>Medical Superintendent · THQ Hospital, Chak Jhumra</em><p>We worked with the town team to keep services good for everyone. Health for all was our aim.</p></figcaption></figure>
-      <figure class="jc" data-ch="dc"><div class="ji"><img src="img/photos/journey/j20.jpg" alt="Checking a campaign in the field" loading="lazy"></div><figcaption><span class="jtag">District programs</span><b>Checking campaigns on the ground</b><em>District Coordinator and hospital head · Faisalabad</em><p>I went to the field to check big health campaigns run with partners. Real checks show real quality.</p></figcaption></figure>
-      <figure class="jc" data-ch="dc"><div class="ji"><img src="img/photos/journey/j05.jpg" alt="Checking a vaccine box in the field" loading="lazy"></div><figcaption><span class="jtag">District programs</span><b>Every small step counts</b><em>Field visit · Faisalabad district</em><p>I check each small step, so teams follow the same safe steps used around the world.</p></figcaption></figure>
-      <figure class="jc" data-ch="dc"><div class="ji"><img src="img/photos/journey/j04.jpg" alt="Checking records in the field" loading="lazy"></div><figcaption><span class="jtag">District programs</span><b>Checking data in the field</b><em>District Coordinator · Clinic on Wheels</em><p>Only true numbers lead to goals we can really reach. So I check the data where the work happens.</p></figcaption></figure>
-      <figure class="jc" data-ch="dc"><div class="ji"><img src="img/photos/journey/j25.jpg" alt="Clinic on Wheels camp visits" loading="lazy"></div><figcaption><span class="jtag">District programs</span><b>Leading Clinic on Wheels</b><em>District Coordinator · Faisalabad</em><p>I visited mobile clinic camps with district health leaders. Every level of the system worked together for the public.</p></figcaption></figure>
-      <figure class="jc" data-ch="dc"><div class="ji"><img src="img/photos/journey/j26.jpg" alt="Child nutrition training group" loading="lazy"></div><figcaption><span class="jtag">District programs</span><b>Training for child nutrition, 2024</b><em>District Coordinator · Faisalabad, with UNICEF</em><p>We trained teams to keep data up to date, plan well and work as one. That way help reaches every family who needs it.</p></figcaption></figure>
-      <figure class="jc" data-ch="dc"><div class="ji"><img src="img/photos/journey/j35.jpg" alt="Lady health worker training" loading="lazy"></div><figcaption><span class="jtag">District programs</span><b>Training front-line health workers</b><em>District Coordinator · with The Challenge Initiative</em><p>We shared the newest guidance with lady health workers, so it truly reaches the field.</p></figcaption></figure>
-      <figure class="jc" data-ch="dc"><div class="ji"><img src="img/photos/journey/j21.jpg" alt="Staff training group" loading="lazy"></div><figcaption><span class="jtag">District programs</span><b>Training staff from many teams</b><em>Training day · Faisalabad district</em><p>New skills for staff from different jobs and levels.</p></figcaption></figure>
-      <figure class="jc" data-ch="dc"><div class="ji"><img src="img/photos/journey/j29.jpg" alt="Health talk at a school" loading="lazy"></div><figcaption><span class="jtag">District programs</span><b>Teaching children about health</b><em>District Coordinator · School in Chak Jhumra</em><p>Good habits start young. We shared simple health lessons with school children.</p></figcaption></figure>
-      <figure class="jc" data-ch="dc"><div class="ji"><img src="img/photos/journey/j33.jpg" alt="Talking with university students" loading="lazy"></div><figcaption><span class="jtag">District programs</span><b>Talking about food and health with students</b><em>District Coordinator · University visit</em><p>Daily habits formed at this age can last a lifetime. Good food matters most for young women, who often have the least.</p></figcaption></figure>
-      <figure class="jc" data-ch="dc"><div class="ji"><img src="img/photos/journey/j07.jpg" alt="Health camp at a university" loading="lazy"></div><figcaption><span class="jtag">District programs</span><b>Health camp on exam day</b><em>University entry test</em><p>We serve people where they are, in the streets or at a university on exam day.</p></figcaption></figure>
-      <figure class="jc" data-ch="dc"><div class="ji"><img src="img/photos/journey/j38.jpg" alt="Free Model Health Mela team" loading="lazy"></div><figcaption><span class="jtag">District programs</span><b>Free Model Health Mela, 2025</b><em>District Coordinator · Faisalabad</em><p>The district and partner groups served areas that get the least care. We offered checks for hepatitis B and C, diabetes, nutrition and family planning.</p></figcaption></figure>
-      <figure class="jc" data-ch="dc"><div class="ji"><img src="img/photos/journey/j32.jpg" alt="Punjab workshop certificate" loading="lazy"></div><figcaption><span class="jtag">District programs</span><b>Workshop on health habits in Punjab</b><em>District Coordinator · with the Population Welfare Department and Pathfinder</em><p>I spoke for our district on people's habits and beliefs. This is the hidden part of health care, like the part of an iceberg under the water.</p></figcaption></figure>
-      <figure class="jc" data-ch="dc"><div class="ji"><img src="img/photos/journey/j34.jpg" alt="Provincial review meeting group" loading="lazy"></div><figcaption><span class="jtag">District programs</span><b>Provincial review meeting</b><em>District Coordinator · Multan</em><p>We met often to talk about real problems on the ground and plan the next steps to our goals.</p></figcaption></figure>
-      <figure class="jc" data-ch="dc"><div class="ji"><img src="img/photos/journey/j18.jpg" alt="Divisional review meeting" loading="lazy"></div><figcaption><span class="jtag">District programs</span><b>Divisional review meeting</b><em>District Coordinator · Commissioner's Office, Faisalabad</em><p>Leaders from each district checked health progress together.</p></figcaption></figure>
+      <figure class="jc" data-ch="doctor"><div class="ji"><img src="img/photos/journey/j09.jpg" alt="Hospital team during COVID-19" loading="lazy"></div><figcaption><span class="jtag">Hospital doctor</span><span class="jdate">2019 to 2020</span><b>Caring for patients during COVID&#8209;19</b><em>Medical Officer · Large teaching hospital</em><p>We kept care going in hard days. I helped close gaps on both the medical side and the management side, so patients and families did not lose hope.</p></figcaption></figure>
+      <figure class="jc" data-ch="doctor"><div class="ji"><img src="img/photos/journey/j13.jpg" alt="With hospital leaders" loading="lazy"></div><figcaption><span class="jtag">Hospital doctor</span><span class="jdate">2019 to 2020</span><b>Teamwork with hospital leaders</b><em>Doctor · Allied Hospital II, Faisalabad</em><p>I worked closely with the Medical Superintendent to keep a good place to work for doctors and nurses.</p></figcaption></figure>
+      <figure class="jc" data-ch="ddho"><div class="ji"><img src="img/photos/journey/j06.jpg" alt="Visiting a health center under repair" loading="lazy"></div><figcaption><span class="jtag">District health officer</span><span class="jdate">2022 to 2023</span><b>Rebuilding a rural health center</b><em>Deputy District Health Officer · Faisalabad</em><p>I visited a rural health center under repair with the district team. When a clinic's future is at stake, every brick counts.</p></figcaption></figure>
+      <figure class="jc" data-ch="ddho"><div class="ji"><img src="img/photos/journey/j36.jpg" alt="Polio campaign field visit" loading="lazy"></div><figcaption><span class="jtag">District health officer</span><span class="jdate">2022 to 2023</span><b>Checking the polio campaign</b><em>Deputy District Health Officer · Faisalabad</em><p>I visited polio teams at work. Our aim was simple: every drop reaches every child.</p></figcaption></figure>
+      <figure class="jc" data-ch="ms"><div class="ji"><img src="img/photos/journey/j16.jpg" alt="Senior officials visiting the hospital" loading="lazy"></div><figcaption><span class="jtag">Hospital head</span><span class="jdate">2023 to 2024</span><b>Leading visits by senior officials</b><em>Medical Superintendent · THQ Hospital, Chak Jhumra</em><p>As head of a town hospital, I showed senior officials our work. The job is a duty, not a title. Hundreds of patients come each day, and each day sharpens your skills.</p></figcaption></figure>
+      <figure class="jc" data-ch="ms"><div class="ji"><img src="img/photos/journey/j23.jpg" alt="Working with the town management team" loading="lazy"></div><figcaption><span class="jtag">Hospital head</span><span class="jdate">2023 to 2024</span><b>Working with the town's management</b><em>Medical Superintendent · THQ Hospital, Chak Jhumra</em><p>We worked with the town team to keep services good for everyone. Health for all was our aim.</p></figcaption></figure>
+      <figure class="jc" data-ch="dc"><div class="ji"><img src="img/photos/journey/j20.jpg" alt="Checking a campaign in the field" loading="lazy"></div><figcaption><span class="jtag">District programs</span><span class="jdate">2023 to 2024</span><b>Checking campaigns on the ground</b><em>District Coordinator and hospital head · Faisalabad</em><p>I went to the field to check big health campaigns run with partners. Real checks show real quality.</p></figcaption></figure>
+      <figure class="jc" data-ch="dc"><div class="ji"><img src="img/photos/journey/j05.jpg" alt="Checking a vaccine box in the field" loading="lazy"></div><figcaption><span class="jtag">District programs</span><span class="jdate">2023 to 2025</span><b>Every small step counts</b><em>Field visit · Faisalabad district</em><p>I check each small step, so teams follow the same safe steps used around the world.</p></figcaption></figure>
+      <figure class="jc" data-ch="dc"><div class="ji"><img src="img/photos/journey/j04.jpg" alt="Checking records in the field" loading="lazy"></div><figcaption><span class="jtag">District programs</span><span class="jdate">2023 to 2025</span><b>Checking data in the field</b><em>District Coordinator · Clinic on Wheels</em><p>Only true numbers lead to goals we can really reach. So I check the data where the work happens.</p></figcaption></figure>
+      <figure class="jc" data-ch="dc"><div class="ji"><img src="img/photos/journey/j25.jpg" alt="Clinic on Wheels camp visits" loading="lazy"></div><figcaption><span class="jtag">District programs</span><span class="jdate">2023 to 2025</span><b>Leading Clinic on Wheels</b><em>District Coordinator · Faisalabad</em><p>I visited mobile clinic camps with district health leaders. Every level of the system worked together for the public.</p></figcaption></figure>
+      <figure class="jc" data-ch="dc"><div class="ji"><img src="img/photos/journey/j26.jpg" alt="Child nutrition training group" loading="lazy"></div><figcaption><span class="jtag">District programs</span><span class="jdate">January 2024</span><b>Training for child nutrition</b><em>District Coordinator · Faisalabad, with UNICEF</em><p>We trained teams to keep data up to date, plan well and work as one. That way help reaches every family who needs it.</p></figcaption></figure>
+      <figure class="jc" data-ch="dc"><div class="ji"><img src="img/photos/journey/j35.jpg" alt="Lady health worker training" loading="lazy"></div><figcaption><span class="jtag">District programs</span><span class="jdate">2023 to 2025</span><b>Training front-line health workers</b><em>District Coordinator · with The Challenge Initiative</em><p>We shared the newest guidance with lady health workers, so it truly reaches the field.</p></figcaption></figure>
+      <figure class="jc" data-ch="dc"><div class="ji"><img src="img/photos/journey/j21.jpg" alt="Staff training group" loading="lazy"></div><figcaption><span class="jtag">District programs</span><span class="jdate">2023 to 2025</span><b>Training staff from many teams</b><em>Training day · Faisalabad district</em><p>New skills for staff from different jobs and levels.</p></figcaption></figure>
+      <figure class="jc" data-ch="dc"><div class="ji"><img src="img/photos/journey/j29.jpg" alt="Health talk at a school" loading="lazy"></div><figcaption><span class="jtag">District programs</span><span class="jdate">2023 to 2025</span><b>Teaching children about health</b><em>District Coordinator · School in Chak Jhumra</em><p>Good habits start young. We shared simple health lessons with school children.</p></figcaption></figure>
+      <figure class="jc" data-ch="dc"><div class="ji"><img src="img/photos/journey/j33.jpg" alt="Talking with university students" loading="lazy"></div><figcaption><span class="jtag">District programs</span><span class="jdate">2023 to 2025</span><b>Talking about food and health with students</b><em>District Coordinator · University visit</em><p>Daily habits formed at this age can last a lifetime. Good food matters most for young women, who often have the least.</p></figcaption></figure>
+      <figure class="jc" data-ch="dc"><div class="ji"><img src="img/photos/journey/j07.jpg" alt="Health camp at a university" loading="lazy"></div><figcaption><span class="jtag">District programs</span><span class="jdate">2023 to 2025</span><b>Health camp on exam day</b><em>University entry test</em><p>We serve people where they are, in the streets or at a university on exam day.</p></figcaption></figure>
+      <figure class="jc" data-ch="dc"><div class="ji"><img src="img/photos/journey/j38.jpg" alt="Free Model Health Mela team" loading="lazy"></div><figcaption><span class="jtag">District programs</span><span class="jdate">2025</span><b>Free Model Health Mela</b><em>District Coordinator · Faisalabad</em><p>The district and partner groups served areas that get the least care. We offered checks for hepatitis B and C, diabetes, nutrition and family planning.</p></figcaption></figure>
+      <figure class="jc" data-ch="dc"><div class="ji"><img src="img/photos/journey/j32.jpg" alt="Punjab workshop certificate" loading="lazy"></div><figcaption><span class="jtag">District programs</span><span class="jdate">2023 to 2025</span><b>Workshop on health habits in Punjab</b><em>District Coordinator · with the Population Welfare Department and Pathfinder</em><p>I spoke for our district on people's habits and beliefs. This is the hidden part of health care, like the part of an iceberg under the water.</p></figcaption></figure>
+      <figure class="jc" data-ch="dc"><div class="ji"><img src="img/photos/journey/j34.jpg" alt="Provincial review meeting group" loading="lazy"></div><figcaption><span class="jtag">District programs</span><span class="jdate">2023 to 2025</span><b>Provincial review meeting</b><em>District Coordinator · Multan</em><p>We met often to talk about real problems on the ground and plan the next steps to our goals.</p></figcaption></figure>
+      <figure class="jc" data-ch="dc"><div class="ji"><img src="img/photos/journey/j18.jpg" alt="Divisional review meeting" loading="lazy"></div><figcaption><span class="jtag">District programs</span><span class="jdate">2023 to 2025</span><b>Divisional review meeting</b><em>District Coordinator · Commissioner's Office, Faisalabad</em><p>Leaders from each district checked health progress together.</p></figcaption></figure>
     </div>
   </div>
 </div></section>
 
-<div class="lightbox" id="lb" aria-hidden="true">
+<div class="lightbox" id="lb" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Photo viewer">
   <button class="lb-x" aria-label="Close">×</button>
-  <button class="lb-p" aria-label="Previous">←</button>
-  <figure><img alt=""><figcaption></figcaption></figure>
-  <button class="lb-n" aria-label="Next">→</button>
+  <button class="lb-p" aria-label="Previous photo">←</button>
+  <div class="lb-in"><div class="lb-img"><img alt=""></div><div class="lb-cap"><span class="lb-count"></span><div class="lb-text"></div></div></div>
+  <button class="lb-n" aria-label="Next photo">→</button>
 </div>
 
-<section id="how"><div class="wrap">
+<section class="soft" id="how"><div class="wrap">
   <span class="kicker rv">How we work together</span>
   <h2 class="rv d1">Five simple steps.</h2>
   <p class="sub rv d2">You always know what happens next.</p>
@@ -184,36 +412,96 @@
     <div class="st rv d3"><div class="top"><span class="ic"><svg viewBox="0 0 24 24"><path d="M7 11l-4 4 4 4"/><path d="M3 15h11a4 4 0 0 0 0-8h-1"/><path d="M17 3l4 4-4 4"/></svg></span><span class="num"></span></div><h3>I hand it over</h3><p>Each part gets an owner and clear steps to follow.</p></div>
     <div class="st rv d3"><div class="top"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 6-6"/><path d="M16 8h4v4"/></svg></span><span class="num"></span></div><h3>We check the results</h3><p>We look at the numbers before and after.</p></div>
   </div>
+  <div class="cta-band rv">
+    <div><h3>Step one is a short talk.</h3><p>Tell me about your hospital or program. I reply myself.</p></div>
+    <div class="actions"><a class="btn red" href="#contact">Book a call <span class="arr">→</span></a><a class="btn wa" href="https://wa.me/923000400494" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>WhatsApp me</a></div>
+  </div>
 </div></section>
+
+<section class="soft" id="faq"><div class="wrap faq-wrap">
+  <div>
+    <span class="kicker rv">Questions</span>
+    <h2 class="rv d1">Common questions.</h2>
+    <p class="sub rv d2" style="margin-bottom:24px">Not here? Ask me on WhatsApp.</p>
+    <a class="btn line rv d2" href="https://wa.me/923000400494" target="_blank" rel="noopener">Ask a question</a>
+  </div>
+  <div class="faq rv d1">
+    <details open><summary>Who do you work with?</summary><p>Hospital owners and Trusts, government health teams, and NGO health programs. I have worked in all three.</p></details>
+    <details><summary>Where do you work?</summary><p>I am based in Faisalabad. I work across Punjab and online.</p></details>
+    <details><summary>Do you still work in a hospital?</summary><p>Yes. I run a 100-bed hospital for mothers and children in Jhang. My advice comes from work I do every day.</p></details>
+    <details><summary>How do we start?</summary><p>Send me a message here or on WhatsApp. I reply with a few questions. Then we have a short talk to see if I can help.</p></details>
+    <details><summary>Will you keep our data private?</summary><p>Yes. I keep patient and staff data private. I never share one client's details with another.</p></details>
+    <details><summary>What does it cost?</summary><p>It depends on the size and design of the project. After our first talk, I send you a clear written offer.</p></details>
+  </div>
+</div></section>
+
+<section class="cform-sec" id="contact"><div class="wrap">
+  <span class="kicker rv">Contact</span>
+  <h2 class="rv d1">Tell me about your hospital or program.</h2>
+  <p class="sub rv d2">A few lines are enough. I read every message and reply myself.</p>
+  <div class="c-grid">
+    <div class="form-card rv" id="fcard">
+      <form id="cform" novalidate>
+        <div class="fields">
+          <div class="field"><label for="f-name">Your name <span>*</span></label><input id="f-name" name="name" required autocomplete="name" aria-describedby="e-name"><span class="err" id="e-name">Please write your name.</span></div>
+          <div class="field"><label for="f-org">Hospital or organization</label><input id="f-org" name="org" autocomplete="organization"></div>
+          <div class="field"><label for="f-email">Your email <span>*</span></label><input id="f-email" name="email" type="email" required autocomplete="email" aria-describedby="e-email"><span class="err" id="e-email">Please write a valid email, like name@example.com.</span></div>
+          <div class="field"><label for="f-phone">WhatsApp number <em>(if you want a call)</em></label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" aria-describedby="e-phone"><span class="err" id="e-phone">Please check this number. Use digits only, like 0300 1234567.</span></div>
+          <div class="field full"><label for="f-topic">What do you need help with?</label>
+            <select id="f-topic" name="topic"><option>Opening a new hospital</option><option>Passing an inspection</option><option>Costs and money</option><option>Reports and numbers</option><option>A health program</option><option>Staff and pay</option><option>Something else</option></select></div>
+          <div class="field full"><label for="f-msg">Your message <span>*</span></label><textarea id="f-msg" name="message" required placeholder="What is happening, and what would you like to change?" aria-describedby="e-msg"></textarea><span class="err" id="e-msg">Please write a few words, at least 10 letters.</span></div>
+        </div>
+        <div class="form-foot">
+          <button class="btn red" type="submit">Send by email</button><button class="btn wa" type="button" id="wa-send"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>Send on WhatsApp</button>
+          <small>Your email app or WhatsApp opens with the message ready. Just press send.</small>
+        </div>
+      </form>
+      <div class="done" id="done" role="status" tabindex="-1">
+        <div class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></div>
+        <h3>Thank you<span id="d-name"></span>.</h3>
+        <p id="d-msg">Your message is ready in your email app. Press send there and I will reply myself.</p>
+        <p style="font-size:14px">Did nothing open? Write to <a href="mailto:unc890@gmail.com">unc890@gmail.com</a> or WhatsApp <a href="https://wa.me/923000400494" target="_blank" rel="noopener">0300 0400494</a>.</p>
+        <button class="btn line sm" type="button" id="again">Write another message</button>
+      </div>
+    </div>
+    <aside class="side-cards">
+      <a class="i-card rv d1" href="mailto:unc890@gmail.com"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><span><b>Email</b><span>unc890@gmail.com</span></span></a>
+      <a class="i-card dark rv d1" href="https://wa.me/923000400494" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg></span><span><b>WhatsApp</b><span>0300 0400494. Send a message or ask for a call.</span></span></a>
+      <a class="i-card rv d2" href="https://www.linkedin.com/in/umar-nawaz-a5271912b" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg></span><span><b>LinkedIn</b><span>Connect with me there</span></span></a>
+    </aside>
+  </div>
+</div></section>
+</main>
 
 <footer>
   <div class="wrap f-top">
     <div class="f-brand">
       <a class="logo" href="#top"><img class="mark" src="img/logo.svg" alt="" width="42" height="42"><span><b>Dr. Umar Nawaz</b><small>MBBS, MPH</small></span></a>
       <p>Doctor and health consultant. I help hospitals and health programs work well.</p>
+      <a class="mail" href="mailto:unc890@gmail.com">unc890@gmail.com</a>
       <div class="social">
-        <a href="https://wa.me/923000400494" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg></a>
+        <a href="https://wa.me/923000400494" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg></a>
         <a href="https://www.linkedin.com/in/umar-nawaz-a5271912b" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
         <a href="mailto:unc890@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
       </div>
     </div>
     <div>
       <h4>Pages</h4>
-      <ul><li><a href="#help">How I help</a></li><li><a href="#about">About me</a></li><li><a href="#work">My work</a></li><li><a href="#journey">Photo journey</a></li><li><a href="#how">How we work</a></li><li><a href="contact.html">Contact</a></li></ul>
+      <ul><li><a href="#help">How I help</a></li><li><a href="#about">About me</a></li><li><a href="#results">Results</a></li><li><a href="#work">My work</a></li><li><a href="#journey">Photo journey</a></li><li><a href="#faq">FAQ</a></li></ul>
     </div>
     <div>
       <h4>Contact</h4>
       <ul class="f-contact">
-        <li><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg><a href="https://wa.me/923000400494" target="_blank" rel="noopener">WhatsApp 0300 0400494</a></li>
+        <li><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><a href="https://wa.me/923000400494" target="_blank" rel="noopener">WhatsApp 0300 0400494</a></li>
         <li><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:unc890@gmail.com">unc890@gmail.com</a></li>
-        <li><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg><a href="https://www.linkedin.com/in/umar-nawaz-a5271912b" target="_blank" rel="noopener">LinkedIn profile</a></li>
-        <li><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Faisalabad, Pakistan</span></li>
+        <li><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Faisalabad, Pakistan. Work across Punjab and online.</span></li>
       </ul>
     </div>
     <div class="f-cta">
       <b>Have a hospital or program to fix?</b>
       <p>Send me a short note. I will reply myself.</p>
-      <a class="btn red" href="contact.html">Book a call</a>
+      <a class="btn red" href="#contact">Book a call</a>
+      <a class="btn li" href="https://www.linkedin.com/in/umar-nawaz-a5271912b" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>Connect on LinkedIn</a>
     </div>
   </div>
   <div class="f-bottom"><div class="wrap">
@@ -237,15 +525,27 @@
   }
   var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if(!e.isIntersecting) return;
     e.target.classList.add('in'); e.target.querySelectorAll('[data-count]').forEach(count);
-    if (e.target.hasAttribute('data-count')) count(e.target); io.unobserve(e.target); }); }, {threshold:.15});
+    if (e.target.hasAttribute('data-count')) count(e.target); io.unobserve(e.target); }); }, {threshold:.12});
   document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
 
-  var links = [].slice.call(document.querySelectorAll('nav a:not(.btn)'));
-  var sio = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting) links.forEach(function(a){ a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id); }); }); }, {rootMargin:'-45% 0px -50% 0px'});
-  links.forEach(function(a){ var s = document.querySelector(a.getAttribute('href')); if (s) sio.observe(s); });
+  // active nav item
+  var links = [].slice.call(document.querySelectorAll('nav a[href^="#"]:not(.btn)'));
+  var map = {voices:'faq', how:'work'};
+  var sio = new IntersectionObserver(function(es){ es.forEach(function(e){ if(!e.isIntersecting) return; var id = map[e.target.id] || e.target.id;
+    links.forEach(function(a){ var on = a.getAttribute('href') === '#' + id; a.classList.toggle('on', on); if (on) a.setAttribute('aria-current','true'); else a.removeAttribute('aria-current'); }); }); }, {rootMargin:'-45% 0px -50% 0px'});
+  document.querySelectorAll('main section[id]').forEach(function(s){ sio.observe(s); });
 
+  // "Show more" / "Details": button[aria-expanded] opens its .xp panel in place
+  document.querySelectorAll('.xbtn[aria-controls]').forEach(function(b){
+    var p = document.getElementById(b.getAttribute('aria-controls'));
+    b.addEventListener('click', function(){
+      var open = b.getAttribute('aria-expanded') !== 'true';
+      b.setAttribute('aria-expanded', open); p.classList.toggle('open', open);
+      if (b.hasAttribute('data-more')) b.textContent = open ? b.getAttribute('data-less') : b.getAttribute('data-more');
+    });
+  });
 
-  // My work tabs: Timeline / Photo journey (journey stays hidden until chosen)
+  // My work tabs
   var wtabs = [].slice.call(document.querySelectorAll('.wtabs button'));
   function showTab(t){
     wtabs.forEach(function(b){ var on = b.getAttribute('data-t') === t; b.classList.toggle('on', on); b.setAttribute('aria-selected', on); });
@@ -253,26 +553,62 @@
   }
   wtabs.forEach(function(b){ b.addEventListener('click', function(){ showTab(b.getAttribute('data-t')); }); });
   document.querySelectorAll('[data-open="journey"]').forEach(function(b){ b.addEventListener('click', function(){ showTab('journey'); document.getElementById('work').scrollIntoView({behavior: reduce ? 'auto' : 'smooth'}); }); });
-  if (location.hash === '#journey') { showTab('journey'); setTimeout(function(){ document.getElementById('work').scrollIntoView(); }, 50); }
-  window.addEventListener('hashchange', function(){ if (location.hash === '#journey') { showTab('journey'); document.getElementById('work').scrollIntoView(); } });
+  function hashJ(){ if (location.hash === '#journey') { showTab('journey'); setTimeout(function(){ document.getElementById('work').scrollIntoView(); }, 50); } }
+  hashJ(); window.addEventListener('hashchange', hashJ);
 
-  // journey filters + lightbox
+  // journey filters
   var figs = [].slice.call(document.querySelectorAll('.jc')), fb = [].slice.call(document.querySelectorAll('#wp-journey .filters button'));
-  fb.forEach(function(b){ b.addEventListener('click', function(){ fb.forEach(function(x){ x.classList.toggle('on', x===b); });
+  fb.forEach(function(b){ b.addEventListener('click', function(){ fb.forEach(function(x){ x.classList.toggle('on', x===b); x.setAttribute('aria-pressed', x===b); });
     var f = b.getAttribute('data-f'); figs.forEach(function(g){ g.classList.toggle('hide', f !== 'all' && g.getAttribute('data-ch') !== f); }); }); });
-  var lb = document.getElementById('lb'), li = lb.querySelector('img'), lc = lb.querySelector('figcaption'), idx = 0;
+
+  // lightbox
+  var lb = document.getElementById('lb'), li = lb.querySelector('.lb-img img'), lt = lb.querySelector('.lb-text'), lcnt = lb.querySelector('.lb-count'), idx = 0, last = null;
   function vis(){ return figs.filter(function(g){ return !g.classList.contains('hide'); }); }
-  function open(i){ var v = vis(); idx = (i + v.length) % v.length; li.src = v[idx].querySelector('img').src;
-    lc.innerHTML = v[idx].querySelector('figcaption').innerHTML; lb.classList.add('open'); }
-  function close(){ lb.classList.remove('open'); }
-  figs.forEach(function(g){ g.tabIndex = 0; g.addEventListener('click', function(){ open(vis().indexOf(g)); });
-    g.addEventListener('keydown', function(e){ if (e.key === 'Enter') open(vis().indexOf(g)); }); });
+  function open(i){ var v = vis(); idx = (i + v.length) % v.length; var im = v[idx].querySelector('img');
+    li.src = im.src; li.alt = im.alt; lt.innerHTML = v[idx].querySelector('figcaption').innerHTML; lcnt.textContent = (idx + 1) + ' of ' + v.length;
+    [idx+1, idx-1].forEach(function(k){ var g = v[(k + v.length) % v.length]; (new Image()).src = g.querySelector('img').src; });
+    if (!lb.classList.contains('open')) { last = document.activeElement; lb.classList.add('open'); lb.setAttribute('aria-hidden','false'); document.body.style.overflow = 'hidden'; lb.querySelector('.lb-x').focus(); } }
+  function close(){ lb.classList.remove('open'); lb.setAttribute('aria-hidden','true'); document.body.style.overflow = ''; if (last) last.focus(); }
+  figs.forEach(function(g){ g.tabIndex = 0; g.setAttribute('role','button'); g.addEventListener('click', function(){ open(vis().indexOf(g)); });
+    g.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(vis().indexOf(g)); } }); });
   lb.querySelector('.lb-x').addEventListener('click', close);
   lb.querySelector('.lb-p').addEventListener('click', function(){ open(idx - 1); });
   lb.querySelector('.lb-n').addEventListener('click', function(){ open(idx + 1); });
   lb.addEventListener('click', function(e){ if (e.target === lb) close(); });
+  var tx = null; lb.addEventListener('touchstart', function(e){ tx = e.touches[0].clientX; }, {passive:true});
+  lb.addEventListener('touchend', function(e){ if (tx === null) return; var dx = e.changedTouches[0].clientX - tx; if (Math.abs(dx) > 50) open(idx + (dx < 0 ? 1 : -1)); tx = null; });
   document.addEventListener('keydown', function(e){ if (!lb.classList.contains('open')) return;
-    if (e.key === 'Escape') close(); if (e.key === 'ArrowRight') open(idx + 1); if (e.key === 'ArrowLeft') open(idx - 1); });
+    if (e.key === 'Escape') close(); if (e.key === 'ArrowRight') open(idx + 1); if (e.key === 'ArrowLeft') open(idx - 1);
+    if (e.key === 'Tab') { var f = [].slice.call(lb.querySelectorAll('button')); var i = f.indexOf(document.activeElement); e.preventDefault(); f[(i + (e.shiftKey ? -1 : 1) + f.length) % f.length].focus(); } });
+
+  // "Ask me about this" fills the topic
+  document.querySelectorAll('[data-topic]').forEach(function(a){ a.addEventListener('click', function(){ document.getElementById('f-topic').value = a.getAttribute('data-topic'); setTimeout(function(){ document.getElementById('f-name').focus({preventScroll:true}); }, 600); }); });
+
+  // contact form: validation + confirmation
+  var form = document.getElementById('cform'), card = document.getElementById('fcard'), done = document.getElementById('done');
+  var v = function(id){ return document.getElementById(id).value.trim(); };
+  var rules = {
+    'f-name': function(x){ return x.length >= 2; },
+    'f-email': function(x){ return /^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test(x); },
+    'f-phone': function(x){ return !x || /^[+\d][\d\s-]{9,15}$/.test(x); },
+    'f-msg': function(x){ return x.length >= 10; }
+  };
+  function check(id){ var el = document.getElementById(id), ok = rules[id](el.value.trim()); el.parentNode.classList.toggle('bad', !ok); el.setAttribute('aria-invalid', !ok); return ok; }
+  Object.keys(rules).forEach(function(id){ var el = document.getElementById(id);
+    el.addEventListener('blur', function(){ if (el.value.trim() || el.required) check(id); });
+    el.addEventListener('input', function(){ if (el.parentNode.classList.contains('bad')) check(id); }); });
+  function validate(ids){ var first = null; ids.forEach(function(id){ if (!check(id) && !first) first = id; }); if (first) document.getElementById(first).focus(); return !first; }
+  function finish(how){ document.getElementById('d-name').textContent = ', ' + v('f-name').split(' ')[0];
+    document.getElementById('d-msg').textContent = how === 'wa' ? 'WhatsApp is open with your message ready. Press send there and I will reply myself.' : 'Your message is ready in your email app. Press send there and I will reply myself.';
+    card.classList.add('sent-ok'); done.classList.add('show'); done.focus(); }
+  form.addEventListener('submit', function(e){ e.preventDefault(); if (!validate(['f-name','f-email','f-phone','f-msg'])) return;
+    var subject = 'Enquiry: ' + v('f-topic') + (v('f-org') ? ' (' + v('f-org') + ')' : '');
+    var body = 'Name: ' + v('f-name') + '\nOrganization: ' + (v('f-org') || '-') + '\nEmail: ' + v('f-email') + '\nPhone: ' + (v('f-phone') || '-') + '\nTopic: ' + v('f-topic') + '\n\n' + v('f-msg');
+    window.location.href = 'mailto:unc890@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body); finish('mail'); });
+  document.getElementById('wa-send').addEventListener('click', function(){ if (!validate(['f-name','f-phone','f-msg'])) return;
+    var text = 'Hello Dr. Umar. I am ' + v('f-name') + (v('f-org') ? ' from ' + v('f-org') : '') + '.\nTopic: ' + v('f-topic') + '\n\n' + v('f-msg');
+    window.open('https://wa.me/923000400494?text=' + encodeURIComponent(text), '_blank', 'noopener'); finish('wa'); });
+  document.getElementById('again').addEventListener('click', function(){ form.reset(); card.classList.remove('sent-ok'); done.classList.remove('show'); document.getElementById('f-name').focus(); });
 })();
 </script>
 </body>
