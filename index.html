@@ -59,7 +59,7 @@
   </div>
 </section>
 
-<div class="band"><div class="wrap">
+<div class="band"><div class="wrap" data-m-show="4" data-m-label="Show all 9 numbers">
   <div class="rv"><b data-count="10">10</b><span>years in health care</span></div>
   <div class="rv d1"><b>3 levels</b><span>Primary, Secondary and Tertiary care, at facility, tehsil and district level</span></div>
   <div class="rv d2"><b data-count="48">48</b><span>UCs of a tehsil: EPI, Polio and MR campaigns and Dengue control, with BHUs and RHCs</span></div>
@@ -96,7 +96,7 @@
   <span class="kicker rv">Results</span>
   <h2 class="rv d1">What changed after I came in.</h2>
   <p class="sub rv d2">Real numbers from my own work, with where, when and how.</p>
-  <div class="ach">
+  <div class="ach" data-m-show="4" data-m-label="Show all 10 results">
     <div class="a feat rv">
       <div class="big">42% → 0%<small>Complaints left with no action</small></div>
       <div>
@@ -195,16 +195,16 @@
     <img src="img/photos/journey/j36.jpg" alt="Dr. Umar Nawaz talking with a health worker during a polio campaign" loading="lazy">
     <figcaption>On a polio campaign field visit, Faisalabad</figcaption>
   </figure>
-  <div class="about-copy rv d1">
+  <div class="about-copy rv d1" data-m-fold data-m-label="Read more about me">
     <span class="kicker">About me</span>
     <h2>I do not just advise. I run a 100-bed hospital today.</h2>
     <p class="intro">I started as a doctor in a small village clinic. Today I run a 100-bed hospital for mothers and children in Jhang.</p>
-    <p>In between, I ran a town hospital and led health programs for a whole district. I know the clinic floor and the office desk. So I can talk to doctors, nurses and owners in a way they all understand.</p>
+    <p class="m-fold">In between, I ran a town hospital and led health programs for a whole district. I know the clinic floor and the office desk. So I can talk to doctors, nurses and owners in a way they all understand.</p>
     <div class="quals">
       <div class="qual"><b>MBBS</b><span>University of Lahore<br>2010 to 2015</span></div>
       <div class="qual"><b>MPH</b><span>Master of Public Health<br>Times Institute, Multan · 2020 to 2022</span></div>
     </div>
-    <ul class="checks">
+    <ul class="checks m-fold">
       <li>I have done the work I advise on</li>
       <li>I have worked for the government and for private hospitals</li>
       <li>I measure results before and after</li>
@@ -225,8 +225,8 @@
     <button role="tab" aria-selected="false" aria-controls="wp-journey" data-t="journey">Photo journey <span class="cnt">20</span></button>
   </div>
 
-  <div class="wpanel on" id="wp-timeline" role="tabpanel">
-  <div class="overlap rv">
+  <div class="wpanel on" id="wp-timeline" role="tabpanel" data-m-fold data-m-label="See the 2022 to 2026 chart">
+  <div class="overlap rv m-fold">
     <h3>2022 to 2026 at a glance</h3>
     <p>From 2023 to 2025 I held more than one job at a time. This chart shows how they fit together.</p>
     <div class="gantt" role="img" aria-label="Chart of jobs from 2022 to 2026. Deputy District Health Officer May 2022 to May 2023. Medical Superintendent May 2023 to September 2024. District Coordinator April 2023 to December 2025. District Manager from March 2025. Administrator May 2026 to now.">
@@ -239,7 +239,7 @@
     </div>
   </div>
 
-  <ol class="jlist" aria-label="Jobs, newest first">
+  <ol class="jlist" aria-label="Jobs, newest first" data-m-show="3" data-m-label="Show all 9 jobs">
     <li class="jr now rv">
       <div class="jr-head">
         <span class="mono img" role="img" aria-label="Sheikh Sharif Memorial Trust" title="Sheikh Sharif Memorial Trust"><img src="img/logos/ssmt.png" alt="" loading="lazy"></span>
@@ -635,6 +635,29 @@
   }
   var tm; window.addEventListener('resize', function(){ clearTimeout(tm); tm = setTimeout(even, 120); });
   window.addEventListener('load', even); if (document.fonts) document.fonts.ready.then(even); even();
+})();
+</script><script>
+// Phone only: long lists show the first few items; extra text folds behind one button.
+(function(){
+  var mq = window.matchMedia('(max-width: 640px)');
+  function makeBtn(label, after, box){
+    var b = document.createElement('button'); b.type = 'button'; b.className = 'm-more'; b.textContent = label;
+    b.setAttribute('aria-expanded', 'false');
+    b.addEventListener('click', function(){ var o = box.classList.toggle('m-open'); b.setAttribute('aria-expanded', o); b.textContent = o ? 'Show less' : label;
+      if (!o) box.scrollIntoView({block: 'start', behavior: 'smooth'}); });
+    after.parentNode.insertBefore(b, after.nextSibling);
+  }
+  document.querySelectorAll('[data-m-show]').forEach(function(box){
+    var n = +box.getAttribute('data-m-show');
+    [].slice.call(box.children).forEach(function(c, i){ if (i >= n) c.classList.add('m-extra'); });
+    makeBtn(box.getAttribute('data-m-label'), box, box);
+  });
+  document.querySelectorAll('[data-m-fold]').forEach(function(box){
+    var f = box.querySelectorAll('.m-fold'); if (!f.length) return;
+    makeBtn(box.getAttribute('data-m-label'), f[f.length - 1], box);
+  });
+  function sync(){ document.documentElement.classList.toggle('is-phone', mq.matches); }
+  sync(); if (mq.addEventListener) mq.addEventListener('change', sync);
 })();
 </script></body>
 </html>

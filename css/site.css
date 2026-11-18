@@ -922,3 +922,133 @@ nav .btn{min-height:40px;padding:8px 20px;font-size:15px}
   .trust.center{align-items:flex-start;width:max-content;max-width:100%;margin-left:auto;margin-right:auto}
   .cta-inline p{font-size:19px}
 }
+
+/* ===== v15 layer: shorter phone version ===== */
+/* ===== v15: shorter phone version =====
+   Desktop is unchanged. On phones: headlines and key numbers stay visible,
+   details sit behind "Show more" and long lists show the first few items. */
+
+.m-more{display:none}
+
+@media(max-width:640px){
+  /* tighter rhythm */
+  :root{--head-gap:26px;--pad:18px;--gap:12px}
+  section{padding:56px 0}
+  h2{font-size:26px}
+  section>.wrap>.sub{font-size:15.5px}
+
+  /* show-first-few lists and folded text */
+  [data-m-show]:not(.m-open)>.m-extra{display:none!important}
+  [data-m-fold]:not(.m-open) .m-fold{display:none!important}
+  .m-more{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;min-height:44px;margin:14px 0 0;background:#fff;border:1.5px solid var(--red);border-radius:999px;color:var(--red);font:600 15px Inter,sans-serif;cursor:pointer}
+  .m-more::after{content:"";width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:transform .25s}
+  .m-more[aria-expanded="true"]::after{transform:rotate(225deg) translateY(-2px)}
+
+  /* hero: headline, question, buttons; the long note and photo label go */
+  .hero.v11 .wrap{padding-top:88px;padding-bottom:78px;gap:22px}
+  .portrait{max-width:170px}
+  .portrait .tag,.hero .note{display:none}
+  .hero.v11 .lead{font-size:17px;margin-bottom:22px}
+  .creds-row{margin-bottom:16px}
+  .trust{font-size:13.5px;gap:6px;margin-top:18px}
+
+  /* numbers: first 4, rest behind the button */
+  .band .wrap>div{padding:16px 14px}
+  .band b{font-size:26px;margin-bottom:4px}
+  .band span{font-size:13px}
+  .band .m-more{width:auto;margin:14px 16px 0}
+
+  /* services: icon + title only; text and proof open with "Show more" */
+  #help .card,#help .card.wide{display:grid;grid-template-columns:44px 1fr;column-gap:14px;align-items:center;padding:16px 18px}
+  #help .card .icon{width:44px;height:44px;margin:0}
+  #help .card h3{margin:0;font-size:17px}
+  #help .card>p,#help .card .wide-body p{display:none;grid-column:1/-1}
+  #help .card:has(details[open])>p{display:block;margin:12px 0 0}
+  #help .card.wide:has(details[open]) .wide-body p{display:block;margin:10px 0 0}
+  #help .card .more{grid-column:1/-1;margin-top:12px;padding-top:12px}
+
+  /* results: number + title; story and place open with "Show more" */
+  .ach .a{padding:18px}
+  .ach .a b{font-size:28px;margin-bottom:4px}
+  .ach .a h3{font-size:17px;margin:0}
+  .ach .a p,.ach .a .where{display:none}
+  .ach .a:has(.xp.open) p,.ach .a:has(.xp.open) .where{display:block;margin:8px 0 0}
+  .ach .a:not(.feat) .xbtn{margin-top:12px;padding-top:12px}
+  .ach .feat{padding:22px}
+  .ach .feat .big{font-size:40px}
+  .ach .feat h3{font-size:18px;margin-top:10px}
+  .cta-inline{margin-top:24px}
+  .cta-inline p{font-size:18px}
+
+  /* partner and department logos: one swipeable row each */
+  .logos.soft:not(.depts){padding-top:44px}
+  .logos.depts.soft{padding-bottom:44px}
+  .logos p{font-size:11.5px;margin-bottom:12px}
+  .logo-grid{display:flex;overflow-x:auto;gap:10px;padding:2px 2px 8px;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 82%,transparent);mask-image:linear-gradient(90deg,#000 82%,transparent)}
+  .logo-grid::-webkit-scrollbar{display:none}
+  .logo-grid .lg{flex:0 0 92px;height:62px;padding:8px;scroll-snap-align:start}
+  .logo-grid .lg:hover{transform:none}
+
+  /* steps: compact rows */
+  .steps{gap:10px}
+  .st{display:grid;grid-template-columns:44px 1fr;column-gap:14px;padding:14px 16px;align-items:start}
+  .st .top{display:contents}
+  .st .ic{grid-column:1;grid-row:1/span 3;width:44px;height:44px}
+  .st .num{grid-column:2;font-size:11.5px}
+  .st h3{grid-column:2;font-size:16px;margin:4px 0 2px}
+  .st p{grid-column:2;font-size:14px}
+  .cta-band{margin-top:20px;padding:18px}
+  .cta-band h3{font-size:18px}
+
+  /* about: photo shorter, extra paragraph and ticks folded */
+  .split{gap:22px}
+  .about-photo img{aspect-ratio:16/10;min-height:0}
+  .about-photo figcaption{display:none}
+  .about-copy h2{font-size:24px;margin-bottom:12px}
+  .about-copy .intro{font-size:16px}
+  .quals{grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}
+  .qual{padding:14px}
+  .qual b{font-size:24px}
+  .qual span{font-size:13px}
+  .cv-row{margin-top:16px}
+
+  /* my work: chart folded, first 3 jobs, one-line summary opens with "Show more" */
+  .wtabs{margin-bottom:20px}
+  #wp-timeline>.m-more{margin:0 0 16px}
+  .jr{margin-bottom:10px}
+  .jr-head{grid-template-columns:40px 1fr;padding:14px}
+  .jr-head .mono{width:40px;height:40px}
+  .jr-t h3{font-size:16.5px}
+  .jr-org{font-size:13.5px}
+  .jr-main p{display:none}
+  .jr:has(.xp.open) .jr-main p{display:block}
+  /* photo journey: two photos a row, the story shows when a photo is tapped */
+  .jgrid{grid-template-columns:1fr 1fr;gap:10px}
+  .jc figcaption{padding:10px 12px 12px}
+  .jc figcaption b{font-size:14px;margin:6px 0 0}
+  .jc figcaption em,.jc figcaption p,.jc figcaption .jdate{display:none}
+  .jtag{font-size:10.5px;padding:2px 8px}
+  .filters{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;scrollbar-width:none}
+  .filters button{flex:none}
+
+  /* faq */
+  .faq summary{font-size:16px;padding:14px 2px}
+
+  /* contact: three icon tiles in one row */
+  .cform-sec .side-cards{grid-template-columns:repeat(3,1fr);gap:10px}
+  .cform-sec .i-card{flex-direction:column;align-items:center;text-align:center;gap:8px;padding:14px 6px}
+  .cform-sec .i-card>span:last-child>span{display:none}
+  .cform-sec .i-card b{font-size:14px;margin:0}
+  .trust.center{margin-bottom:22px}
+  .form-card{padding:20px 16px}
+
+  /* footer: brand and contact only */
+  .f-top{gap:28px;padding-top:44px;padding-bottom:32px}
+  .f-top>div:nth-child(2),.f-cta{display:none}
+}
+
+@media(max-width:640px){
+  .band .m-more{width:calc(100% - 32px);margin:14px auto 0}
+  .portrait::before{display:none}
+  .qual span{line-height:1.45;display:block}
+}
